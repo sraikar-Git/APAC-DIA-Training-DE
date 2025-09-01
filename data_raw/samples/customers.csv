@@ -1,0 +1,800 @@
+customer_id,natural_key,first_name,last_name,email,phone,address_line1,address_line2,city,state_region,postcode,country_code,latitude,longitude,birth_date,join_ts,is_vip,gdpr_consent
+1,CUST-9-A9Z--A,Thomas,Smith,bad_email,07632163,92 Livingston Anchorage,,Petersonville,VIC,9483,AU,-43.063048,121.306436,2014-01-03,2024-01-14T20:26:03,False,True
+2,CUST-Z-0-0--A,Levi,Gomez,bad_email,(08) 8059 6024,Apt. 042 84 Williams Ronde,,East Michelle,SA,0964,AU,-43.032836,145.899775,2014-02-28,2024-05-15T01:34:55,False,True
+3,CUST--9-AZ0-Z,Kevin,Roberts,colemanholly@example.com,+61 3 5864 9477,Suite 604 7 Harris Arcade,,Lambertshire,QLD,2950,AU,-35.335163,127.205049,2000-09-04,2024-11-21T13:16:59,False,True
+4,CUST-999-ZA99,Beth,Jones,bryan35@example.org,+61-475-842-421,Suite 507 7 Angela Motorway,,New Joseph,NT,2619,AU,-34.746088,139.526478,1979-09-14,2024-12-16T11:48:24,False,True
+5,CUST---ZZ0-AA,David,Gonzalez,jilljacobson@example.org,08 3919 9498,81 Emily Little,,Port Kevin,QLD,0920,AU,-42.603697,141.799559,2008-05-09,2024-05-14T21:17:02,False,True
+6,CUST-0AAZ--A-,Paul,Hines,amberellis@example.net,0832356663,5/710 Jessica Pocket,,Lake Eric,QLD,2821,AU,-39.319501,122.056565,2009-08-19,2024-01-06T04:10:14,False,True
+7,CUST-A0Z9Z-0Z,Joshua,Watson,daniellejennings@example.com,+61349753810,Level 1 39 Amanda Byway,,Lanebury,NSW,2935,AU,-41.015552,137.557980,2014-08-19,2024-04-11T05:33:52,False,True
+8,CUST--ZZAA-A0,Anthony,Sanchez,lesliecummings@example.com,+61-431-989-695,Flat 97 81 Alvarez Highway,,South Rebeccaville,WA,2920,AU,-34.220155,133.308247,1971-04-13,2024-03-06T17:18:16,False,True
+9,CUST----909--,Mary,Reed,abutler@example.org,(07).3716.9871,0/7 Perez Ridgeway,,Brendanfurt,ACT,2670,AU,-41.753027,125.523422,2012-10-11,2024-10-10T08:22:41,False,False
+10,CUST-A9Z9AAA-,Luis,Roberts,coxautumn@example.org,0459 869 773,95/608 Herbert Elbow,,Lake Rhondaborough,NT,6124,AU,-35.176169,135.048466,1981-10-19,2024-08-30T14:49:14,False,True
+11,CUST-909A000Z,Paul,Tran,baxtershawn@example.org,02.8240.1453,3 Baker Causeway,,South Kennethview,QLD,9123,AU,-39.513865,128.875266,1984-12-27,2024-08-24T09:05:42,False,True
+12,CUST----AAA9A,Casey,Hunt,bevans@example.org,(08) 7865 3548,5 Cannon Heights,,Jaredland,TAS,4814,AU,-43.978446,127.616870,2000-10-26,2024-05-26T15:24:04,False,True
+13,CUST-099-Z---,Jocelyn,Krause,bad_email,(07).8401.1185,940 Anna Retreat,,West Billystad,NT,3481,AU,-38.158224,132.114015,2007-08-25,2024-03-21T02:04:15,False,True
+14,CUST-A-A--09A,Richard,Clark,jonesbrian@example.org,+61.8.1597.5864,166 Meyer Expressway,,South Melissamouth,NT,0806,AU,-41.957408,140.647672,1981-05-31,2024-05-15T14:24:36,True,True
+15,CUST-A-0A-A0Z,Katie,Mejia,coreymartinez@example.net,6110 3955,Unit 12 72 Morgan Trail,,North Cheryl,ACT,2959,AU,-35.207298,126.781084,1974-02-25,2024-08-12T19:46:40,False,True
+16,CUST--99-Z9AA,Teresa,Webb,gonzalezlauren@example.com,0376830379,8 Paul Siding,,West Bettyborough,VIC,2668,AU,-36.823878,120.143892,1983-09-07,2024-09-15T17:47:12,False,True
+17,CUST-AZA0AZA9,Zachary,Torres,davisjessica@example.org,+61-8-4202-9715,72/736 Bradley Quays,,Ferrellside,NSW,2197,AU,-42.881261,149.802038,1973-05-16,2024-10-06T01:18:42,False,True
+18,CUST-ZAZ--0ZA,Laurie,Bailey,carly47@example.net,+61-413-242-329,Flat 07 052 Estrada Vista,,Jenningsfort,SA,2004,AU,-36.505224,149.030553,1981-03-28,2024-03-24T06:26:46,False,False
+19,CUST-09--Z99Z,Deborah,Johnson,julieali@example.org,(03) 2642 4935,Flat 77 480 Carrie Quadrangle,,Anthonyport,WA,2763,AU,-35.794636,146.852921,1979-12-31,2024-01-13T07:01:53,False,True
+20,CUST--9-ZZ9A0,Alicia,Williams,bad_email,0320594905,Suite 859 21 Kane River,,South Courtneyton,NT,2217,AU,-38.034287,125.827484,1988-02-21,2024-08-11T22:04:17,False,True
+21,CUST-9-0A--ZA,Dustin,Wang,washingtonpatricia@example.org,0402-164-572,95/136 Jenna Path,,Katietown,ACT,2771,AU,-42.753747,148.001873,2005-06-30,2024-06-07T14:52:08,False,True
+22,CUST---00999-,Keith,Lam,ycook@example.net,+61 8 1233 0127,132/826 Nolan Part,,Collinstown,QLD,2619,AU,-41.898173,143.430353,2014-06-05,2024-12-01T11:43:57,False,True
+23,CUST-9-AZ0--9,Tanya,Hunter,bad_email,+61-8-2809-3615,425/0 Flores Cruiseway,,Mooreberg,NSW,2605,AU,-41.551575,131.005454,1966-07-14,2024-08-21T15:05:21,False,True
+24,CUST-00-909-9,John,Sanford,bad_email,(03).4213.6508,517 Pamela Reach,,Greenebury,ACT,2945,AU,-41.508017,145.933454,2000-12-13,2024-03-09T16:55:01,False,True
+25,CUST-0-09--Z-,Robert,Miles,tyler13@example.net,+61-8-2092-2697,765 Joy Ride,,South Karenmouth,NT,2942,AU,-41.226886,143.106993,2003-06-23,2024-11-16T08:42:38,False,True
+26,CUST---ZZAZ-Z,Pamela,Smith,steinjason@example.com,+61335819168,Flat 03 522 Victoria Centreway,,North Gene,ACT,2667,AU,-38.573889,128.630969,1978-07-22,2024-08-03T14:10:49,False,True
+27,CUST--9AA00ZZ,Jacqueline,Taylor,guerrakyle@example.net,(07)-1474-5378,49/60 Ruiz Broadway,,Wilsonville,SA,2607,AU,-39.143580,127.554288,1996-04-09,2025-01-05T06:00:32,False,True
+28,CUST--A-9A0--,John,Leach,bakervictor@example.net,8067 7937,Suite 100 8 Angela Landing,,North Allisonfurt,TAS,1926,AU,-40.726473,130.187973,1990-04-12,2025-01-24T13:48:12,False,True
+29,CUST--A0A0AZ9,Maria,Gonzales,kramos@example.org,4079.3976,95 Alexis Ronde,,Byrdtown,NSW,2972,AU,-43.796200,118.095294,1971-04-29,2024-08-30T04:09:53,False,True
+30,CUST----9Z99Z,Jennifer,Perry,thomas42@example.org,02 5134 6652,Apt. 362 982 Townsend Avenue,,Richardfort,QLD,2641,AU,-38.242033,148.321046,1993-09-02,2024-07-22T07:13:15,True,True
+31,CUST-9-A-9ZA9,Andrew,Lynch,bad_email,0469 163 393,Unit 37 468 Brown Block,,East Karinamouth,NSW,6519,AU,-39.799413,131.608068,1998-11-22,2024-07-04T23:08:27,False,True
+32,CUST-9-0--Z9-,Andrew,Mills,pennyvaughan@example.com,07 8725 2919,59 Susan Trail,,West Amandamouth,NT,2917,AU,-43.133371,147.265247,1981-11-16,2025-01-19T16:55:10,False,True
+33,CUST-AZZ0Z-0-,Robin,Powers,stephaniethompson@example.net,+61-429-481-964,758 Short Top,,Chantown,ACT,2646,AU,-42.089436,121.654242,1996-06-17,2024-09-07T20:12:48,False,True
+34,CUST-90-A09AZ,Roger,Washington,haley82@example.com,0401.116.201,52 Shepherd Promenade,,Josephchester,VIC,2611,AU,-36.540646,125.231652,2000-09-15,2024-05-18T11:09:49,False,True
+35,CUST-Z---A-99,Derek,Atkins,thomas40@example.com,0381.8871,Unit 46 266 Johnson Sound,,Emilyfurt,TAS,6678,AU,-40.391189,124.090704,2007-12-02,2024-03-05T09:59:14,True,True
+36,CUST-9-Z-AA90,Catherine,Lane,flemingderrick@example.net,4297 4254,282 Wilson Basin,,Marytown,ACT,3390,AU,-35.382770,116.563486,1965-11-11,2024-07-24T17:54:14,True,True
+37,CUST-A---AAZ-,Jose,Mills,jennifer74@example.com,+61371442182,306 Parker Way,,Toddland,NSW,2619,AU,-39.572790,146.406667,1998-06-21,2024-06-05T20:42:11,False,True
+38,CUST-ZA99-9A-,Nancy,Keller,tgreen@example.org,03-4052-2976,Apt. 677 8 Nelson Walk,,West Tiffanybury,WA,0826,AU,-37.106289,130.796499,1962-12-05,2024-04-28T10:29:22,False,True
+39,CUST--99AZ09-,Alejandro,Phillips,christianroman@example.net,07-1343-9792,95/9 Santos Centreway,,Tinaburgh,TAS,2818,AU,-35.733688,114.856393,1974-11-19,2024-06-06T21:39:53,False,True
+40,CUST-0AZZ0909,Michael,Campbell,jefferygray@example.org,18205870,23/062 Amy Flat,,Khanborough,TAS,8204,AU,-36.654661,136.148546,1962-04-27,2024-02-16T08:20:05,False,True
+41,CUST-A--A9-Z-,Patricia,Brewer,bakerwhitney@example.com,08.3555.7877,463 Boone Dip,,Port Roger,SA,2605,AU,-39.082742,115.649696,1991-03-20,2024-07-28T12:08:07,False,True
+42,CUST-9ZZ0009-,Edward,Hill,toddlee@example.org,+61 2 2543 3287,Level 4 5 Allison Glade,,West Michaelshire,ACT,8191,AU,-39.958249,132.583850,1960-02-07,2024-12-02T19:45:18,False,True
+43,CUST--0A0-Z-9,Mark,Perez,lisawilliams@example.com,0475.524.106,3 Baldwin Gap,,Lake Edward,SA,2664,AU,-34.268532,136.354867,1981-06-20,2024-12-29T05:45:58,False,False
+44,CUST-0AA90-A-,Laura,Hancock,brentbrock@example.org,+61 400 965 793,15/575 Elizabeth Gap,,Rushfurt,SA,2845,AU,-41.562691,134.050603,1994-05-31,2024-04-07T21:49:21,False,True
+45,CUST-0ZAZZZA-,Lindsey,Hunter,oedwards@example.org,(03)-4807-3585,1 Tran Part,,Zacharyport,TAS,2879,AU,-40.548761,134.076697,2008-10-02,2024-07-12T16:34:42,False,True
+46,CUST--9--A00Z,Christine,West,johnramsey@example.net,+61-474-586-810,9 Castillo Deviation,,Watsonborough,SA,2667,AU,-34.346464,125.279788,1969-01-01,2024-08-13T03:37:49,False,True
+47,CUST-00-99Z-A,Karen,Powers,lee61@example.com,(03).6955.9510,Level 0 3 Johnson Track,,Larsonburgh,NSW,2400,AU,-37.732008,147.497547,2003-10-11,2024-10-04T01:18:25,False,True
+48,CUST-A0A9-99Z,John,Shea,russell34@example.com,+61 436 881 299,2 Fowler Part,,Maysville,QLD,2667,AU,-41.066322,126.993644,1973-01-22,2024-05-05T19:20:21,False,True
+49,CUST----0--9A,Beverly,Goodman,brivers@example.org,0444-073-477,Unit 67 2 Lynch Common,,West Kerry,QLD,0971,AU,-37.331593,147.956341,2001-09-27,2024-05-27T19:54:03,False,True
+50,CUST-ZZ0Z99-0,Donald,Hammond,james13@example.com,+61-498-162-150,Apt. 312 7 Anderson Ride,,Watsonview,WA,2949,AU,-38.251881,151.707682,1986-06-27,2024-01-12T23:57:55,False,False
+51,CUST-99-AZ-90,Cynthia,Spencer,barbaragarcia@example.org,(07) 4239 1390,Unit 71 99 Cassandra Deviation,,St. Dylanstad,NSW,2604,AU,-34.965963,137.853624,1987-09-19,2024-08-13T01:12:53,False,True
+52,CUST-A-9ZZ-0-,Erin,Roy,omoreno@example.net,0419.942.114,4 John Ring,,Hannahfurt,NSW,2222,AU,-41.048586,146.815878,1970-05-01,2024-08-27T02:44:29,True,True
+53,CUST-ZA900-99,Kevin,Ray,adriennecarey@example.net,+61.2.4640.8718,0 Michael Parkway,,Gibsonhaven,QLD,2952,AU,-35.775827,149.611676,1969-09-20,2024-12-11T08:30:47,False,True
+54,CUST-9-0Z--A9,Timothy,Fitzgerald,nadams@example.org,02.4514.0578,341 Chen Brae,,Justinberg,SA,2266,AU,-39.073754,115.887680,2008-03-23,2024-03-10T14:09:00,False,True
+55,CUST---9-0999,Sarah,Smith,duncantammy@example.net,2217-1312,58 Bentley Common,,North Joseland,SA,2960,AU,-41.827303,129.787834,1981-03-07,2024-07-04T03:37:02,False,True
+56,CUST-AA09Z0-Z,Crystal,Garcia,ramoskathleen@example.org,0425.585.509,Suite 191 774 Campbell Strip,,Jessicaport,VIC,0955,AU,-42.740761,134.583119,1966-02-26,2025-01-26T20:10:41,False,True
+57,CUST-Z----Z-A,Kristy,Lewis,debra27@example.net,0428.433.039,882 Vanessa Way,,South Jacquelineborough,ACT,2922,AU,-36.115685,135.554117,1961-06-01,2024-03-30T09:39:42,True,True
+58,CUST-Z09--0AA,Bradley,Rowland,josephanderson@example.com,(07) 9195 8218,Apt. 012 380 Jones Cutting,,East Andres,NSW,2330,AU,-34.359738,114.433016,2002-12-21,2024-07-24T15:31:12,False,True
+59,CUST-0ZAAA---,Todd,Hoover,alexisthomas@example.org,6222.2780,2 Brown Ground,,East Michaelton,NT,2640,AU,-37.945732,115.967138,1970-04-07,2024-12-01T23:41:56,False,True
+60,CUST-000-0-Z0,Kevin,Frost,veronica51@example.org,(08)46779264,073 Jeremy Esplanade,,Port Audrey,NSW,2681,AU,-42.473611,148.919401,1966-01-08,2024-02-16T03:06:28,True,True
+61,CUST--ZA--9--,Michele,Allison,jruiz@example.org,6082-3480,879/2 Weber Flat,,Kathrynview,VIC,0976,AU,-36.789393,150.735945,2013-11-12,2024-06-08T12:48:10,True,True
+62,CUST-Z--ZA0-9,Michelle,Mitchell,sanderscorey@example.org,(08) 8837 1216,Flat 34 5 Christine Gully,,North Zoe,ACT,2682,AU,-37.421688,139.738848,1962-08-06,2024-04-02T09:56:58,False,True
+63,CUST-9-A-Z-0Z,Margaret,Hall,xrandall@example.org,+61 406 280 171,Flat 57 745 Stephanie Mount,,East Russellchester,NT,2548,AU,-39.463542,118.296371,1987-12-16,2025-01-04T11:48:37,False,True
+64,CUST-AA-A9A--,Shirley,Graham,fosterfred@example.org,+61.422.499.699,966 Reese Mews,,Heatherfurt,SA,2655,AU,-41.844310,132.493852,1990-12-19,2024-08-08T04:02:14,False,True
+65,CUST-AZ0-9--0,Michael,Williams,gmartin@example.org,02 0324 6294,22 Michael Retreat,,West Laurenton,NSW,2622,AU,-42.800157,131.895413,1998-08-20,2024-03-30T04:42:12,False,True
+66,CUST-A-09AZ-9,Julie,Arnold,robertholmes@example.org,0487 736 344,971/35 Donald Strand,,Lake Kayla,NSW,2903,AU,-36.905010,128.707758,1970-05-02,2024-07-26T00:45:33,False,True
+67,CUST-090--ZAA,Roger,Grant,jeanette75@example.com,0469.599.258,362 Harris Ring,,Kennedychester,TAS,2668,AU,-41.784279,143.164715,1966-11-07,2024-09-18T23:03:18,True,True
+68,CUST-9Z9--AZ-,Shawn,Montoya,chelseavaughn@example.net,5521-5684,618 Robinson Dale,,Livingstonville,TAS,2621,AU,-36.271519,131.764681,2010-07-29,2025-01-24T21:05:52,False,True
+69,CUST-ZZ999---,Erika,Johnson,drobles@example.com,03 8475 8229,39 Drake Part,,Wilcoxton,WA,7442,AU,-43.258093,130.469699,1963-05-17,2024-01-30T13:25:31,False,True
+70,CUST--0---0-A,Cynthia,Mejia,ryan68@example.com,0433 722 274,90 Ashley Wynd,,Pamport,TAS,2954,AU,-34.422776,130.020924,1990-10-23,2024-12-31T03:04:13,False,True
+71,CUST---9-0-0-,Allison,Williams,maldonadorichard@example.org,0425-639-215,481/876 Ayala Rue,,Port Jasonshire,NT,2423,AU,-37.526946,114.636474,1968-06-23,2024-10-12T14:04:27,False,True
+72,CUST-A99-Z---,Daniel,Holt,ogray@example.org,03-9922-6079,777 Porter Vale,,Stevenborough,NT,2955,AU,-40.233207,143.666478,1971-06-19,2024-12-09T19:09:55,True,True
+73,CUST-AZ-Z--ZZ,Steven,French,erinmathews@example.net,03.1632.4924,664 Nicole Park,,Parsonsburgh,WA,2646,AU,-42.988592,142.834989,2007-03-28,2024-01-20T12:15:40,False,True
+74,CUST---90----,Erika,Lowe,sandraclark@example.org,+61.2.4050.5413,578 Taylor Roadside,,North Robert,ACT,2668,AU,-36.161996,121.360118,1981-06-16,2024-06-07T17:04:34,False,True
+75,CUST-0900Z---,Steven,Martinez,alexblack@example.org,5194-9638,3/5 Karen Ridgeway,,Lanefurt,ACT,2611,AU,-35.258831,134.181630,1969-03-15,2024-12-30T18:47:01,False,True
+76,CUST--AZ0--0-,Christopher,Miller,mark36@example.com,03-2295-1936,5 Dillon Outlook,,South Claudiaburgh,NSW,8722,AU,-34.054746,126.996507,1962-07-12,2024-06-12T03:36:27,False,True
+77,CUST-A--9-0Z9,Cynthia,Gomez,shannongonzalez@example.com,0424 198 418,Unit 53 0 Fernando Footway,,Tuckerton,WA,0854,AU,-42.504804,149.609038,2014-08-16,2024-09-27T15:24:36,True,True
+78,CUST-09A-0-ZA,Bryan,Smith,jacobhorton@example.com,(02).1843.3500,85 Jennifer Path,,St. Davidtown,QLD,2877,AU,-41.087280,112.062573,1991-08-27,2024-05-03T20:46:38,False,True
+79,CUST--Z----AA,Maria,Scott,james46@example.org,(03).3909.9202,874 Megan Ronde,,North Ericbury,QLD,2619,AU,-40.429061,114.702382,1981-08-19,2025-01-10T23:55:27,False,True
+80,CUST-Z99ZA-Z-,Jeffrey,Pittman,xcardenas@example.net,(03)37849469,4 Lee Walk,,Rayport,NT,5847,AU,-43.368995,143.047616,2001-01-22,2024-01-19T10:41:02,False,True
+81,CUST--Z0ZZ-0A,Sarah,Villa,david35@example.com,(03).1943.0822,882 Ward Flat,,Salazarshire,QLD,2927,AU,-40.680753,116.979000,1993-01-06,2024-08-11T14:33:51,False,True
+82,CUST---Z000Z9,Michael,Lee,jamesgardner@example.com,+61.408.577.407,6 Crystal Slope,,Johnsonview,NSW,2943,AU,-40.787886,115.202756,1986-07-10,2024-06-05T16:14:07,False,True
+83,CUST-00-A99ZZ,Karla,Griffin,stanleypamela@example.com,+61-8-1009-7599,9 Smith Centreway,,Johnview,TAS,2903,AU,-35.989040,139.176424,1962-10-17,2024-03-14T22:07:15,False,True
+84,CUST--0Z-9AZ-,Gabriela,Underwood,nicholashorton@example.com,07-6084-6557,621 Christina Tollway,,Barbarachester,SA,7082,AU,-38.260782,133.178395,1995-09-16,2024-06-09T23:38:59,False,True
+85,CUST-AA090---,Sheri,Cooper,sherry22@example.org,+61.470.591.950,Unit 91 26 Haley Quay,,Martinezhaven,NT,0243,AU,-34.013712,120.007134,1972-03-05,2024-02-07T16:27:30,False,True
+86,CUST--A9A99ZZ,Jo,Hale,xaustin@example.net,(07)-7055-5337,4/3 Sanford Underpass,,West Seth,SA,2181,AU,-41.990196,117.555075,2004-04-27,2024-01-14T13:08:23,False,True
+87,CUST---0-ZAA9,Jay,Powell,garciasandra@example.net,02.6509.4757,Suite 789 4 Zachary Bypass,,Adamsside,TAS,8099,AU,-39.500255,139.204360,1990-11-28,2024-03-06T20:04:20,False,True
+88,CUST--AA--Z0-,Heather,Garrison,gmercer@example.com,08 6198 4730,3/59 Williams Walk,,East Monicaville,SA,4676,AU,-41.493947,137.402284,2009-06-01,2024-05-20T04:33:26,False,True
+89,CUST--9--A---,John,Rogers,barkerrachel@example.org,+61.470.259.037,8 James Expressway,,Nicholsstad,ACT,2610,AU,-36.289776,122.586236,1978-11-29,2025-01-27T20:49:51,False,True
+90,CUST--9Z90Z-0,Bernard,Hill,natalie23@example.com,07 1876 0591,Level 4 55 Erika Part,,Davidville,ACT,2622,AU,-39.355578,125.607703,1972-11-20,2024-06-09T11:37:33,False,True
+91,CUST--AZ--Z0-,Sarah,Rodriguez,bad_email,24544139,5 Woods Extension,,East Mollyburgh,TAS,2503,AU,-34.546151,146.566554,1997-07-06,2024-05-07T05:48:52,False,True
+92,CUST-0Z-0-9-0,Valerie,Roth,leahjackson@example.net,(02)98613400,899 Davis Towers,,Rogerstown,ACT,2970,AU,-41.848556,126.115804,1964-07-14,2024-05-24T18:01:06,False,True
+93,CUST--090-ZAA,Yesenia,Fox,bad_email,+61 450 060 568,Apt. 375 526 Regina Viaduct,,Port Amy,ACT,2624,AU,-38.381831,126.500951,1985-11-21,2024-02-07T14:03:59,False,True
+94,CUST---Z0A9A-,Troy,Heath,lesliepearson@example.net,+61.2.5013.6430,93 Stephanie Copse,,Dickersonchester,SA,2951,AU,-39.986129,113.610196,1963-06-29,2024-03-11T12:07:32,False,True
+95,CUST-------ZZ,Jessica,Dunn,btaylor@example.org,(03).3674.9914,98 Franklin Range,,New Joseph,TAS,2427,AU,-41.002094,144.629953,1993-01-17,2024-06-18T03:59:26,False,True
+96,CUST-99Z9-90A,Anthony,Phillips,christian90@example.com,+61.3.7775.7153,Apt. 794 28 Erica Quadrant,,New Kenneth,ACT,1338,AU,-37.192731,113.262821,1969-11-10,2024-04-07T00:41:22,False,True
+97,CUST-90-0-9-0,Faith,Montgomery,vnichols@example.org,0345305941,Suite 073 9 Williams Viaduct,,Sanchezland,ACT,2643,AU,-39.216290,127.072991,1975-07-15,2024-08-23T19:24:38,False,True
+98,CUST-9--90Z99,John,Lambert,fjimenez@example.com,+61-7-8199-6180,Unit 14 10 Heather Round,,Jimmyberg,SA,0229,AU,-37.097601,131.560123,2003-01-17,2024-06-27T20:24:24,False,True
+99,CUST-9-0ZAZ0-,Sue,Hansen,mario95@example.net,0455.309.614,856 Robert Retreat,,Nicholasfurt,VIC,2638,AU,-39.576239,122.257759,2002-12-24,2024-04-19T07:21:25,False,True
+100,CUST---Z9A-9-,Michele,Ford,bad_email,07-9397-9760,19 Michelle Bypass,,East Davidmouth,TAS,2988,AU,-39.866986,140.694322,1969-01-07,2024-12-14T05:00:18,True,True
+101,CUST-00-0-Z99,Christine,Moreno,mariaferguson@example.net,0403 266 317,476 Chen Flat,,Johnborough,TAS,2640,AU,-36.768823,149.466775,1975-09-15,2024-08-01T06:24:00,False,False
+102,CUST-AZ0Z9A-0,Larry,Walls,kevin69@example.org,+61230473858,4 Angela Circlet,,South Rebeccaside,WA,2611,AU,-35.911861,125.227364,2001-03-03,2024-11-27T09:22:00,False,False
+103,CUST--ZZ--99-,Robert,Bryant,normafuentes@example.net,5485-6229,95 Tina Cutting,,Taylorport,QLD,2960,AU,-42.152188,117.624475,1989-01-11,2024-05-07T00:14:55,False,True
+104,CUST--ZA9ZZZ-,Bonnie,Ford,susancarter@example.com,0411.606.616,280 Richard Place,,Ronaldland,WA,4516,AU,-37.139264,148.924241,1987-11-25,2024-12-19T04:16:29,False,True
+105,CUST--Z---0-0,Robert,Riley,davidmitchell@example.com,0418.326.720,488 Chelsea Crossing,,New Davidhaven,NT,2630,AU,-37.196581,135.832579,1967-05-06,2024-09-26T16:15:56,False,True
+106,CUST-------AA,Christopher,Castillo,tglenn@example.org,(07).9729.3768,Flat 12 53 Smith Esplanade,,Gibbsmouth,NT,2615,AU,-39.111720,147.955574,1999-12-19,2024-01-29T16:30:32,True,True
+107,CUST-A90ZA--9,Gabrielle,Clayton,harperjohnny@example.org,0451.079.622,502 Mack Drive,,Wendyberg,ACT,2670,AU,-43.362401,151.764946,1966-03-11,2024-08-29T01:09:19,False,True
+108,CUST-Z0990-90,Richard,Mason,browntimothy@example.com,(07)84135088,Suite 957 00 James Top,,Glennmouth,QLD,4656,AU,-34.071532,127.722345,1971-06-04,2025-01-07T08:06:28,False,True
+109,CUST--Z0-9009,Tiffany,Simpson,ashley35@example.org,+61 451 451 212,3/0 Timothy Gates,,Hardingborough,QLD,3771,AU,-36.749761,116.513786,1997-08-11,2024-11-10T00:34:10,False,True
+110,CUST-90-9AA--,Andrew,Morgan,alvarezadam@example.org,0495.581.565,Unit 92 570 Barber Artery,,Chelseamouth,WA,2647,AU,-41.107365,144.631450,2011-09-07,2024-06-12T21:01:30,False,True
+111,CUST-----0ZZ9,Nichole,Miller,sabrina26@example.net,1466-3013,Unit 80 36 Jeremy Way,,North Shelby,QLD,2230,AU,-43.531159,125.776593,1994-03-12,2024-09-25T11:36:17,False,True
+112,CUST-Z00-Z---,Natasha,Bender,hhill@example.net,08-8738-7933,3 Brown Bend,,East David,SA,0961,AU,-41.450044,125.210520,1967-02-03,2024-08-18T13:30:37,True,True
+113,CUST-Z-0--9AA,Robert,Phelps,jreeves@example.org,4027.1075,4 Robert Quadrangle,,Boydville,TAS,4779,AU,-40.670357,150.280790,1961-05-17,2024-04-18T06:55:06,False,True
+114,CUST-0--9-90-,Eric,Miller,richard78@example.net,02 6915 0945,6 Kim Interchange,,Fryeside,WA,2444,AU,-40.403554,147.312478,2001-10-22,2024-02-20T17:05:37,False,True
+115,CUST---Z0A9-Z,Vanessa,Chavez,qhenry@example.org,+61.429.931.610,35/8 Simpson Distributor,,Lake Davidstad,TAS,2995,AU,-41.699814,134.791581,1982-01-17,2024-09-12T20:02:53,False,True
+116,CUST--9Z99000,Jason,Mccarty,omay@example.com,+61 3 6542 4267,Unit 25 8 Erin Parade,,St. Heather,QLD,2668,AU,-35.609315,114.973216,1964-05-08,2025-01-26T00:13:56,False,True
+117,CUST--A9-0A--,Jesse,Coleman,bad_email,+61.7.5283.6799,Unit 29 7 Lucero Roadway,,Walkermouth,QLD,2980,AU,-38.677875,128.453540,1961-07-02,2024-09-28T10:00:10,False,True
+118,CUST--0A--A99,Molly,Ayers,pdean@example.net,(02)-8973-0893,664 Cooper Trunkway,,Christopherborough,ACT,2628,AU,-43.209808,150.371912,2001-03-06,2024-10-16T08:51:17,False,True
+119,CUST-AA9099A0,Elijah,Armstrong,bad_email,0869330849,06 Vargas Byway,,Jenniferton,NT,6073,AU,-35.546702,137.796290,1989-09-20,2024-10-16T03:28:19,False,True
+120,CUST-9Z---AA0,John,Harrison,tracy19@example.org,66695126,736 Howell Brow,,Martinside,NSW,2569,AU,-38.129639,142.090179,1995-09-25,2024-02-09T10:53:46,False,True
+121,CUST--9Z0-909,Stephanie,Acosta,jessicapennington@example.net,9750.0490,45 Jeffrey Trailer,,West Danielle,QLD,2672,AU,-43.239818,136.206750,2013-06-07,2024-07-22T11:52:58,True,True
+122,CUST-Z-00--00,Marco,Garcia,bad_email,08 1126 6201,Flat 66 1 Justin Round,,South Sarahville,ACT,2808,AU,-42.457790,140.467086,1973-11-03,2025-01-13T14:11:08,False,True
+123,CUST-ZAAAZ-Z0,David,Holden,bad_email,06690510,284 George Cove,,Lake Christopher,WA,2757,AU,-38.457802,135.876982,1989-02-07,2024-07-16T00:26:57,False,True
+124,CUST-A----99-,Edwin,Ward,manuel92@example.com,0489-787-653,0/7 Eric Glade,,Wilsonfort,WA,2901,AU,-42.327926,123.038475,1986-11-22,2024-09-04T02:48:02,False,True
+125,CUST--9-0-9A0,Allen,Jackson,robertssavannah@example.com,+61 2 7978 2714,2/92 Lawrence Plaza,,Robinfort,QLD,2602,AU,-40.704583,125.389449,2013-04-29,2024-03-10T10:56:18,False,True
+126,CUST--ZZ-Z009,Timothy,Greene,gonzalezhenry@example.com,+61 7 3170 5578,05/77 Rivera Tollway,,West Matthewshire,QLD,7978,AU,-34.679328,119.992002,2008-12-13,2024-04-02T20:01:42,True,True
+127,CUST-99Z00A-9,Alison,Ryan,jcarlson@example.net,90861358,13 Curtis Mall,,Lake Davidland,VIC,3047,AU,-36.109232,114.958605,2013-08-23,2024-09-02T21:11:55,False,True
+128,CUST-A-Z9--90,Shannon,Johnson,theresa43@example.com,+61.476.073.856,Apt. 094 438 Mercer Artery,,Robertsonville,TAS,0830,AU,-37.549688,137.869744,1989-09-30,2024-08-08T03:51:26,True,True
+129,CUST----99---,Larry,Smith,ashleylowery@example.com,(03)38909860,45 Atkins Beach,,Masonside,QLD,2637,AU,-41.045678,148.821902,1967-09-14,2024-02-29T05:09:29,False,True
+130,CUST--Z0A0-09,James,Tapia,bad_email,(02).5193.3770,0/660 Jose Mews,,Brandimouth,QLD,5394,AU,-40.569221,116.374507,1974-09-29,2025-01-14T08:52:50,False,True
+131,CUST---Z-0900,Dana,Austin,patrick40@example.com,2128 9069,Flat 54 8 Eric Crescent,,Brettburgh,TAS,0266,AU,-39.704472,112.178002,1979-04-09,2024-04-15T10:08:03,False,True
+132,CUST-Z--Z-AA-,Jeffrey,Lucero,mallen@example.net,(03)26319220,Suite 958 33 Candace Basin,,Priscillafort,VIC,2926,AU,-38.129953,125.916985,2001-01-28,2024-11-12T06:16:53,False,True
+133,CUST-9-AZ-Z-A,Wyatt,Weeks,pamela32@example.com,+61-483-876-661,Suite 389 6 Michael Outlook,,Garrettberg,NSW,6301,AU,-39.817609,117.514692,1994-06-04,2024-08-04T06:45:47,False,True
+134,CUST----90--Z,Carol,Cooper,hoffmanlaura@example.net,0743159901,412 Carter Rise,,Sherryside,QLD,0955,AU,-42.048715,127.357767,2010-05-19,2024-09-15T23:46:39,False,True
+135,CUST-AA-9-000,Beth,Moore,tleonard@example.org,94902840,3/306 Carter Circlet,,Guerreroshire,QLD,2699,AU,-39.426786,141.700730,2004-06-08,2024-10-08T18:35:52,True,True
+136,CUST-A9--Z0--,Michael,Sanchez,travischaney@example.com,(02)84318697,418 Phillips Basin,,New David,WA,5931,AU,-35.378004,115.479320,1970-07-13,2025-02-01T08:37:36,False,True
+137,CUST--9-90Z-9,Antonio,Rose,hcraig@example.net,0483-447-914,07/346 Jacob Copse,,Lake Scott,QLD,2659,AU,-38.031423,118.735095,1986-04-03,2024-05-28T20:51:09,False,True
+138,CUST-90AZ-9A-,David,Gilmore,flynnkurt@example.com,0403.410.494,Unit 96 9 Steven Anchorage,,Port Williamstad,NSW,1893,AU,-38.225745,122.748686,1997-02-28,2024-07-11T16:27:23,True,True
+139,CUST-90Z9AZ-0,Tina,Kirby,lauraperez@example.com,03 8943 2309,04 Boyer Ring,,Douglasland,SA,2540,AU,-37.027110,146.004250,2007-12-12,2024-07-22T07:55:51,False,True
+140,CUST--ZZZ0Z--,Jenna,Snyder,bad_email,+61-491-076-467,419 Eric Driveway,,West Lacey,WA,2691,AU,-34.705671,118.319341,2000-12-15,2024-01-01T15:34:32,False,True
+141,CUST--AZ99Z-Z,Shawn,Ray,alexisortiz@example.com,0890617613,13 Jennifer Ring,,St. Brendashire,SA,5541,AU,-36.447678,129.169238,1968-03-07,2024-12-26T03:27:55,True,True
+142,CUST--A9---A0,Shelly,James,brendacrawford@example.net,07 0968 5854,58/6 Brooke Strand,,New Hunterland,SA,1268,AU,-43.106689,144.238273,1969-04-04,2024-06-09T13:22:57,False,True
+143,CUST----A9A-9,Heather,Smith,hulleric@example.org,+61233643331,Apt. 346 887 Donaldson Plaza,,Pruitthaven,SA,2634,AU,-43.133120,116.018604,1971-01-18,2024-10-28T13:58:55,False,True
+144,CUST--9-Z---A,Henry,Russell,lcarpenter@example.net,0498-681-545,Apt. 688 714 Gonzalez Garden,,Port Marvinshire,TAS,2198,AU,-41.044579,114.182765,1981-06-21,2024-09-10T14:02:58,True,True
+145,CUST-Z0-AAZ--,Kimberly,Stewart,vwong@example.com,(02)-1001-0202,460 Raymond Break,,Williamsville,QLD,8748,AU,-43.862066,120.629718,1965-06-04,2024-07-22T18:26:42,False,True
+146,CUST-00A9-0-9,Ashley,Mendoza,bernardbrandon@example.com,03-9961-6586,699 Angela Artery,,East Janice,NT,2965,AU,-42.446229,125.070012,2012-08-11,2024-11-20T23:39:35,False,True
+147,CUST-9A09-A-0,John,Hawkins,tholland@example.net,(07)-3687-2240,018 Bass Grange,,Mendozaville,NT,5006,AU,-36.920994,140.059984,1974-09-12,2024-09-11T12:37:23,False,True
+148,CUST--99Z-9ZZ,Melissa,Bryant,pricetoni@example.org,+61-445-237-561,701 Hardin Frontage,,Zacharyfort,QLD,0910,AU,-34.249494,137.101313,2004-07-05,2024-08-21T18:35:49,False,True
+149,CUST--Z--ZA9-,Manuel,Stewart,lsanchez@example.org,+61.459.347.845,Suite 905 60 Middleton Thoroughfare,,Conleyshire,TAS,2081,AU,-39.282354,127.319179,1973-06-18,2024-04-01T01:17:15,False,True
+150,CUST-9-90Z90-,Yvonne,Terry,michaelkelly@example.org,+61844727364,2 Jeremiah Place,,North Ruth,NT,2430,AU,-35.956620,151.256555,1995-12-20,2024-02-05T16:56:00,False,True
+151,CUST-ZA-ZZA-0,Brittney,Terrell,sharon99@example.com,+61-402-385-930,1 Amber Corso,,Mitchellside,NT,2953,AU,-39.066393,142.904531,1977-07-13,2025-01-10T19:53:58,False,True
+152,CUST-0-Z9-9AA,Scott,Evans,kristenwilson@example.net,+61.481.055.091,953 Douglas Walk,,North Rachel,NSW,2189,AU,-41.618324,131.681155,1965-05-16,2024-03-13T10:11:17,True,True
+153,CUST-9A9-Z-00,James,Booth,oscarmunoz@example.org,03.1945.2451,Suite 347 74 Morales Trunkway,,East Derrickchester,VIC,2150,AU,-34.357817,121.470869,1983-06-01,2024-06-10T14:18:25,False,True
+154,CUST--ZA--Z-0,Michael,Harper,chelseapatel@example.com,+61.7.1336.9835,70 Lucas Boulevard,,Laurabury,NT,0277,AU,-38.640755,150.585389,1978-08-17,2024-08-19T11:13:30,False,True
+155,CUST-9A9A-9-Z,William,Lopez,qsmith@example.net,+61-424-167-289,Apt. 488 8 Burnett Point,,New Nicole,ACT,2386,AU,-40.037555,113.958025,1986-10-23,2024-05-13T06:19:49,True,True
+156,CUST--A--A009,Lori,Allen,collinsscott@example.com,0416-982-159,843 Christine Parklands,,Bartonmouth,TAS,2464,AU,-40.277603,137.211902,1967-07-16,2024-10-25T21:20:23,False,True
+157,CUST-0--ZA9AA,Reginald,Herrera,jamesbrooks@example.com,+61255098464,577 Smith Parade,,Ronnieport,ACT,0212,AU,-40.050013,113.179292,1998-04-11,2024-03-29T12:53:12,False,True
+158,CUST-0-Z---A-,Patrick,Woodard,jonestammy@example.net,(08).0062.8539,729 Woods Front,,Jillmouth,WA,0927,AU,-42.627640,119.978312,2007-03-04,2024-05-07T22:57:54,False,True
+159,CUST-Z00A09Z-,Timothy,Cordova,bad_email,+61253299278,3 West Gardens,,Perkinsport,ACT,6118,AU,-35.893106,123.237307,2002-04-26,2024-09-28T13:00:49,False,True
+160,CUST--9Z9-A--,Beverly,Bennett,sherriclark@example.com,23638824,37 Gentry Reserve,,South Cassandraborough,ACT,2627,AU,-38.074805,144.248409,1992-03-09,2024-10-29T01:01:37,False,True
+161,CUST--Z--0---,Alison,Woods,bad_email,+61839126868,Unit 35 261 Derrick Subway,,Torresmouth,NSW,2114,AU,-39.220110,125.269360,1978-01-27,2024-03-07T12:24:23,False,True
+162,CUST--AA--AZ9,Christine,Wilcox,amy59@example.org,(03)29539067,059 Jones Lane,,Brianaberg,NSW,3098,AU,-34.241393,141.294081,1999-03-12,2024-11-23T17:44:18,False,True
+163,CUST-Z--9-9--,Mark,Ramsey,ivanhowell@example.net,+61.451.419.376,94 Robert Arcade,,West Lisaland,NSW,2602,AU,-34.513018,127.664057,2010-11-29,2024-01-17T06:37:45,False,True
+164,CUST---A-09Z-,Caroline,Cox,samuelvega@example.com,03.1916.5804,Flat 36 2 Howard Circuit,,West William,NSW,2693,AU,-37.299754,141.171438,1990-02-13,2024-08-16T00:24:53,False,True
+165,CUST-AZ9AZAA0,Tracie,Smith,vwalsh@example.org,8892.7002,76/92 Parsons Meander,,Lake Christinaberg,WA,8285,AU,-40.246524,145.152279,2011-11-10,2024-11-29T08:12:47,False,True
+166,CUST-AZAZAZZA,Taylor,Smith,stephen03@example.com,+61-452-099-894,Flat 54 3 Sonya Loop,,Bridgesmouth,QLD,2653,AU,-39.686767,138.145407,2014-06-26,2024-08-10T05:43:11,True,True
+167,CUST---9Z-099,Carmen,Berry,qcordova@example.net,0445.935.367,5 Bullock Track,,North Kyleville,VIC,2610,AU,-40.391711,129.104238,1986-06-04,2024-12-04T22:45:31,False,True
+168,CUST-A--AA90Z,Samuel,Robinson,bad_email,+61775727695,Suite 091 6 Petersen Viaduct,,West Matthewbury,QLD,7475,AU,-38.558740,119.395249,1994-03-22,2024-07-08T06:47:35,False,True
+169,CUST-9--Z-A0Z,Scott,Bentley,sanchezalan@example.com,2024 0094,7 Carrillo Mount,,North Stephen,WA,2986,AU,-35.592028,144.736209,1997-07-22,2024-10-01T17:17:16,False,True
+170,CUST----AA9Z0,Crystal,Tucker,susan14@example.com,(07).0320.5910,Apt. 027 51 Pena Intersection,,Welchland,ACT,2046,AU,-39.766251,151.531197,1999-01-22,2024-04-13T22:50:11,True,True
+171,CUST--9ZA0A0-,Denise,Vazquez,thernandez@example.net,+61-435-883-107,3 Richard Expressway,,New Trevor,NT,2935,AU,-42.503577,134.663757,2012-04-10,2025-01-23T03:38:53,False,True
+172,CUST--ZZAZ009,John,Sherman,jonathanschultz@example.org,08 1932 2763,14 Ashley Laneway,,Brandyborough,NT,3875,AU,-37.817555,139.232515,1996-01-15,2024-01-20T14:24:37,False,True
+173,CUST-AZZ-0A9Z,April,Weber,whunter@example.org,44103195,82 Jennifer Spur,,Medinahaven,QLD,2407,AU,-36.562764,142.961236,1988-10-14,2024-05-17T15:10:27,False,True
+174,CUST---Z90A00,Stacey,Neal,qmurray@example.com,08 6525 8705,46/246 Joyce Circle,,Fordberg,WA,2984,AU,-35.248194,120.029071,1965-03-03,2024-05-07T01:12:14,False,True
+175,CUST-0Z0Z99--,Erin,Phillips,gbell@example.org,0496 302 408,Level 1 60 Melissa Close,,St. Mark,ACT,0840,AU,-35.295192,135.475210,1991-05-18,2024-06-25T05:57:12,False,True
+176,CUST-9Z-0AA-A,Colleen,Dixon,elizabethhampton@example.net,0408-366-990,034 Roger Nook,,Bruceshire,WA,2601,AU,-35.353701,150.685534,1960-10-18,2024-08-30T04:49:02,False,True
+177,CUST-9A-9Z9-Z,Andrew,Powers,robertperez@example.net,0404-864-232,Level 1 094 Tiffany Mews,,Daybury,QLD,1835,AU,-37.228038,144.972433,1995-08-18,2024-10-26T03:43:30,True,True
+178,CUST-Z9Z-9Z--,Robert,Tanner,mooneydiana@example.net,+61842712010,Flat 80 352 Timothy Green,,East Christopher,ACT,2680,AU,-41.388531,140.443751,1986-10-21,2024-04-06T05:27:31,False,True
+179,CUST-9--Z099A,Sara,Lynch,melissa76@example.com,(02).0701.2934,87 Natalie Heights,,Emilytown,TAS,2984,AU,-43.646810,140.322758,2011-04-27,2024-04-07T12:29:39,False,True
+180,CUST--ZZ99--0,Michael,Rivera,robertacunningham@example.net,0852839831,524 Johnson Avenue,,Conwaytown,SA,2934,AU,-38.409683,148.504991,1990-02-10,2024-12-01T03:15:04,False,True
+181,CUST-ZZ0-ZZZ0,Sean,Porter,barneschristopher@example.org,(07) 0300 5605,762/21 Hall Ramp,,Port Gabriela,WA,2996,AU,-35.325022,127.266769,1986-10-07,2024-07-30T01:58:06,False,True
+182,CUST-Z-09--Z0,William,Monroe,kylehill@example.net,73058770,Unit 24 399 Kevin Strand,,West Joseborough,TAS,2627,AU,-43.419864,130.082129,1978-10-14,2025-01-24T06:08:19,False,True
+183,CUST-90--0A00,Kevin,Schultz,gjohnson@example.net,03.8235.0148,50/78 Tonya Boulevard,,Frenchberg,ACT,0204,AU,-35.079936,142.273910,2007-08-22,2024-04-07T00:39:08,False,True
+184,CUST-0ZA9---Z,Cassandra,Martin,heather25@example.org,08-5461-7162,406 Willis Crest,,Raymondfurt,QLD,2754,AU,-38.036301,125.513406,1972-01-02,2024-06-24T17:50:48,False,True
+185,CUST----9A-90,Stacy,Rodriguez,teresa61@example.org,0397861711,07/501 Cathy Centreway,,St. Kelli,QLD,2631,AU,-37.596789,142.849987,1964-05-11,2024-10-31T01:44:46,False,True
+186,CUST-0A9AA0A0,Amber,Kerr,robert89@example.com,+61-418-312-717,7/924 Joseph Cove,,Evansburgh,SA,2955,AU,-37.383354,138.499319,1984-03-21,2024-11-14T22:03:01,False,True
+187,CUST-ZA-9AA-A,Beverly,Smith,turnerkimberly@example.org,8982-1867,943/9 Steven Entrance,,Port Julia,ACT,0874,AU,-39.902438,118.414944,2009-03-05,2024-09-11T07:33:42,False,True
+188,CUST--9AAA-A9,Richard,Ferrell,angela76@example.com,(03) 8495 7070,34 Benjamin Edge,,Kellystad,NT,2036,AU,-37.556632,130.270049,1986-07-23,2024-05-15T16:54:13,True,True
+189,CUST-9ZZA0A9Z,Nicholas,Thomas,vcollins@example.com,(08) 9151 0665,58 Laura Crescent,,Collinsbury,NSW,4132,AU,-35.054724,150.203566,1984-01-26,2025-01-10T03:23:03,False,True
+190,CUST-0Z00A009,Aaron,Hall,kromero@example.org,08-7608-3445,4 Peter Walkway,,Davisville,QLD,3922,AU,-35.556502,116.148524,2012-12-30,2024-09-04T20:42:52,False,True
+191,CUST--Z9-9A00,Olivia,Hill,ian01@example.net,(07)49942328,Suite 260 0 Cynthia Court,,Lake Tracy,NT,2906,AU,-43.876398,146.733291,2007-01-31,2025-01-27T20:59:42,False,True
+192,CUST-9-9-ZA9-,John,Steele,dyerjonathan@example.net,03 8537 8329,6/7 Martinez Trail,,South Sherry,VIC,2940,AU,-35.735622,147.682475,1964-11-23,2024-01-06T23:25:31,False,True
+193,CUST---ZA0Z00,William,Eaton,bad_email,+61 418 467 793,7 Gamble Reserve,,West Tiffanychester,NSW,8354,AU,-39.558111,134.921397,1967-11-24,2024-09-12T16:16:38,False,True
+194,CUST-90AA0-A9,Edward,Bridges,philipcraig@example.com,0355922084,39/48 Smith Quad,,North Michelle,NT,2619,AU,-39.437921,125.634168,1964-11-13,2024-04-24T16:32:46,False,True
+195,CUST-99Z-A900,Heidi,Robinson,shelbyleblanc@example.net,(03) 7056 9421,345 Linda Dale,,Fosterbury,NSW,2812,AU,-34.355663,123.679343,2006-10-30,2024-07-10T03:52:15,True,True
+196,CUST-9A0Z--99,Anthony,King,crawfordleslie@example.org,0360587879,93/34 Denise Ridgeway,,South Ronaldview,SA,2645,AU,-42.922343,128.578814,2012-10-28,2024-03-04T16:24:08,False,True
+197,CUST-9-0-A--A,Caleb,Mullen,lkelly@example.org,0459-730-025,7 Travis Circuit,,Jameston,SA,2671,AU,-42.716182,127.496223,2013-11-16,2024-11-06T11:43:04,False,True
+198,CUST--ZZ00Z9-,Nicholas,Robinson,robertarussell@example.com,6389 2531,66 Howard Causeway,,Port Tammy,NSW,2626,AU,-34.644879,137.303331,1978-01-08,2024-04-17T22:43:30,False,True
+199,CUST----9999-,Douglas,Silva,xrodriguez@example.net,75013400,39/802 Elizabeth Nook,,Bretthaven,QLD,2639,AU,-35.061340,133.356112,1997-11-22,2024-01-07T19:01:55,True,True
+200,CUST---9ZAA9Z,Jacob,Williams,santiagomatthew@example.net,02.5703.9488,Flat 74 5 Nguyen Close,,Andradechester,VIC,2255,AU,-39.474055,136.644353,2010-05-29,2024-04-24T23:33:39,False,True
+201,CUST-9Z0909A0,Sharon,Gray,pdavis@example.org,(03).9840.0830,41 Lisa Circus,,North Angela,NT,2375,AU,-34.885136,140.185163,1992-12-28,2025-01-21T21:25:20,False,True
+202,CUST---A09-9Z,Kristina,Lopez,dixongreg@example.org,+61.8.0155.7893,525 Cheryl Heights,,Jonesborough,SA,2760,AU,-41.357604,118.437154,1982-11-17,2024-01-03T12:02:07,False,True
+203,CUST---AZ99-A,Karen,Rangel,kdonaldson@example.com,0451.155.518,4 Tammy Tollway,,Danielchester,WA,0910,AU,-34.430123,132.824251,2005-04-26,2024-03-22T15:08:36,False,True
+204,CUST--Z-ZZZZ9,Christopher,Davis,ubradley@example.net,4786 3466,9 Winters Laneway,,Jennatown,SA,8026,AU,-40.539927,121.613915,1981-11-15,2024-01-21T11:41:05,False,True
+205,CUST-Z0A--A9Z,Nicholas,Cisneros,april95@example.com,+61-446-569-965,884 William Line,,West Curtisbury,WA,2930,AU,-42.074876,132.555788,1968-08-10,2024-03-26T19:35:13,False,True
+206,CUST--99-9-0A,Brianna,Rice,bad_email,+61.472.334.022,3 Stanley Right Of Way,,Jordanhaven,TAS,2603,AU,-43.267520,119.119687,1982-08-07,2024-10-12T02:33:52,False,True
+207,CUST-0009Z00Z,Misty,Holt,jasonwilson@example.org,+61-2-4649-8971,911 April Highroad,,East Christopher,TAS,2958,AU,-38.143920,140.035281,1966-07-06,2024-07-02T18:18:27,True,True
+208,CUST-A0900-ZZ,Jeffrey,Benjamin,xlopez@example.org,+61.491.043.858,Apt. 392 09 Caldwell Edge,,Harrisshire,VIC,2956,AU,-35.505326,123.799139,1972-12-04,2024-06-01T23:35:26,False,True
+209,CUST-A-A---A-,Patricia,Valenzuela,debraortega@example.net,02-5826-7454,6 Stanton Sound,,Port Erikshire,SA,5661,AU,-34.943720,146.058354,1972-10-11,2024-03-23T06:41:56,False,True
+210,CUST-09---A-A,Rachel,Branch,jhowell@example.net,08-3555-2535,Suite 696 9 Cortez Ramble,,Whiteton,NT,5131,AU,-39.128096,125.234037,1971-07-03,2024-12-09T23:51:54,False,True
+211,CUST-A0-Z-9Z0,Austin,Sims,paul59@example.net,0406-311-326,36 Karina Stairs,,Washingtonstad,QLD,2621,AU,-40.867852,143.426404,1999-02-15,2024-05-21T13:05:18,True,True
+212,CUST-0Z-A0Z00,Timothy,Campbell,elaine92@example.com,+61.8.8878.1963,Suite 944 51 Amanda Trail,,Smithfurt,VIC,2602,AU,-35.136642,115.058495,1966-10-06,2024-01-10T18:27:56,False,True
+213,CUST-AZ---0--,Joseph,Sampson,fjohnson@example.net,(02) 9456 8759,Apt. 871 24 Watson Trail,,Port Kayla,VIC,2646,AU,-38.988768,115.622161,1992-08-23,2024-09-14T00:23:08,False,True
+214,CUST-9-----0-,John,Salas,billy75@example.net,0490-361-950,2 Pruitt Dell,,Brookeland,TAS,8626,AU,-41.682501,122.574285,1980-12-29,2024-01-22T07:31:42,False,True
+215,CUST-0AA009ZA,Sarah,Miller,emilyhughes@example.com,(08)-6154-0697,199 Garcia Ridge,,East Danielfurt,SA,2927,AU,-37.466635,145.418763,2006-05-09,2024-05-08T13:42:06,False,True
+216,CUST-A0-0-Z0Z,Jose,Nichols,elliottmelissa@example.net,80187269,363 Lisa Service Way,,North Natashashire,SA,2918,AU,-42.130943,126.488918,1970-08-13,2024-12-04T08:23:11,False,True
+217,CUST-009--0A-,Aaron,Powers,walkertony@example.com,(07)54593217,060 Joseph Trail,,Gardnerfort,NSW,0802,AU,-38.873572,147.631907,1973-03-05,2024-01-29T06:03:22,False,True
+218,CUST--9999-0A,Jack,Green,mayelizabeth@example.com,+61.417.908.036,32 Anne Pass,,New Rebecca,VIC,8186,AU,-39.892331,117.708485,2012-04-09,2025-01-27T06:37:19,False,True
+219,CUST-09--9-AZ,Sarah,Thomas,haroldross@example.com,(03)-4964-3964,18 Gates River,,Vickieville,VIC,2703,AU,-34.906608,139.374713,1973-06-01,2024-11-06T03:30:22,False,True
+220,CUST-AA9--0A-,Amy,Boyd,gjohns@example.net,03.6941.5806,54/16 Chavez Part,,Michaelmouth,SA,3798,AU,-43.565617,133.192661,1980-08-02,2024-09-03T13:52:49,False,True
+221,CUST-09-0Z-A-,Mathew,Bishop,bad_email,+61 455 859 064,Suite 965 38 Bishop Quadrangle,,West Jessicaside,NSW,2999,AU,-36.563543,112.284563,2006-11-17,2024-03-01T18:55:26,True,True
+222,CUST-9Z-0Z90A,Jason,Sanchez,cooperadrian@example.com,+61-2-6386-2199,Suite 628 4 Kayla Track,,South Gregory,VIC,2986,AU,-40.025459,120.147746,2009-07-13,2024-10-12T17:33:58,False,True
+223,CUST-9Z-Z090Z,Kayla,Lee,freemanjeffery@example.net,08-9450-5772,3 Joshua Laneway,,South Jessechester,QLD,2899,AU,-38.916565,143.443245,2009-05-24,2024-11-10T01:53:42,False,True
+224,CUST-0A0AA-A-,Michael,Ruiz,armstrongmatthew@example.org,+61.7.0796.9333,299 Rhodes Vale,,Staceyberg,QLD,2639,AU,-39.993551,138.247009,1985-09-13,2024-12-30T21:45:11,True,True
+225,CUST-0-09--9A,Kristin,Smith,rebeccapacheco@example.org,0788479325,6/0 Stein End,,New Micheleton,QLD,2655,AU,-40.402600,138.200765,1974-02-15,2024-02-14T10:02:47,False,True
+226,CUST-9-9A--00,Vanessa,Hudson,toddblair@example.org,+61 409 897 505,47 Robert Entrance,,Tonyaview,WA,2809,AU,-34.369429,130.190360,1996-03-28,2024-10-21T00:10:09,False,True
+227,CUST-AZ--AA-Z,Lisa,Rodriguez,bradleyrobertson@example.net,+61.405.923.092,Unit 24 30 Steven Part,,East Brian,WA,2655,AU,-36.425267,150.449549,2001-03-01,2024-12-14T16:46:27,False,True
+228,CUST-A0099Z-A,Mary,Peterson,aweaver@example.net,0460 764 966,7 Hansen Fairway,,Dixonfurt,NT,2099,AU,-41.366503,123.491583,1995-10-16,2024-12-10T12:27:05,True,True
+229,CUST--0Z-ZZ9-,James,James,upetersen@example.org,0427 247 029,7 Sosa Corner,,Murrayland,VIC,9236,AU,-41.932214,120.110662,1982-05-27,2024-11-12T12:57:45,False,True
+230,CUST-A9A0--9A,Karen,Ryan,lmartin@example.net,(08).2795.9570,98 Hoover Concourse,,Bradleyville,WA,2634,AU,-34.156053,148.640273,1985-02-21,2024-07-22T08:05:10,False,True
+231,CUST-0-0ZA--0,Marcus,Robles,bad_email,0410-793-746,80 Lori Causeway,,Sosafurt,WA,3064,AU,-41.892476,135.240329,1989-03-12,2024-07-04T22:18:38,False,True
+232,CUST-Z-ZZZ-0-,Daniel,Higgins,srobinson@example.org,0453 748 216,Apt. 579 73 Watkins Extension,,Jefferybury,QLD,2654,AU,-42.201108,117.245567,2011-08-31,2024-12-17T08:19:18,False,True
+233,CUST-0--0--9-,Patricia,Tucker,william12@example.org,(02) 9841 4958,77 Scott Dell,,Underwoodstad,NT,2975,AU,-35.506101,132.680279,1988-04-28,2024-09-06T10:55:26,False,True
+234,CUST--0A9AA-Z,George,Miller,qsmith@example.com,03.8631.4753,332 Virginia Point,,St. Rachel,WA,2983,AU,-40.396934,134.299660,1983-02-13,2024-06-25T00:43:19,False,True
+235,CUST-9---9-9-,Susan,Harris,stevenochoa@example.com,95423521,Suite 049 20 Christopher Villas,,North Bethany,QLD,6146,AU,-39.530699,115.136301,1985-09-14,2024-08-25T22:59:59,False,True
+236,CUST-99--00AZ,Olivia,Hernandez,tylerwilliams@example.net,7315-3210,23/566 Michael Crest,,Smithview,TAS,2630,AU,-37.946150,127.818213,1999-11-30,2025-02-03T13:13:20,False,True
+237,CUST----009-A,Brian,Davis,barbara64@example.net,(08)72984208,Apt. 918 9 Coleman Bypass,,East Scott,VIC,2373,AU,-43.362076,147.147639,2009-03-15,2024-01-28T00:57:35,False,True
+238,CUST-AA0-Z9A-,Craig,Clements,lbarker@example.net,03 1743 8405,2/365 Randy Approach,,East Michaelfort,WA,2693,AU,-35.614822,113.142852,1992-01-05,2024-06-15T17:20:10,False,True
+239,CUST-Z-0-9---,Haley,Smith,kristinaramirez@example.org,(07) 9628 2554,979/632 Vazquez Vale,,Lake Christopherview,VIC,2939,AU,-39.183483,121.085138,1968-01-13,2024-08-14T11:12:32,False,True
+240,CUST--A0AZ-ZZ,Shirley,Chapman,michael91@example.com,+61-499-833-055,5 Guzman Roads,,North Kyle,NSW,0275,AU,-38.029962,143.870695,2009-03-07,2024-07-10T06:51:56,False,True
+241,CUST-990-00-9,Joseph,Zavala,lorirobinson@example.net,03.9214.6697,6 Russo Parade,,Jimmyport,NSW,2479,AU,-36.570731,144.352346,1997-01-16,2024-04-06T02:29:33,False,True
+242,CUST-Z0-909-0,Brenda,Weber,kellyking@example.org,+61 3 0790 9935,2 Shannon Range,,Lake Christopherfort,VIC,2921,AU,-42.977265,122.767805,1999-05-02,2025-01-07T00:17:55,False,True
+243,CUST-0ZZ0-0Z0,Tiffany,Mcdonald,bad_email,1424 2868,878 Chase Corner,,Lake Jennifer,QLD,2980,AU,-39.298532,119.687692,1982-06-08,2024-07-14T00:27:33,True,True
+244,CUST--0--0A90,Christopher,Faulkner,xwheeler@example.net,02.7287.4048,Level 9 056 Patricia Vista,,Thomasberg,SA,2999,AU,-42.413886,141.129483,2009-04-21,2024-09-23T04:26:49,False,True
+245,CUST--A99Z-A-,Gregory,Chavez,cindycruz@example.org,7701 3550,Level 0 1 Jackson Stairs,,Sabrinaville,TAS,9824,AU,-41.569107,150.753397,2012-02-17,2024-12-19T17:18:14,False,True
+246,CUST-9A0---ZA,Erin,Johnson,tannerrebecca@example.com,+61 433 526 746,Suite 876 01 Freeman Garden,,Port Heatherport,ACT,2972,AU,-34.183243,143.542473,1991-02-27,2024-08-12T07:01:32,True,True
+247,CUST-09Z-A9-0,Michele,Miller,hunterkristine@example.org,+61261301258,337/8 Mendez Tarn,,New Evelynport,SA,4030,AU,-40.763191,130.735789,2013-09-16,2024-10-10T05:50:16,True,True
+248,CUST--0Z-ZZA9,Erik,Wilson,xmolina@example.org,0463.596.214,078 Robert Rise,,Haleyberg,SA,2659,AU,-43.366582,150.686526,1994-10-06,2024-04-07T19:04:50,False,True
+249,CUST-AZZZ-90-,Christopher,Hays,shawn93@example.org,0450 607 453,9/9 Yates Turn,,Port Isaiah,WA,2658,AU,-41.979210,131.414811,1968-11-09,2024-01-17T20:47:23,False,True
+250,CUST---ZA0Z-9,Jennifer,Blackwell,natashacampbell@example.com,07004046,065 Case Expressway,,Port Kristin,QLD,5231,AU,-35.679223,130.722366,1965-06-12,2024-07-03T20:19:00,False,True
+251,CUST--Z-9ZAA9,Michael,Garcia,changthomas@example.org,3278-0745,9 Morrison Thoroughfare,,Ashleyview,ACT,2037,AU,-41.689820,127.413244,1977-04-29,2024-09-26T23:54:58,False,True
+252,CUST--90-A-99,Christine,Wagner,brookenixon@example.com,+61-448-150-682,624 Ramos Courtyard,,Alexanderhaven,VIC,2663,AU,-38.953072,138.301275,2007-11-24,2024-11-03T16:07:46,False,True
+253,CUST--0ZZZ990,Patrick,Humphrey,robertschristine@example.org,0405-462-573,01 Mark Drive,,Gutierrezberg,WA,2992,AU,-39.475965,150.392977,1960-01-07,2025-01-06T01:15:43,False,True
+254,CUST-AZZ-Z---,John,Neal,michelle62@example.net,08-1446-4761,976 Fuentes Highway,,Laraside,VIC,2476,AU,-42.438929,122.599527,2012-03-24,2024-05-07T08:28:59,False,True
+255,CUST-A9--9-0Z,Holly,Mcgee,bad_email,0428.706.468,28 William Place,,Lauraland,NT,0999,AU,-35.916588,127.261844,1965-01-06,2025-01-29T12:10:29,False,True
+256,CUST--9A99-0A,Vickie,Robinson,bishopana@example.net,(08) 4623 2263,052 Jennifer Quay,,Shawnstad,VIC,0802,AU,-37.022313,118.127899,1995-03-31,2024-08-16T21:40:05,False,True
+257,CUST-ZAZ00--0,George,Cooper,jordanclark@example.com,9727.3837,05/03 Johnson Link,,New Alyssaville,SA,2910,AU,-42.696248,117.394831,2010-03-06,2024-04-11T17:45:44,False,True
+258,CUST-Z-----9A,Jerry,Cantrell,atkinstommy@example.org,(03)96227452,592 Patricia Centreway,,Turnerfort,NSW,2951,AU,-40.516921,124.829535,2013-04-12,2024-12-01T00:52:52,False,True
+259,CUST--A-Z-00-,Jennifer,Ali,jwilliams@example.org,1397 1661,0 Scott Parkway,,Jonathanberg,SA,2595,AU,-37.789976,117.907083,1985-10-22,2024-01-08T12:29:53,False,True
+260,CUST-009-A--Z,April,Medina,oobrien@example.org,+61 3 1763 9769,973/847 Shaw Ronde,,South Rodney,ACT,2693,AU,-37.317394,127.064267,2007-04-06,2024-01-23T09:18:03,False,True
+261,CUST-0-A9AZ9A,Ivan,Bennett,martinterry@example.net,+61-457-780-567,Unit 04 3 Daisy Corner,,Davisport,VIC,2629,AU,-37.505889,121.246745,1994-02-25,2024-09-17T03:37:35,False,True
+262,CUST-0--A----,Anthony,Park,larry59@example.org,+61.470.110.295,Apt. 281 418 Mark Strip,,East Dannyport,TAS,2604,AU,-42.429947,125.871196,1991-07-28,2024-06-30T22:45:50,False,True
+263,CUST-0--9AAZZ,Laurie,Wall,bad_email,(08).5958.4992,48 Rodriguez Parklands,,East Lauren,NT,0226,AU,-40.177929,150.424228,1980-05-27,2024-08-01T08:45:04,False,True
+264,CUST-9Z0----Z,Zachary,Schroeder,welchjoshua@example.com,+61 7 3897 6455,068/6 Galvan Causeway,,Wallsview,QLD,2607,AU,-34.909979,142.802000,2010-09-03,2024-03-21T11:33:34,True,True
+265,CUST-A-99Z-ZA,Jeff,Rodriguez,weeksjesus@example.net,(07).4558.9089,0/5 Janice Road,,New Russellport,ACT,2993,AU,-42.152535,142.497899,1983-12-10,2024-11-06T20:38:43,False,True
+266,CUST--AZ9A09-,Isabella,Williams,xphillips@example.org,3726-1003,634 Thomas Footway,,Wheelerborough,NT,2477,AU,-42.362136,121.050922,1996-08-27,2025-01-26T00:32:47,False,True
+267,CUST----9-9A0,Belinda,Steele,victorhampton@example.net,5418-5442,Flat 08 22 Deleon Close,,Henryside,TAS,2933,AU,-37.920700,144.973141,1988-01-27,2024-07-20T22:15:51,False,True
+268,CUST-A-99--A0,Keith,Martinez,bentleyjamie@example.org,+61 2 1949 1133,428/326 Michael Path,,Maryfort,WA,2423,AU,-38.838733,137.225942,1964-06-03,2024-04-07T10:36:05,False,True
+269,CUST-0Z9ZA-0-,Jasmine,Deleon,jessica97@example.org,+61 3 5316 0843,0 Kenneth Reserve,,West Leahview,ACT,2987,AU,-38.145523,147.773121,2009-01-07,2024-03-10T14:18:40,False,True
+270,CUST---9-0AZ0,Kristi,Lewis,ramosstephen@example.com,0475 407 798,Apt. 457 8 Ann Quay,,Claytontown,TAS,5450,AU,-37.659276,115.412262,1994-06-16,2025-01-07T18:37:45,False,True
+271,CUST---Z--09A,Cory,Black,ijones@example.org,(08) 2740 9732,9/790 Davis Highroad,,Chaveztown,ACT,2709,AU,-36.313696,129.850329,1976-03-18,2024-03-01T04:47:25,False,False
+272,CUST-Z0-00AA-,Luke,Thomas,guerraveronica@example.net,37833994,9/302 Rivera Brace,,Cooperland,NSW,5220,AU,-37.987834,112.262921,2009-02-07,2024-05-22T22:33:53,False,True
+273,CUST--9AAA-Z-,Dana,Bautista,bad_email,07-8667-7727,2 Natalie Highway,,Port Sarah,SA,2248,AU,-39.830431,119.129936,1985-07-06,2024-11-08T21:39:43,False,True
+274,CUST-A-9ZZ0ZA,Rachel,Morgan,ehaynes@example.com,(02).5893.7930,9 Johnson Gate,,Bryanhaven,VIC,2618,AU,-37.053806,122.976742,2007-04-14,2024-07-30T19:06:06,False,True
+275,CUST-AAA--099,Justin,House,cmitchell@example.net,0481-938-672,59 Walker Bridge,,Bradfordstad,NT,2943,AU,-37.857100,131.855877,2004-08-26,2024-09-09T06:33:00,False,True
+276,CUST-A-Z0AA9A,Timothy,Harrington,katiemack@example.com,+61.486.747.841,585 Green Tollway,,Allisonport,WA,2100,AU,-35.939565,120.493517,1978-01-18,2024-12-19T10:15:13,False,True
+277,CUST---9ZAZZA,Robert,Lee,hernandezlisa@example.com,+61-466-931-742,2 Dawn View,,Madisonstad,NSW,0240,AU,-40.620631,138.898918,2002-07-27,2024-01-19T23:30:26,True,True
+278,CUST-A-00Z9-0,Tricia,Wilson,vanceanthony@example.com,(03)-8695-7435,4 Darrell Elbow,,Lake Antoniofort,SA,2680,AU,-35.119705,126.143822,1973-05-24,2024-05-23T01:08:05,False,True
+279,CUST--A-----0,Deborah,Webb,eramirez@example.com,(07).6601.4991,44/417 Kennedy Ronde,,Tammyville,VIC,6517,AU,-41.623578,130.076253,1987-02-24,2024-04-20T19:07:05,False,True
+280,CUST--A0A0--A,James,Wright,dwilliams@example.com,0378.2010,5/2 Cody Entrance,,West Royfort,SA,2646,AU,-43.017484,151.290939,2006-04-22,2024-12-12T04:49:55,False,False
+281,CUST-Z9AA0A-9,Jennifer,Morales,bad_email,7850 1983,3 Maynard Avenue,,Barnettside,NSW,2670,AU,-36.415062,137.554034,1978-10-29,2024-06-13T07:18:07,False,True
+282,CUST-9ZA--ZZ0,Kristin,Bennett,wendymartin@example.net,+61214057081,Flat 21 96 Kylie Cruiseway,,Lake Kellieton,SA,7005,AU,-41.289479,149.731113,1985-05-31,2024-10-20T08:54:49,False,True
+283,CUST-A0--0A9Z,Jason,Barker,moranscott@example.org,+61.8.0391.7947,Suite 291 31 Ochoa Gap,,Gonzalezborough,WA,2924,AU,-38.038786,135.710249,1999-12-31,2024-11-11T12:56:52,False,True
+284,CUST-0-9--A9A,Matthew,Goodwin,dukejustin@example.com,+61 463 559 020,17 Lawrence Court,,Bradleyville,NSW,2916,AU,-42.562783,147.828034,1983-02-24,2024-07-05T14:16:30,False,True
+285,CUST-AZA0Z00A,Jerry,Watson,jamesclark@example.org,4695.1230,667 Guerra Break,,St. Maureen,WA,5884,AU,-39.943140,140.570923,1969-08-06,2024-06-15T20:14:55,False,True
+286,CUST--00----0,Damon,Torres,parkerheather@example.org,(03) 1964 1514,05/978 Andrew Artery,,Port Edwardtown,QLD,4971,AU,-39.646463,143.493071,2008-11-07,2024-12-21T08:35:53,False,True
+287,CUST-0--909A-,Anthony,Copeland,bad_email,+61.2.1046.3607,09/65 Ortiz Wade,,Tanyahaven,TAS,2619,AU,-42.912554,144.562669,1993-12-29,2024-06-16T17:59:48,False,True
+288,CUST----99-A-,Mary,Harper,joseph60@example.net,+61782883425,7 Anthony Footway,,St. Courtney,ACT,2286,AU,-40.834023,134.811056,1987-04-28,2024-08-10T12:32:03,False,True
+289,CUST---Z0ZA--,Valerie,Morgan,idiaz@example.net,3116 0954,73 David Circlet,,Port Adamshire,NT,2957,AU,-41.647588,140.088875,1995-05-16,2024-11-16T11:34:57,False,True
+290,CUST-00--9---,Jimmy,Huffman,danielle29@example.net,07.2193.2995,70 Farley Vale,,South Harryberg,SA,2981,AU,-43.282540,112.628312,2003-08-31,2024-12-02T15:54:03,False,True
+291,CUST---9-0900,James,Hill,mfields@example.org,5123 0314,Level 1 0 Anderson Fairway,,South Bridget,NT,2992,AU,-39.752281,112.297200,2004-09-09,2025-01-09T08:37:11,False,True
+292,CUST-Z-90AA--,Kevin,Clarke,villanuevadawn@example.com,(07) 0364 0751,61 Tyler Strip,,South Johnview,NT,2772,AU,-43.217654,147.596619,1967-12-08,2024-05-05T17:12:05,False,True
+293,CUST--ZA9--99,Caleb,Jones,fturner@example.org,(08) 7259 3868,720 Kristina Grove,,Russellchester,WA,2913,AU,-40.684860,126.116582,1986-06-07,2024-05-28T06:05:55,True,True
+294,CUST--9ZA09Z9,Tamara,Perez,bad_email,08-3119-8261,Apt. 775 4 Kimberly Bend,,Davisburgh,NT,0290,AU,-38.944039,146.057810,1984-12-04,2024-05-09T04:49:32,False,True
+295,CUST--Z-A9A-9,Jerry,Bowers,sarah23@example.net,08-4499-6157,26 Rocha Firetrail,,Whitneyburgh,QLD,2984,AU,-36.006280,146.480577,1990-10-04,2024-02-13T05:16:54,False,True
+296,CUST--9009900,Tara,Sullivan,jim39@example.org,0437.471.207,Suite 617 91 Fuller Parade,,Port Georgeburgh,SA,2920,AU,-42.840056,118.704016,1995-10-10,2024-08-31T10:58:20,False,True
+297,CUST-00-Z-990,Paul,Gay,blowe@example.net,+61-477-834-353,Unit 10 3 Rachel Loop,,South Colin,NT,2688,AU,-34.382373,139.315052,1963-09-06,2024-02-19T19:20:37,False,True
+298,CUST--09ZZAZZ,Dalton,Allen,travisjeffrey@example.org,+61-2-3277-7242,600 Taylor View,,St. Joy,SA,2064,AU,-38.112757,119.797027,1990-04-09,2024-12-12T06:33:02,False,False
+299,CUST--0AAAAA9,Travis,Garner,bad_email,+61-7-9112-5697,825 Bailey Towers,,Port Amanda,NT,2973,AU,-43.080587,149.540219,1979-06-14,2024-11-02T23:13:54,True,True
+300,CUST-0A-9--9-,Kenneth,Rios,pvang@example.org,(02) 3549 2652,Unit 05 25 Julie Garden,,Marcusmouth,WA,2117,AU,-34.773046,123.055342,1998-04-22,2024-12-20T11:46:29,False,True
+301,CUST-AZZAZZ00,Christine,Knapp,aromero@example.org,+61.3.8176.8009,1 Paul Circuit,,South Christopherland,SA,0237,AU,-39.079427,117.754904,1998-09-09,2024-04-21T22:21:13,False,True
+302,CUST-ZA9A9A-A,Jason,Herrera,jessebrown@example.com,3824 6106,Flat 28 35 Russell Approach,,Lake Jameston,ACT,2627,AU,-37.353942,122.657459,1989-08-03,2024-07-19T20:55:19,True,True
+303,CUST-900--A00,Antonio,Benson,joseph25@example.com,0452 874 416,4 Jones Rosebowl,,St. Jefferyburgh,TAS,2921,AU,-40.971719,114.207787,1968-02-18,2024-07-06T19:27:54,False,True
+304,CUST--ZA00-9-,Christine,Gomez,qmorales@example.net,+61 8 1600 4137,0 Brandon Retreat,,St. Courtney,WA,2627,AU,-35.147858,129.519350,1976-12-30,2024-03-12T01:17:59,False,True
+305,CUST-0--9-0AZ,Patricia,Goodman,kellyrachel@example.org,07 4300 6861,6/3 Hamilton Street,,East Amy,NSW,1522,AU,-36.789880,128.220314,1978-12-28,2024-11-30T19:02:46,False,True
+306,CUST---9A-A-9,Maria,Douglas,jonesamy@example.com,+61-489-772-811,082/5 Daniel Loop,,St. Destiny,SA,8215,AU,-37.512136,112.574608,1964-06-25,2024-06-06T03:32:32,False,True
+307,CUST---0AA--A,James,Duran,lisaalvarez@example.org,(08) 7653 7086,377 Anderson Esplanade,,New Gregorybury,NSW,2920,AU,-34.241467,135.038680,1972-04-27,2024-06-13T07:45:48,False,True
+308,CUST--ZA9ZA-0,Troy,Bryant,danielmartinez@example.org,+61717085135,423/77 Alexandra Flat,,Perryborough,SA,2902,AU,-36.089477,137.287785,1993-09-29,2025-02-02T05:44:37,True,True
+309,CUST--ZA9AA9-,Nicholas,Carr,qreed@example.net,03.6896.3368,70 Jeffrey Crest,,Richardberg,TAS,2858,AU,-39.879687,149.523584,1963-05-17,2024-11-01T06:33:13,False,True
+310,CUST-9A-Z-0AZ,Carolyn,Richard,amandahoffman@example.org,(03)-2194-7451,898 Simmons Rise,,Michealside,WA,2971,AU,-37.735358,120.324348,1964-10-04,2024-04-09T04:06:09,False,True
+311,CUST-099A-0-A,Erik,Jones,bad_email,+61 458 382 413,642 Charles Common,,Gregstad,QLD,2611,AU,-36.595831,148.994454,1975-10-12,2024-03-21T01:03:29,False,True
+312,CUST----00-9Z,Melissa,Hart,laurawilliams@example.net,03 4330 4945,737 Daniel Broadway,,St. Kylieburgh,VIC,2982,AU,-35.301137,127.021296,1979-10-18,2024-02-07T17:08:53,False,True
+313,CUST-000Z----,Scott,Conway,jeffrey99@example.net,03.0124.5990,Unit 61 32 Charles Alley,,North Jonathanfurt,NT,6456,AU,-43.679054,134.746633,1985-03-04,2024-03-10T04:02:43,False,True
+314,CUST-Z---Z9--,Kimberly,Chandler,rfuller@example.net,0428-054-622,9 Ford Point,,St. Abigail,SA,2605,AU,-41.835574,130.939560,2001-07-07,2024-05-22T00:31:41,False,True
+315,CUST---Z---0-,Julie,Taylor,julie32@example.net,+61.8.0458.8373,2 Justin Fire Track,,St. Deborah,NSW,2974,AU,-40.056798,144.388661,1968-10-16,2024-08-19T18:01:58,False,True
+316,CUST--99ZZA-0,John,Crawford,knightwillie@example.org,+61.3.7485.3358,Unit 41 6 Carroll Tarn,,South Kimberlyton,QLD,2872,AU,-39.407172,134.815232,2012-05-12,2024-01-13T16:33:36,False,True
+317,CUST-90-Z9099,Curtis,Davis,jacqueline67@example.com,+61-3-1221-4640,72 Jessica Dip,,Clarkville,WA,2077,AU,-41.034100,142.115520,2008-08-30,2024-10-21T07:32:31,False,True
+318,CUST-ZA9Z9-AA,Chad,Clark,erica12@example.com,08.8462.9579,7 Stephanie Terrace,,Lisamouth,SA,0848,AU,-38.412095,114.680237,1978-05-14,2024-03-11T12:11:39,False,True
+319,CUST-9Z0-9--9,Harold,Williams,daniellewis@example.com,(02)41969795,Suite 978 873 Ethan Crest,,St. Anita,TAS,2675,AU,-39.475894,132.058004,1971-01-03,2024-08-28T19:21:57,False,True
+320,CUST--990ZAZ-,Angela,Buck,davidreeves@example.org,(08) 5767 5576,89/8 Johnson Highway,,Anthonyside,ACT,9486,AU,-41.240573,139.883284,2004-07-11,2024-03-18T07:26:12,False,True
+321,CUST-0--9ZZ00,Kim,Stark,bad_email,(02)46373330,80 Andre Approach,,Hessville,VIC,0931,AU,-35.980109,145.397901,2006-08-13,2024-11-26T12:13:44,False,True
+322,CUST-99-Z90--,Brian,Wright,amberfriedman@example.net,+61 495 799 041,Apt. 493 365 White Service Way,,Port Mariashire,QLD,2619,AU,-41.732181,126.876093,1985-11-06,2025-01-29T01:43:22,True,True
+323,CUST--9Z-----,Robert,Sullivan,reedalexis@example.org,+61.2.5027.4793,754 Santiago Siding,,West Frankport,SA,2939,AU,-40.303279,120.206214,1963-02-10,2024-12-06T11:32:22,False,True
+324,CUST-AZ0---A0,Kevin,Dorsey,christinarichardson@example.net,0482.041.599,Suite 260 81 Li Corso,,Lake Johnathanmouth,SA,2684,AU,-38.538544,132.296361,1986-07-07,2024-08-30T10:33:08,False,True
+325,CUST-Z9-9--09,Brent,Bennett,jcalhoun@example.com,+61-2-9496-9382,Suite 287 2 Diane Bridge,,Tonyburgh,WA,2918,AU,-39.983701,145.635077,2000-01-04,2024-07-01T03:22:01,False,True
+326,CUST---Z--A-A,Alex,Jarvis,solomonmary@example.com,(07)79376904,160 Tyler Park,,Alexanderport,TAS,0874,AU,-37.949222,149.736087,1992-05-23,2024-07-22T05:23:11,False,True
+327,CUST-0AZZZZ0Z,Donald,Khan,eric90@example.org,0205089555,9/2 Emma Plaza,,Port Allisonmouth,NT,2500,AU,-36.719993,147.908944,1997-02-27,2024-03-12T21:22:42,False,True
+328,CUST-A0A0--ZZ,Bridget,Mcmillan,ryan01@example.org,+61.8.1310.0045,Flat 32 60 Kevin Quadrant,,Walkerstad,NSW,2610,AU,-36.447563,117.477082,1976-09-08,2024-07-14T10:32:20,False,False
+329,CUST-90-Z--0Z,Amanda,Russell,zimmermanvanessa@example.net,6294 9112,397 Leslie Cul-de-sac,,Lake Andrewton,SA,0945,AU,-37.340865,123.507561,1976-02-03,2024-09-08T23:28:33,False,True
+330,CUST-Z90Z-A0-,Jennifer,Stewart,lauriegibson@example.net,+61-8-1811-6652,693 Tiffany Green,,New Amanda,NSW,1621,AU,-42.371528,114.340416,1988-09-05,2024-08-24T04:55:59,False,True
+331,CUST-ZZ9ZZ-A0,Christopher,Murphy,taylorbobby@example.com,+61 3 8257 4581,73 Douglas Block,,Lake Nicholas,ACT,2998,AU,-35.275569,145.072880,1987-01-04,2024-05-18T13:11:56,True,True
+332,CUST--0-Z0-AZ,Elizabeth,Owens,icooper@example.net,4562-0332,Flat 82 87 Figueroa State Highway,,Hudsonside,VIC,0234,AU,-36.048933,134.346209,2007-02-27,2024-09-29T20:03:55,False,True
+333,CUST-0Z0A0AA-,Michael,Jackson,kurt12@example.com,+61-2-5843-0526,1/41 Campbell Street,,West Heidi,TAS,2901,AU,-40.953157,141.778409,1970-08-22,2024-04-23T04:41:10,False,True
+334,CUST-9-A--0-Z,Maria,Baird,shernandez@example.org,03.1820.1079,122 Mack Gate,,West Jill,SA,2644,AU,-36.069448,132.539168,1965-04-26,2024-08-28T04:19:47,False,False
+335,CUST--A-ZA-9A,Daniel,Sullivan,lnichols@example.org,+61 401 116 857,17 Samantha Front,,North Jenny,SA,1593,AU,-34.581550,149.951664,1991-03-16,2024-06-29T05:50:44,False,True
+336,CUST-A-A---A-,Hannah,Pratt,nfreeman@example.net,(03).2769.2149,73/5 Ellis Intersection,,Carterland,NT,2644,AU,-43.013143,120.560615,2005-03-26,2024-12-28T17:17:01,False,True
+337,CUST-Z090A0--,Michael,Thomas,kennethdalton@example.org,+61840069807,33/4 Acosta Spur,,Port Williamville,NSW,2393,AU,-39.041840,126.450018,1985-11-11,2024-10-12T01:28:42,True,True
+338,CUST-Z90Z009-,Kimberly,Caldwell,marywashington@example.org,0486 194 156,04 Tracey Cove,,Tammyborough,NSW,2827,AU,-35.975636,149.563280,1992-12-18,2024-04-01T00:27:55,False,True
+339,CUST-09AA9A-0,Evan,Ruiz,bad_email,0465 954 067,92 Ray Glade,,Debramouth,TAS,2923,AU,-34.247925,125.545266,2013-05-17,2024-07-25T04:28:10,False,True
+340,CUST-09Z9-0-Z,Jessica,Myers,schmittsharon@example.net,0452.137.438,618 Johnson Alleyway,,South James,ACT,2801,AU,-39.453653,116.887602,2003-11-25,2024-09-11T08:24:14,False,True
+341,CUST--AA9A90A,Raymond,Mcdonald,franklinstephanie@example.org,+61876216101,085 James Dell,,New Jefferyton,NSW,2976,AU,-37.389194,132.797957,2004-02-27,2024-08-26T07:21:07,False,True
+342,CUST-A-Z--Z-A,Ronald,Rubio,holmesmary@example.com,(03)48861166,Flat 74 879 Brown Corner,,East Mary,NT,2622,AU,-43.671402,134.266662,1987-03-10,2024-12-27T05:58:34,False,True
+343,CUST-00990-A9,Jonathan,Lee,fcastillo@example.net,0417 199 355,282 Jimenez Gate,,Courtneyland,QLD,2973,AU,-34.291292,136.677587,1991-08-25,2025-01-27T10:21:21,False,False
+344,CUST-99-ZAAZ-,Alison,Thompson,smithjenny@example.org,+61 8 1693 6399,Apt. 136 6 Erickson Riviera,,Vanessahaven,VIC,2616,AU,-37.387600,121.904557,1987-12-31,2024-10-30T03:05:33,False,True
+345,CUST-ZZAZA--A,Allison,Oliver,roberto73@example.com,5461.8682,758 Mckinney Mews,,Clinestad,NT,2977,AU,-38.120108,151.430591,1993-11-20,2024-10-19T14:12:37,False,True
+346,CUST-900-9-AZ,Trevor,Williams,qcaldwell@example.com,0416-307-918,520/43 Jones Parade,,West Christopher,WA,2913,AU,-35.526659,143.485984,2008-01-27,2024-04-19T10:27:44,False,True
+347,CUST---9-A-90,Frances,Robinson,pcline@example.com,4495.9076,Flat 34 731 Zachary Frontage,,East Jenniferhaven,WA,2092,AU,-40.526835,115.066464,1987-01-29,2024-09-15T10:55:09,False,True
+348,CUST-0Z90---0,Timothy,Olson,awright@example.org,9901 5773,004/567 Cole Crossing,,Port Eileen,TAS,2575,AU,-34.378829,141.688320,2001-12-03,2024-05-17T23:13:34,False,True
+349,CUST-09A9---Z,Deborah,Ward,jessica18@example.net,(08)22948293,7 Tara Loop,,South Laura,VIC,0961,AU,-35.697856,114.577101,1978-04-06,2024-07-30T09:43:07,False,True
+350,CUST-A0---9Z-,Michelle,Klein,fisherdanielle@example.net,+61 2 8286 4148,0 King Crossway,,Jenningsmouth,NT,2985,AU,-34.943444,120.079620,1984-06-19,2024-03-10T01:03:39,False,True
+351,CUST-9-9A-A09,Courtney,Paul,michael05@example.org,8735-2893,Suite 918 730 Sara Glen,,Fowlerchester,ACT,8379,AU,-37.283279,147.428774,1995-08-10,2025-01-05T05:07:03,False,True
+352,CUST--9Z---0A,Patricia,Williams,leahwells@example.net,+61-410-742-718,7 Barnett Freeway,,New Jennifer,NT,2929,AU,-36.560410,149.420004,1979-07-23,2024-03-14T03:53:20,False,True
+353,CUST-Z0-0-AZ0,Karen,Johnson,nmeyers@example.net,+61-7-6331-8940,975 Collier Artery,,South Rachel,NSW,2214,AU,-35.205665,149.478892,1992-07-25,2024-08-31T13:23:20,False,False
+354,CUST-A-9999-A,Margaret,Conrad,tylergonzalez@example.net,(08)-8828-7795,705 Joe Quadrangle,,Lake David,QLD,1382,AU,-41.636181,129.696112,1960-09-14,2024-07-20T09:18:13,False,True
+355,CUST--0Z9--9Z,Heather,Mckenzie,michaelwebb@example.org,(03)-8078-0411,Unit 68 211 Lisa Brace,,New Isaac,SA,2080,AU,-34.735028,125.308889,1997-11-22,2024-02-21T05:50:16,False,True
+356,CUST--9-900ZZ,Steven,Blake,bad_email,+61-419-352-215,31 Alicia Cross,,New Shane,VIC,2696,AU,-41.999247,124.221902,2011-08-29,2024-02-12T04:02:06,False,True
+357,CUST-99Z00-0-,Sean,Allen,bad_email,8510 5642,903 Brock Avenue,,Traceyville,ACT,0802,AU,-40.324004,127.739767,1993-11-07,2024-10-19T08:10:23,True,False
+358,CUST--0-9-9A-,Gabriel,Barrett,buckleytracy@example.org,+61.431.931.521,Unit 81 55 Cordova Outlook,,Christinaview,NT,2877,AU,-42.507488,150.321315,1975-04-06,2024-10-17T04:16:21,True,True
+359,CUST--90-A90-,Jose,Rubio,antonio41@example.net,(07) 1836 7563,4 Christine Quays,,Gabrieltown,QLD,2630,AU,-37.999172,151.808298,1985-05-21,2025-01-07T06:53:40,False,True
+360,CUST-ZA0-Z---,Michelle,Bishop,tkelley@example.net,(02)-3769-0643,3 Michael Riviera,,Lake Sandraburgh,QLD,2678,AU,-40.767540,139.720942,1979-01-14,2024-12-31T13:57:45,False,True
+361,CUST-ZA-ZAAA-,Amy,Myers,andrewcooke@example.org,0435.826.075,Level 5 6 Randall Cul-de-sac,,Heatherfort,NT,2947,AU,-40.190623,151.100955,1993-04-10,2024-03-08T20:22:22,True,True
+362,CUST-ZZ0--0-A,Robert,Robinson,vjackson@example.net,(02)-9038-3489,9 Amanda Ridgeway,,East Robertmouth,NT,2941,AU,-34.266285,123.240026,1992-05-07,2024-08-08T10:18:03,False,True
+363,CUST--09Z0Z-Z,John,Adams,bad_email,+61.436.640.092,Apt. 926 549 Bryan Strand,,Tamaratown,SA,2624,AU,-42.168587,130.809901,1974-09-03,2024-12-27T17:00:28,False,True
+364,CUST-0Z90A-00,Kathleen,Fischer,ryan42@example.com,+61788122345,9 Martinez Vale,,Michaelshire,ACT,2169,AU,-41.158836,145.398146,2005-08-22,2024-05-19T20:30:25,False,True
+365,CUST---AA--0-,Joseph,Clark,tammy22@example.com,02 7217 7224,Flat 72 301 Fernandez Square,,Port Dawnport,NSW,6891,AU,-38.096615,150.048794,1989-01-09,2024-03-19T01:03:04,True,True
+366,CUST-0909ZA9-,Tiffany,Decker,hchoi@example.com,(02) 5691 7527,Level 0 855 Jacob Steps,,Contrerasview,VIC,2904,AU,-43.513178,137.745761,1988-12-28,2024-01-29T02:34:29,False,True
+367,CUST-AA-Z0A0-,Alexander,Gibson,alexander26@example.net,03.2787.9156,3 William Parade,,Mercadomouth,ACT,2670,AU,-39.091549,129.294337,1987-10-27,2024-12-16T21:58:23,True,True
+368,CUST-Z00--0Z0,Evelyn,Duncan,bad_email,(08)-2852-2944,33 Huff Mall,,New Krystal,NSW,2692,AU,-38.866585,150.930872,1980-02-12,2024-11-27T05:38:45,False,True
+369,CUST-9Z00AA-0,Madison,Carter,ecabrera@example.com,+61879806537,917 Browning Pass,,Harrisonhaven,VIC,7088,AU,-43.522717,115.061301,1964-01-17,2024-09-19T03:55:07,False,True
+370,CUST---9Z0ZZ9,Christine,Paul,lopezjames@example.org,+61.3.1665.1258,Suite 507 11 Wilson Port,,Port Paul,NT,9387,AU,-42.177919,127.718294,1967-06-22,2024-08-01T10:50:13,False,True
+371,CUST--Z-9-Z-0,David,Hays,bad_email,+61.487.407.841,74/16 Keith Meander,,East Vincent,NSW,2697,AU,-42.833217,118.869414,2002-10-21,2024-08-23T14:44:56,False,True
+372,CUST-Z--9-09Z,Nicole,Mclaughlin,mark07@example.com,+61 404 306 819,198 Travis Tollway,,Smithside,TAS,1432,AU,-35.840318,139.841298,1976-11-19,2024-01-14T07:37:04,False,True
+373,CUST-00A--Z-9,Justin,Kline,brian54@example.net,07 0075 3186,87 Snyder Arcade,,St. Gregory,SA,1849,AU,-39.547341,131.401873,1961-10-05,2024-08-18T21:18:26,False,True
+374,CUST-9A0ZAA09,Veronica,Henry,gutierrezchad@example.com,08-8348-8725,05/06 Hill Edge,,Robertborough,SA,2619,AU,-38.866443,140.984567,2003-10-09,2024-04-28T02:12:36,False,True
+375,CUST-Z-0ZA09A,Kevin,Lee,bad_email,0488.940.765,Unit 66 0 Pratt Subway,,East Lisa,NSW,0892,AU,-41.119892,119.688052,1990-11-06,2024-08-12T08:27:02,False,True
+376,CUST-Z99Z-09-,Stephanie,Williams,wroberts@example.com,(02) 0629 9166,8/776 Benjamin Glade,,Rodriguezburgh,SA,2207,AU,-36.507457,138.682258,1971-08-01,2024-03-29T07:15:46,False,True
+377,CUST--0A-0AZ-,Noah,Sloan,flynnjohn@example.net,+61230563138,041 Aaron Hill,,New Carlosview,ACT,2611,AU,-40.622652,116.558772,1980-05-03,2024-03-02T20:27:40,False,True
+378,CUST--A9Z-Z-Z,Lydia,Schmidt,eric12@example.org,0363370004,92/68 Baker Cutting,,St. Edward,NSW,2643,AU,-37.903442,146.335496,1969-02-20,2024-10-14T01:31:41,False,True
+379,CUST--99Z-AZ0,Patricia,Roach,cvasquez@example.org,07.3874.4913,9/05 Anthony Copse,,Melissastad,ACT,2635,AU,-41.981097,150.785467,1960-08-03,2024-05-05T17:14:44,False,True
+380,CUST-ZZA990Z9,Hunter,Bowen,connie30@example.net,+61.463.535.291,Level 4 57 Kimberly Laneway,,Shannonville,VIC,2938,AU,-39.906907,130.350123,2006-04-22,2024-12-15T13:10:18,False,True
+381,CUST-9A0ZZAA-,Albert,Sims,gina96@example.org,+61 462 643 247,428 Jeffrey Rue,,South Rodneystad,WA,2920,AU,-43.421902,137.264302,2006-08-19,2024-05-31T15:15:59,False,True
+382,CUST--ZZZA9Z9,Robert,Becker,qtorres@example.net,47200145,2 Smith Park,,Josephberg,TAS,2615,AU,-35.123251,143.262524,1996-04-15,2025-02-01T07:10:59,False,True
+383,CUST-9-90--Z9,Emily,Hobbs,loweryheather@example.org,03-3064-8200,Suite 443 40 Knight Siding,,Seanberg,VIC,8700,AU,-42.399727,113.115649,2008-06-09,2024-10-30T09:25:07,False,True
+384,CUST--90AZZ9A,Michael,Randolph,kristendavis@example.net,+61 445 234 723,40 Sims Edge,,Rachelside,SA,2232,AU,-34.170494,144.215502,2012-03-05,2024-10-16T22:51:19,False,True
+385,CUST-9--Z9Z9Z,James,White,smithjaclyn@example.com,0484.219.044,2 Paul Ground,,South Allison,WA,2942,AU,-42.074447,143.141980,2000-10-03,2024-02-20T05:20:09,False,True
+386,CUST-A0-0-0AA,James,Parker,hannah93@example.org,6649-0829,56 Hardy Circus,,Davisborough,QLD,2926,AU,-38.156962,137.458446,1999-06-25,2024-12-18T17:49:25,False,True
+387,CUST-0--0--9-,Amanda,Castro,reyesmichael@example.net,(07) 1916 7517,Suite 811 441 Walls Parklands,,West Laurentown,NSW,2485,AU,-40.306679,150.072870,2013-12-21,2024-07-28T04:01:01,True,True
+388,CUST-ZZ-Z-AAZ,Sara,Moreno,bad_email,70419907,Unit 17 794 Blanchard Driveway,,North Elizabeth,ACT,2619,AU,-35.057471,147.562288,1979-05-05,2024-04-03T17:47:47,True,True
+389,CUST-0-AA00-Z,Melissa,Gallagher,james56@example.com,+61-7-3918-6184,48 Rodriguez Chase,,South Matthew,VIC,2620,AU,-37.327793,117.959304,1989-03-05,2024-02-15T22:44:49,False,True
+390,CUST--9Z00-9A,Grant,Taylor,vsingleton@example.com,0369234492,Suite 831 157 Tammy Outlook,,Lake Michaelmouth,QLD,0982,AU,-42.762184,134.374113,1977-04-06,2024-11-12T19:43:39,False,True
+391,CUST-A0A--9--,Brian,Thomas,bad_email,0315.1099,Suite 457 887 Stephanie Gap,,New Michaelburgh,SA,2969,AU,-38.664561,124.817246,2012-10-30,2024-01-24T17:53:38,False,False
+392,CUST-0ZAZ-00-,Cindy,Graham,gregorylane@example.net,+61.7.4930.4222,692/56 Ramos Sound,,New Jessicaview,QLD,2002,AU,-36.316953,118.169095,1996-07-15,2024-12-13T06:09:36,True,True
+393,CUST-AZ-A0ZA9,Jenna,Harrington,shawnmatthews@example.net,+61-7-0106-4143,Flat 40 62 Steven Square,,Lake John,NT,2645,AU,-36.478663,135.441163,2004-03-23,2024-09-17T18:21:55,False,True
+394,CUST-A0-0AZA0,Dennis,Cortez,peterflores@example.com,0470 358 074,723 Nicholas Entrance,,New Thomashaven,VIC,7459,AU,-38.452925,143.408567,1987-04-30,2024-10-17T14:48:33,False,True
+395,CUST------Z--,Ashley,Anderson,cohenjennifer@example.org,(07)-8175-9555,78 Ford Gully,,Port Stevenfort,QLD,0277,AU,-42.326183,114.407001,2003-04-05,2024-05-19T21:46:03,False,True
+396,CUST-A--Z-Z-9,Raymond,Weeks,williamsdebbie@example.org,08 0846 5559,5 Paul Rue,,Kelleytown,SA,2916,AU,-41.891498,132.192810,1988-07-22,2024-12-15T12:28:29,False,True
+397,CUST--ZZ09Z9-,Leslie,Davidson,brianna65@example.com,+61-7-7511-7133,537/8 Williams Quadrant,,Hernandezport,WA,2948,AU,-43.957208,112.383145,1975-07-27,2024-07-30T20:14:08,False,True
+398,CUST---99A0AA,Thomas,Mack,ujohnson@example.net,+61 7 2509 5303,25/72 Taylor Break,,Port Alice,WA,9783,AU,-35.608542,144.474788,1960-10-03,2024-03-04T16:50:46,False,True
+399,CUST-9Z9-9ZAA,Desiree,Yang,leecarmen@example.com,+61778353803,9 Mills Run,,Stephenburgh,NSW,2617,AU,-43.632040,131.713515,2014-05-15,2024-04-17T00:15:35,False,True
+400,CUST--Z0A--0-,Karen,Wong,pricedavid@example.com,(08)74883786,Level 5 808 Allison Crest,,St. Marieburgh,SA,2926,AU,-42.725691,149.342536,1980-06-13,2024-09-24T09:59:16,False,True
+401,CUST-Z-9-09-9,John,Griffin,pknight@example.com,+61.481.473.541,20 Hall Way,,Julieberg,SA,2972,AU,-37.198265,130.663469,1992-06-05,2024-09-21T01:34:57,False,True
+402,CUST--0-00ZZA,Brenda,Taylor,williamsjody@example.com,07 2605 9123,445/03 Skinner Pocket,,New Pattyton,QLD,0855,AU,-34.830048,119.875073,1989-07-15,2024-06-08T02:17:17,False,True
+403,CUST-9ZZ0A--0,Amy,Reed,stephenle@example.org,4652 0361,1 Lori Elbow,,St. Johnshire,ACT,2636,AU,-36.242505,136.782662,1968-07-31,2024-11-16T16:15:17,False,True
+404,CUST-AA-Z90AA,Kristen,Larson,bradleydanielle@example.org,0497 349 267,Apt. 861 239 Collins Grove,,Paultown,NT,2607,AU,-38.407419,123.796671,1994-03-22,2024-07-24T03:29:20,False,True
+405,CUST-000A-0-9,Lisa,Andrade,lewismicheal@example.org,07.8516.6586,Level 8 85 Baker Viaduct,,East Maxwellbury,VIC,2847,AU,-42.919934,112.491543,1966-01-22,2024-10-30T07:02:57,False,True
+406,CUST-0900--ZZ,Kim,Mendoza,bensonmarissa@example.org,+61 7 0286 9859,Level 5 51 Brenda Square,,Debbieshire,NSW,0894,AU,-38.868743,138.068199,1992-02-04,2024-06-08T21:15:02,False,True
+407,CUST--AZZZ0-Z,Nathan,Benitez,tiffany62@example.org,3905-8127,34 Ryan Brow,,Williamsonfurt,SA,5825,AU,-41.996281,148.340009,1966-02-19,2024-06-23T06:53:39,False,True
+408,CUST--Z-0-9Z-,Andrew,Robinson,lterrell@example.com,+61363938063,01 Nash Vista,,Port Michelleshire,TAS,0810,AU,-34.800464,137.550682,1980-08-28,2024-08-26T22:42:58,False,True
+409,CUST--9-0A0ZZ,Christine,Rocha,robert21@example.net,(08).0699.7554,78 Campbell Line,,Stevensview,WA,6328,AU,-37.686654,148.508351,1992-04-15,2024-01-23T01:04:50,False,True
+410,CUST--Z--9Z--,Erica,Taylor,gregory35@example.net,8220-0944,776 Anderson Loop,,Leefurt,NT,2676,AU,-36.125859,116.438760,1978-11-11,2024-06-05T16:36:35,False,True
+411,CUST-90A-9A--,Robert,Larsen,vwilliams@example.com,(08)-3175-5760,755 Myers Ridge,,East Kennethberg,VIC,2619,AU,-39.704598,137.445718,1964-02-22,2025-01-25T22:25:44,False,True
+412,CUST-ZAZ-Z9--,Dennis,Werner,nwilliams@example.net,+61.411.809.360,191 Todd Gully,,Youngville,QLD,2356,AU,-40.118842,147.296883,2005-09-05,2024-07-10T18:09:10,False,True
+413,CUST-Z-990900,Alexandra,Mcneil,williamparker@example.org,0483 769 687,36 Davis River,,Lake Denisemouth,ACT,2239,AU,-39.479199,121.375384,1979-08-11,2024-06-05T15:28:28,False,True
+414,CUST-0Z-AZ-ZA,Stacey,Rodriguez,ylindsey@example.com,15340287,Level 7 7 Kim Quadrant,,Port Matthewbury,WA,2079,AU,-39.324490,128.358111,2004-08-20,2024-06-11T09:56:25,False,True
+415,CUST-ZAA--9ZZ,Karen,Ruiz,hughesbrandy@example.org,03 7835 2395,262 Sloan Basin,,Lake Matthew,VIC,4378,AU,-38.539739,125.350314,1989-07-15,2024-05-08T11:01:17,False,True
+416,CUST-9---99Z-,Craig,Harrison,bennettsarah@example.com,67257080,Apt. 404 77 Acevedo Grove,,Port Michael,ACT,2554,AU,-36.421939,112.475629,2005-12-28,2025-01-24T05:26:06,False,True
+417,CUST---99-0--,Emily,Glass,shawnwilliams@example.com,+61 2 0845 5531,Unit 31 04 Wheeler Gate,,East Gregoryhaven,QLD,2765,AU,-34.580702,128.707515,1999-05-10,2024-08-18T20:19:56,True,True
+418,CUST-0-Z99ZZA,Lisa,Bowman,ehill@example.com,15631561,350/5 Thomas Rue,,Wongbury,TAS,2612,AU,-43.677910,117.565389,1989-08-17,2024-10-17T22:55:54,False,True
+419,CUST-A00-0-0-,Jeffrey,Luna,bad_email,(02).1593.2745,Apt. 704 02 Hernandez Artery,,Jaredhaven,ACT,2958,AU,-42.956868,134.116271,1962-11-16,2024-12-18T21:58:04,False,True
+420,CUST---9ZZA-0,Mike,Brown,shanebishop@example.com,83379428,Unit 33 383 Anderson Link,,Mooreberg,TAS,2915,AU,-39.891388,118.281418,1969-12-07,2024-03-07T19:31:53,False,True
+421,CUST-90--0Z-9,Joseph,Miller,jamesoconnell@example.net,(03).5394.3748,1 Stout Turn,,South Timothymouth,ACT,2978,AU,-37.151641,123.017639,1960-08-31,2024-03-14T16:13:42,True,True
+422,CUST-00--Z-0-,Dawn,Perez,stonemegan@example.net,(03).6597.4653,Apt. 908 42 Jennifer Hill,,St. Tyler,VIC,2337,AU,-35.765704,145.993756,1997-03-27,2024-05-07T06:32:17,False,True
+423,CUST--0-99A00,Mark,Owens,nathaniel75@example.com,(02)58085693,4 Carrie Road,,North Davidshire,WA,0952,AU,-36.775906,120.690195,2004-04-09,2024-07-29T20:07:39,True,True
+424,CUST-0Z-Z--0A,Jose,Holland,jordanmata@example.net,3037 5875,8 Jason Ground,,Michaelville,ACT,0920,AU,-35.442269,127.866973,1960-12-17,2024-05-08T04:10:31,False,True
+425,CUST-090A9-A0,Justin,House,charleneross@example.com,+61 7 7501 4562,176 Mark Block,,Jessebury,SA,2207,AU,-43.819339,116.020605,1986-05-22,2024-03-04T19:27:58,False,True
+426,CUST-9Z-A-90Z,Lisa,Hoffman,wboyd@example.org,03 7088 5384,Level 4 77 Bailey Vale,,Christinaville,WA,2671,AU,-35.884882,137.640488,1969-03-22,2024-07-18T11:13:32,False,True
+427,CUST-0-Z--A-A,Jonathan,Gonzalez,durangregory@example.com,(08)11128823,5/37 Martin Centre,,Jasminemouth,TAS,2905,AU,-35.177139,143.876967,1975-01-23,2025-01-05T06:04:55,True,True
+428,CUST-----ZZ9-,Gregory,Moore,riveraryan@example.com,0439.035.588,8 Robert Freeway,,East Joeltown,QLD,2688,AU,-43.850054,138.159710,1961-01-27,2024-07-18T07:44:47,False,True
+429,CUST-9A-ZZ0-A,Robert,Andrews,flopez@example.com,08.4070.6532,43 Kathleen Slope,,Taraton,QLD,2648,AU,-43.052554,124.974172,1994-11-10,2024-12-13T04:50:23,False,True
+430,CUST-Z9A9ZA0-,Preston,Malone,sarajones@example.org,+61.7.2509.6589,407 Michael Path,,Riveraburgh,VIC,2926,AU,-35.032206,124.353945,1998-06-11,2025-01-22T08:52:02,False,True
+431,CUST-9-Z--00Z,Justin,Morrow,mclarke@example.com,07 7030 6957,Flat 98 985 Wheeler Landing,,East Robert,VIC,2672,AU,-40.824613,143.478835,1963-07-21,2024-09-23T15:06:20,False,True
+432,CUST--Z9Z---A,Nicholas,Smith,carldavis@example.com,3690 0295,Flat 92 95 Taylor Part,,Joseberg,NT,5616,AU,-37.702175,114.584675,2004-02-09,2024-02-05T07:00:26,True,True
+433,CUST----A----,Lawrence,Richardson,wgarcia@example.com,+61 8 1696 8116,Suite 632 83 April Key,,Port Curtisland,NT,2389,AU,-42.235645,121.958777,1985-08-07,2024-10-22T16:19:15,False,True
+434,CUST-Z0-A0000,Laura,Wu,fosterdanielle@example.com,+61 7 1073 0743,12 Darryl Elbow,,West Ryanborough,SA,2964,AU,-39.726027,115.329314,1986-12-07,2024-10-31T19:33:31,False,True
+435,CUST-0Z0Z00Z-,Clifford,Jones,samantha66@example.org,0487 157 133,253/738 Nancy Crossroad,,Carlmouth,VIC,2667,AU,-43.958194,146.466205,1993-07-29,2024-09-08T14:43:45,False,True
+436,CUST-0Z9Z0A9-,Emily,Anderson,yjones@example.org,+61.412.082.289,3 Graves Landing,,Sarabury,NSW,2946,AU,-36.287296,142.063096,1991-04-10,2024-09-17T17:47:24,False,True
+437,CUST-9-0900-A,Derek,Andrews,yjohnston@example.com,03.8705.9720,4 Nicole Dell,,Williamsport,SA,2974,AU,-42.526326,121.896592,2011-11-20,2024-12-05T05:52:38,True,True
+438,CUST-9-90A9-0,Shane,Jackson,christina03@example.net,(02)-6938-2859,8 Cooper Reach,,Port Gregoryburgh,ACT,0266,AU,-38.667987,147.466035,2012-07-30,2024-06-06T14:59:10,False,True
+439,CUST-ZAZA99--,Kathleen,Burgess,bad_email,99363760,932 Mike Tarn,,North Chelsey,ACT,2907,AU,-43.301585,139.852668,2007-02-04,2024-08-01T23:49:49,False,True
+440,CUST-0-----9Z,Donald,Patton,williamssara@example.net,07 4114 6161,Apt. 034 7 Olivia Courtyard,,Port Haileyborough,WA,2619,AU,-35.908214,119.675393,1996-09-03,2024-08-13T22:49:20,False,True
+441,CUST-0AZZA9A-,Jessica,Davis,epruitt@example.net,02-3236-1652,00 Michelle Meander,,East Richardport,SA,2513,AU,-42.991909,114.442259,1960-08-24,2024-12-06T21:12:22,False,False
+442,CUST----0-AZ0,Felicia,Huffman,gduran@example.org,+61285663068,396/888 Alyssa Quay,,Cookhaven,ACT,2118,AU,-40.569225,124.608952,1981-06-30,2024-07-03T14:30:28,False,True
+443,CUST-Z9A900ZA,Adam,Walker,rebeccacharles@example.org,+61 499 449 151,38 Perez Square,,South Michaelview,QLD,2279,AU,-37.816483,138.355044,2002-08-19,2024-09-20T15:02:29,False,False
+444,CUST-99AA9ZZZ,Michelle,Poole,bwilliams@example.org,(03)-1443-6335,Suite 529 420 Hawkins Cove,,Port William,WA,2926,AU,-34.609152,149.659104,2002-09-18,2024-12-03T03:39:26,False,True
+445,CUST--99-A---,Kenneth,Cain,robertmorales@example.com,(08).8274.7142,9 Sullivan Line,,Petersenmouth,QLD,2638,AU,-39.178315,133.626716,1981-10-31,2024-04-18T06:12:18,False,True
+446,CUST-ZA090-AA,Ashley,Herrera,daniellebradley@example.com,0441-600-593,93/864 Stephen Amble,,Lake Melinda,VIC,2959,AU,-34.772638,137.341928,2004-02-19,2024-02-16T12:07:00,False,True
+447,CUST-A9-Z0999,Maria,Molina,nicholascharles@example.com,08.4934.1587,Suite 018 77 Davis Block,,St. Nicole,NSW,2396,AU,-41.090235,116.455301,1990-07-10,2025-01-14T21:33:40,False,True
+448,CUST-0---Z9ZA,Joshua,Brennan,nrivera@example.net,0459.897.843,Level 1 1 Frances Parkway,,Jonesside,NSW,2912,AU,-40.349762,139.172087,1971-05-01,2024-09-23T21:54:15,False,True
+449,CUST-ZAZ-0--0,Mark,Hill,wilkinsmichael@example.com,74235679,97 Reese Reserve,,Bartonview,QLD,2010,AU,-40.911086,151.613404,1971-01-28,2024-05-20T20:53:51,False,True
+450,CUST-9A90ZZ-0,Chad,Hopkins,kmassey@example.org,0408-872-282,Flat 80 147 Henry Driveway,,Lake Robert,TAS,2251,AU,-41.008982,144.600486,1974-04-13,2024-01-12T19:56:59,False,True
+451,CUST-9000ZZ-A,Carlos,Church,peter65@example.org,+61.497.677.797,Unit 69 166 Ryan Rest,,South Joyceborough,ACT,2615,AU,-36.087225,146.634217,1964-11-08,2024-12-29T11:04:15,False,True
+452,CUST-0Z-9---0,Heather,Martinez,shahcameron@example.com,0468.208.094,Apt. 029 2 Tracy Stairs,,St. Cherylside,NT,3991,AU,-34.115158,117.904218,1998-04-26,2024-12-13T06:07:29,False,True
+453,CUST--A0-A9-Z,Joshua,Jackson,larsonjane@example.org,0463.664.218,28/350 Cox Villas,,Coltonbury,SA,0266,AU,-39.113741,139.519364,1975-06-23,2024-11-30T13:40:00,False,True
+454,CUST-9Z0909A9,Brian,Smith,angela14@example.com,08.2313.9937,8/99 Mark Slope,,East Ian,WA,2636,AU,-37.312078,132.389940,1962-01-24,2024-10-27T20:51:41,False,True
+455,CUST-9-099-A0,Kayla,Herrera,brandy32@example.net,02 5670 3853,Apt. 898 0 Maria Mews,,South Judyport,VIC,7643,AU,-35.377895,133.500443,1996-05-12,2024-12-24T00:43:08,False,True
+456,CUST---A--990,Steve,Burke,bad_email,08 7695 3936,70 Robert Meander,,Lake Jonmouth,VIC,2658,AU,-39.527671,124.571843,1963-07-06,2024-03-06T20:56:17,False,True
+457,CUST-ZAZZ--AA,James,Patrick,ufritz@example.com,7338-2209,706 Gomez Cove,,New Michael,WA,2234,AU,-38.805569,143.312073,2007-12-01,2024-08-15T05:05:31,False,True
+458,CUST-----9AZ-,Danielle,Collins,debbie24@example.org,47301069,986 Sonya Hill,,South Veronicastad,NSW,2998,AU,-37.978556,120.641599,1992-03-18,2024-05-22T04:40:41,False,True
+459,CUST-9-000-ZZ,Mark,Hart,bad_email,+61.440.246.595,273 Amanda Bend,,Emilymouth,QLD,0210,AU,-36.673251,151.814371,1977-04-13,2024-12-31T13:32:57,False,True
+460,CUST-Z00-0---,Marcus,Johnson,kelly89@example.net,3865.9865,2 Kenneth Rue,,Mooreburgh,NSW,2484,AU,-39.932187,125.174300,1967-12-25,2024-07-04T12:08:34,False,True
+461,CUST--0-AA0AZ,Dustin,Oliver,uwelch@example.org,0446 205 675,24 John Distributor,,Alexisberg,WA,2625,AU,-35.346017,134.061689,2014-07-01,2024-02-20T01:44:46,False,True
+462,CUST---0Z-99-,Roger,Hutchinson,rodriguezmaria@example.com,(08)93145369,88 Laura Hill,,South Annette,WA,2666,AU,-42.573299,134.702431,1983-12-27,2024-01-28T23:16:20,False,True
+463,CUST--09-90-0,Susan,Nguyen,ashlee54@example.net,0714582779,84/531 Chung Retreat,,Jamesfort,QLD,2632,AU,-36.815332,148.952478,1980-07-10,2024-06-05T23:08:33,False,True
+464,CUST-99AA0A-Z,Catherine,Sanchez,fwhitehead@example.net,0488 692 655,80 Brown Nook,,Wintersborough,SA,2105,AU,-39.071495,146.974118,1998-01-14,2024-12-12T18:31:14,False,True
+465,CUST-A9990--0,Jacob,Curtis,frytaylor@example.net,0433.207.080,60 Charles Ridge,,Wilsonport,SA,2668,AU,-36.610168,150.034736,2007-05-19,2024-12-16T22:10:48,True,True
+466,CUST--9Z----A,Timothy,Gaines,tina91@example.org,0436 519 148,7 Jack Gap,,Hoffmanborough,NT,7637,AU,-40.620414,139.162527,2008-05-13,2025-01-27T04:17:28,False,True
+467,CUST-0-A9Z--9,Lori,Douglas,bad_email,+61 443 735 799,Apt. 802 16 Devin Elbow,,Michaelport,TAS,2979,AU,-43.941089,130.414155,1986-10-07,2024-06-30T03:54:06,True,True
+468,CUST-Z0-A-0A0,Julie,Butler,bad_email,+61212039082,Level 6 563 Williams Foreshore,,East Melissa,ACT,2243,AU,-36.305524,122.005390,2002-03-24,2024-07-21T13:37:41,False,True
+469,CUST-00--A9-Z,Shawn,Hill,ifrederick@example.com,0477-046-318,3 Brock Ronde,,Taylorton,SA,7408,AU,-41.151002,117.347213,1997-10-10,2025-01-15T12:03:32,False,True
+470,CUST--ZA9000-,Renee,Rojas,lancetaylor@example.com,5931 0439,446 Zuniga Parade,,Jessicashire,ACT,5994,AU,-34.423214,143.708518,1971-04-25,2024-03-20T12:31:44,False,True
+471,CUST-0A-A-9Z9,Rachel,Henry,hthomas@example.net,+61326636167,88 David Chase,,South Jessicaburgh,NT,2064,AU,-42.475043,132.449593,1982-05-19,2024-05-23T04:11:15,False,True
+472,CUST--9-9A090,Christopher,Young,hallmargaret@example.com,(07)-7484-7343,70 Patterson Top,,Cobbview,NSW,2347,AU,-41.261384,119.687096,1973-02-11,2024-08-06T00:38:34,False,True
+473,CUST-Z09A9-0-,Douglas,Gamble,johnhaynes@example.org,+61751832181,3/18 Heath Reserve,,Adamshire,QLD,4102,AU,-40.957100,122.769844,1985-03-03,2024-06-28T15:13:17,False,True
+474,CUST-9ZA--AA9,Samantha,Hayes,dawsoncarolyn@example.com,5931-0095,466 Erika Lookout,,Geraldfort,SA,9408,AU,-39.087137,125.371286,1970-01-02,2024-02-19T00:29:50,False,True
+475,CUST--9Z-Z-Z9,Lauren,Adams,bad_email,+61.3.1311.6719,Unit 21 1 Wilson Pathway,,Port Veronica,QLD,2672,AU,-42.936345,137.182345,2013-12-28,2024-03-02T01:29:39,False,True
+476,CUST-09A-9--A,Claudia,Lara,bad_email,+61 457 311 945,98/24 Robert Rotary,,South Joeview,VIC,7611,AU,-42.082933,134.019827,1982-08-27,2025-01-23T20:24:05,False,True
+477,CUST-A0A09090,Richard,Johnson,lauren80@example.com,0459 345 029,Suite 485 1 Patel Freeway,,Roymouth,NSW,2687,AU,-43.392066,150.898960,1977-01-23,2025-01-14T14:28:20,False,True
+478,CUST-00-0A---,Jeremy,Rangel,tammyfisher@example.org,(03)04327078,304 Danny Cross,,South Patricia,QLD,2918,AU,-38.078872,112.354453,2006-01-02,2024-08-21T18:20:36,False,True
+479,CUST---AZ-ZZ9,Sean,Stone,fullerantonio@example.com,+61 8 5219 6645,131 Mcknight Circlet,,Claudiabury,TAS,2268,AU,-41.222435,117.318856,1964-08-15,2024-11-24T09:03:57,False,True
+480,CUST-AZZZ99-A,Rebecca,Evans,coledoris@example.org,(08)-9292-6705,Flat 04 106 Mary Boulevard,,St. Brandon,NT,2932,AU,-43.427366,144.636886,1991-11-22,2024-04-22T10:10:59,False,True
+481,CUST---A90999,Tonya,Norris,thompsonjeremy@example.org,68702731,96 Campbell Outlook,,Quinnmouth,TAS,2562,AU,-41.960814,137.192026,1995-06-24,2024-03-20T16:14:25,False,True
+482,CUST-Z--0A0-0,Alvin,Anderson,bad_email,0750381547,Unit 80 41 Debbie Driveway,,Morganmouth,SA,2770,AU,-42.370814,119.109371,1995-05-14,2024-12-17T22:07:48,False,True
+483,CUST-9--900A0,Melissa,Collins,bad_email,19332731,832/9 Melton Motorway,,Stokesport,TAS,2957,AU,-35.734378,142.537830,1963-12-04,2024-03-08T09:02:30,False,True
+484,CUST-A-9AA9Z-,Brian,Fletcher,rroberts@example.com,0474-687-338,43 Gonzalez Ramble,,Madisonview,SA,2603,AU,-42.454867,114.235020,1983-12-30,2024-11-17T19:47:32,True,True
+485,CUST-Z0--A-AA,Sheryl,Lewis,jamie82@example.net,(03).8705.0009,Suite 281 56 Khan Lees,,Mckinneyside,WA,2947,AU,-41.741156,147.159604,1994-07-08,2024-12-17T04:05:33,False,True
+486,CUST-ZZAAAZ--,Erik,Buchanan,kayla42@example.net,(03).7140.8460,0 Powell Dip,,West Benjaminchester,VIC,0804,AU,-38.003885,139.177332,1973-06-23,2024-12-07T10:58:46,False,True
+487,CUST-9ZA0ZZ9A,Lisa,Scott,qmurray@example.com,(07)-0542-7484,Level 2 377 Lynch Colonnade,,Lake Dylan,NSW,2601,AU,-36.031493,151.053570,1966-01-14,2024-02-27T21:02:19,False,True
+488,CUST-A--Z0Z-Z,Joshua,Mcconnell,youngchristopher@example.net,+61.498.356.366,9/447 Romero Strip,,Nicholasmouth,NSW,2969,AU,-38.506607,133.549890,2004-03-11,2024-09-29T19:31:22,False,True
+489,CUST-9--9-0-9,Tracy,Ramos,lindarobinson@example.net,+61-457-141-769,4 Tamara Follow,,Jerrybury,NSW,2690,AU,-34.423842,148.836164,1965-05-06,2024-06-27T13:08:18,False,True
+490,CUST---0-Z0--,Edwin,Thomas,rachel53@example.com,0428-659-294,Flat 68 85 David Hill,,Whiteville,SA,2450,AU,-43.736531,150.596528,1993-05-06,2024-01-28T03:51:34,False,True
+491,CUST-A-A--Z--,Margaret,Howard,durhampreston@example.net,53193766,1 Joshua Outlook,,Melvinshire,NSW,9533,AU,-36.518929,139.942557,1986-11-14,2024-08-28T14:58:59,False,True
+492,CUST-AZ9-A9A9,Brian,Farmer,cbray@example.net,3441 9498,032 Clayton Follow,,Lake Dana,NT,2917,AU,-37.200965,147.039061,2009-09-18,2024-12-30T09:23:43,False,True
+493,CUST-0-Z9--A0,Shannon,Schwartz,hhoffman@example.org,+61.457.081.981,Unit 54 2 Salazar Entrance,,East Johnbury,SA,2473,AU,-36.540043,134.371772,1966-12-04,2024-12-20T17:03:18,False,True
+494,CUST--0A-900Z,Kenneth,Martinez,bad_email,7115 5809,Level 4 638 Benjamin Point,,West Virginiamouth,TAS,2887,AU,-41.177931,133.662717,1965-11-10,2024-04-18T21:44:24,True,True
+495,CUST----ZA9A-,Jody,Herrera,garcialauren@example.org,02 2397 9538,4 Arroyo Underpass,,Port Mary,TAS,4669,AU,-43.915213,126.265966,1985-05-02,2024-07-22T18:12:44,False,True
+496,CUST--ZA9909Z,Katherine,Garcia,ruben73@example.org,07.6037.3767,707 Nicole Way,,Lake Kristinahaven,SA,2961,AU,-42.484622,130.524249,1968-05-14,2025-01-02T08:25:52,False,True
+497,CUST-99--9---,Donald,Avila,bad_email,+61-435-552-183,500 Jerry Walkway,,Jamesfurt,VIC,2926,AU,-36.872375,139.314939,1981-06-14,2024-04-16T22:13:24,False,True
+498,CUST-A--0Z-A9,Kristina,Stevens,robertwilson@example.net,6195 4872,Unit 62 3 Yvette Reach,,Barbarabury,ACT,2933,AU,-41.198827,126.533131,1968-01-02,2024-02-06T06:31:26,False,True
+499,CUST-Z0A-9-00,Michelle,Castaneda,qjackson@example.org,(03)71169162,603/1 Melissa Thoroughfare,,Brianfurt,SA,2644,AU,-38.875207,136.985276,1988-02-20,2024-07-10T03:02:23,False,True
+500,CUST-99A-A-9Z,Traci,Robinson,michael23@example.org,+61 2 9615 0112,Flat 05 6 Fowler View,,Grahamport,TAS,8263,AU,-41.769487,146.966355,1968-05-21,2024-06-27T16:57:43,False,True
+501,CUST-90AA0A0-,Anthony,Bennett,sandramatthews@example.net,+61837152001,313 Jason Little,,Raymondbury,SA,0853,AU,-36.587152,116.573057,2000-10-12,2024-01-20T19:50:44,False,True
+502,CUST-AZ9-A-0-,Allison,Johnson,aaronrocha@example.org,07-0075-8897,Apt. 028 2 Sara Junction,,Wangland,ACT,2676,AU,-34.473550,139.346858,1984-03-17,2024-05-09T23:08:40,False,True
+503,CUST-09-Z0A0Z,Jacqueline,Smith,christina84@example.com,(07)-6764-3571,Level 1 9 Hernandez Avenue,,New Jenniferland,QLD,8894,AU,-36.468239,118.581331,1991-05-03,2024-08-02T17:32:07,False,True
+504,CUST-00A99--Z,Russell,Ortega,bad_email,+61.2.5509.3310,50 Garcia Vale,,Dianamouth,VIC,0958,AU,-35.034989,149.352776,2004-10-21,2024-06-11T04:08:10,False,True
+505,CUST-099A-0Z-,Tamara,Taylor,ahumphrey@example.net,+61829757290,910/91 Kristin Viaduct,,Nguyentown,WA,2968,AU,-41.838627,120.390523,1977-02-23,2024-12-13T21:00:07,False,True
+506,CUST-ZAA-Z9Z0,Melissa,Douglas,diazkyle@example.com,+61 3 5996 7360,Flat 41 10 Mary Pass,,Lake Laura,WA,2634,AU,-36.349189,116.535200,1975-10-10,2024-08-22T15:35:49,False,True
+507,CUST--90-Z099,Monica,Hale,bad_email,+61 8 5540 9634,Flat 71 42 Grimes Subway,,East Cheryl,QLD,8027,AU,-43.835735,149.299870,1969-04-20,2024-09-11T22:42:46,False,True
+508,CUST---0Z9-0A,Emma,Cox,millerthomas@example.org,0395710783,Suite 340 5 Edwards Riviera,,West Ashleyland,ACT,2696,AU,-34.494485,126.024547,2001-08-15,2024-07-30T23:28:43,False,True
+509,CUST--ZZAZ-9Z,Jordan,Francis,bad_email,5549 7914,077 Colin Lower,,Veronicatown,SA,2491,AU,-42.466247,126.976230,2006-07-23,2025-01-14T21:50:36,False,True
+510,CUST--0--0-9-,Richard,Snyder,lesliehayes@example.com,0992.2900,91 Nancy Landing,,West Travisview,VIC,2601,AU,-42.262827,148.166855,2006-05-29,2024-03-22T15:55:31,False,True
+511,CUST-909---ZA,Debra,Osborne,bad_email,(03).0755.7764,17 Williams Upper,,Griffithport,SA,2617,AU,-36.299678,118.121944,2008-10-10,2024-02-10T20:49:06,False,True
+512,CUST--9--Z099,Katherine,Kennedy,ukrueger@example.com,(02)-2286-9684,3 Erickson Block,,Port Jonathan,WA,2998,AU,-37.407423,122.998593,1972-11-24,2024-11-17T00:50:33,False,True
+513,CUST-0Z--AAAA,Casey,Rush,brandi19@example.com,03.0789.0109,6 Christian Ramble,,Lisaberg,NSW,2392,AU,-39.089630,112.878279,1966-08-07,2024-09-06T22:46:49,True,True
+514,CUST-AZ00Z--9,Mary,Mitchell,swagner@example.net,+61 8 9071 9965,62 Lisa Way,,Mariastad,WA,2481,AU,-39.160890,136.560200,2009-01-10,2024-01-03T05:46:00,False,True
+515,CUST-AA--A---,Melissa,Gonzalez,briandiaz@example.com,(07) 6653 9391,Suite 759 2 James Loop,,Smithland,QLD,5403,AU,-43.165572,139.664069,1971-05-10,2024-05-17T09:57:50,False,True
+516,CUST-00Z-99Z9,Melissa,Chavez,steven71@example.com,+61 8 1995 9750,1 Timothy Bypass,,Kelseyville,SA,2196,AU,-35.126851,123.243311,1995-03-30,2024-02-22T21:14:59,False,True
+517,CUST-0-0--900,Mark,Wallace,woodardtraci@example.org,03 4301 5794,Level 5 3 Foster End,,New Ryan,QLD,2619,AU,-38.328580,126.958419,1965-10-06,2024-08-18T06:05:21,False,True
+518,CUST-Z9-0-ZZ-,Lauren,Parker,wmarshall@example.net,8104.1422,688 Johnson Trail,,North Ericshire,VIC,2975,AU,-43.273597,138.278184,1993-05-15,2024-03-15T11:26:55,True,True
+519,CUST-ZA--0Z-9,Alexandra,Bradford,antonio59@example.org,(03)-8260-4462,400 Laura Little,,Alicebury,WA,2261,AU,-41.219515,136.316175,1966-09-17,2024-10-20T23:31:47,False,True
+520,CUST--ZA00Z-A,Sara,Russell,allison57@example.org,0492.711.396,Unit 75 61 Thomas Grange,,Adamberg,WA,2163,AU,-41.635781,112.850748,1961-08-07,2024-11-25T20:57:45,False,True
+521,CUST---0-AAZZ,Ricardo,Tapia,ericjohnson@example.net,+61379878464,399/0 Miller Close,,Melissashire,SA,0944,AU,-36.463077,128.013774,2009-12-02,2025-01-31T11:24:08,False,False
+522,CUST-A009Z-Z9,Michelle,Mullins,hartleonard@example.org,0805752796,Apt. 358 862 Swanson Little,,Kingchester,NSW,2821,AU,-35.386112,140.970134,1980-04-21,2024-03-28T03:12:16,False,True
+523,CUST-Z-9AAAAZ,Jill,Lewis,zwilliams@example.net,+61.410.427.703,473 Hardy Block,,Lake Tommy,ACT,4680,AU,-42.296614,117.510533,2001-05-01,2024-03-02T04:35:52,False,True
+524,CUST---09A-90,Julia,Carrillo,alyssahill@example.com,+61-426-479-001,205/91 Dylan Chase,,Kimberlymouth,NT,2673,AU,-41.361880,123.849368,1967-06-06,2024-06-29T20:20:05,False,True
+525,CUST--0AA9A99,Laura,Robertson,tammy31@example.com,8622.7785,99 Lance Trailer,,East Christopher,NSW,9281,AU,-40.595499,144.559817,2007-05-03,2024-09-20T11:24:32,False,True
+526,CUST--0Z9-A--,James,Wilson,bad_email,0287919191,846/749 Gonzalez Trunkway,,North Antonio,ACT,2790,AU,-39.769060,139.450640,2011-10-15,2024-11-27T03:42:57,True,True
+527,CUST-Z9A-A0-A,David,Brown,melissamedina@example.org,0426 401 911,994 Michelle Approach,,Crystalfurt,NT,2979,AU,-43.159332,129.258945,1973-07-06,2024-07-22T18:17:03,False,True
+528,CUST-9A0A9ZZ0,Jamie,Shannon,eric52@example.net,0479.997.487,Suite 465 01 Coleman Beach,,West Charles,TAS,2819,AU,-39.063838,129.342614,1964-06-22,2024-11-26T09:03:49,False,True
+529,CUST--A-AZAA-,David,Parsons,bblankenship@example.net,+61-2-7752-2356,3 Martinez Chase,,New Noahside,NT,2930,AU,-35.759313,139.667351,2004-06-03,2024-04-15T06:13:37,False,True
+530,CUST-AZZ99-A-,Thomas,Thompson,carolynthomas@example.net,0397689603,Unit 21 1 Monique Gates,,Evanstown,WA,2567,AU,-40.678447,130.208653,1961-02-21,2024-12-07T17:16:46,False,False
+531,CUST---A0ZA9Z,Courtney,Jackson,emily04@example.com,08-4995-3927,8 William Bypass,,North Robertton,ACT,2968,AU,-34.095869,145.414361,2007-02-15,2024-09-14T06:05:28,False,True
+532,CUST-9AZZ9Z00,Rebecca,Ruiz,aguirreerik@example.com,+61.453.465.138,94 Shane Subway,,North Claudiaside,TAS,2983,AU,-40.988660,125.349555,2006-06-16,2025-01-31T21:41:25,False,True
+533,CUST--0-9-A99,Lindsay,Snyder,owashington@example.com,07.1135.6666,Apt. 735 365 Pham Centreway,,South Margaret,TAS,2841,AU,-36.556349,119.753684,1993-11-22,2024-11-23T03:55:46,False,True
+534,CUST-Z9-09--Z,Steven,Rogers,bad_email,+61 8 0965 2885,2 Boyd Ride,,Maloneland,SA,2920,AU,-38.799223,125.730978,1971-01-12,2024-08-09T16:34:01,False,True
+535,CUST-Z9AZ-00A,Christopher,Boyd,sryan@example.com,+61 442 789 494,603 Pamela Foreshore,,Nataliechester,TAS,2996,AU,-36.002149,112.623696,1963-09-03,2024-04-21T10:18:15,False,True
+536,CUST-A00A9AZZ,Cynthia,Miller,stephaniecohen@example.net,(08)31333013,Unit 86 71 Jorge Outlook,,East Andreaborough,SA,4483,AU,-36.669469,129.282031,1967-03-29,2024-05-28T07:58:06,True,True
+537,CUST--A0099Z0,Robert,Hutchinson,tayloramber@example.net,+61 8 6031 7943,675 Johnathan Loop,,North Stephen,VIC,2955,AU,-42.608236,142.706414,1982-06-06,2024-03-10T15:09:26,False,True
+538,CUST-0--90ZA-,Melanie,Manning,taylor45@example.org,0412.014.853,784 Downs Gates,,East Albert,NSW,2901,AU,-37.148367,126.302360,1991-10-11,2024-08-06T16:59:11,False,True
+539,CUST-AZ--A-A0,Paul,Marshall,bad_email,+61 453 515 025,4 Gonzalez Amble,,Masonchester,NT,2609,AU,-35.548927,117.037434,1960-07-14,2024-08-24T18:51:36,False,True
+540,CUST-ZAAZA9-Z,Joseph,Torres,wnelson@example.com,(03) 4517 5463,7 Annette Gate,,St. Erinborough,VIC,2311,AU,-38.837360,134.481970,2004-06-08,2024-03-10T08:08:20,False,True
+541,CUST--99ZA0-Z,Cynthia,Page,lmelendez@example.com,0450.484.086,598 Gillespie Loop,,Port Paulaberg,VIC,2773,AU,-41.527939,116.144281,1962-03-18,2024-09-15T16:09:31,False,True
+542,CUST-0-0Z--Z-,Jonathan,Zhang,villarrealrichard@example.org,+61.423.289.977,34/52 Ryan Concourse,,Garyshire,QLD,2677,AU,-42.151921,144.742004,1981-08-04,2024-03-28T18:37:25,False,True
+543,CUST-00-9ZZ0A,Cheryl,Dixon,courtney59@example.net,+61.7.9603.6394,24 Sanders Extension,,Port Misty,NT,2920,AU,-35.865064,117.926661,1985-06-05,2024-08-22T04:22:25,False,False
+544,CUST-09Z9A9A-,Kevin,Harrington,susanchambers@example.com,+61 427 662 337,3 Jesse Interchange,,Harrishaven,TAS,2955,AU,-35.441604,132.128225,1991-04-18,2024-12-27T19:07:00,False,True
+545,CUST-9-99Z-0Z,Hannah,Krause,noahjohnson@example.org,+61885160151,Level 2 2 Joy Trailer,,East Cathytown,NT,2945,AU,-39.282477,138.358872,2011-09-05,2024-12-28T18:27:30,False,True
+546,CUST--Z-9Z---,Mark,Clay,inelson@example.net,(08).9242.1218,68 Ford Plaza,,Williamshaven,NSW,2821,AU,-39.005661,139.172891,1989-01-13,2025-01-24T08:25:47,False,True
+547,CUST---00AA99,Brittany,Williams,jonesjeremy@example.net,1677-2247,Unit 10 359 Reeves Common,,North Denise,NT,2449,AU,-40.256779,137.251762,1962-08-23,2024-03-30T11:41:34,True,True
+548,CUST---Z-9--0,Karen,Anderson,lorraine64@example.net,+61-480-642-331,6 Emily Grange,,South Angelaton,SA,0916,AU,-38.714706,143.600169,1967-09-19,2024-10-25T00:52:57,False,True
+549,CUST-0--AZ--A,Cameron,Schmidt,tinaheath@example.org,02 7197 5563,90/7 Hayes Siding,,Patrickland,NSW,2912,AU,-39.262671,126.084242,2010-02-14,2024-03-11T02:26:42,False,True
+550,CUST-A-ZA-A-A,Matthew,Weaver,justinmorgan@example.com,(02).7197.7307,205/45 Jerry Broadway,,Perezmouth,QLD,2627,AU,-41.101035,145.125940,1995-01-10,2024-12-26T13:01:51,True,True
+551,CUST--A--Z---,Valerie,Coleman,sheila76@example.net,(07) 3201 8502,2 Massey Walk,,Franciscoport,QLD,1493,AU,-34.150661,138.129280,1962-11-23,2024-06-22T15:20:34,False,True
+552,CUST--9-Z9AA-,Laura,Rogers,kbrown@example.net,92889953,Flat 34 331 Jerry Lane,,Christineton,SA,7133,AU,-38.018524,136.497306,1967-03-25,2024-10-09T17:25:53,False,True
+553,CUST---ZAAA09,John,Johnson,melissa42@example.org,+61 2 5924 0785,777 Walker Terrace,,Kellyside,QLD,2637,AU,-35.886368,133.367434,1994-01-13,2024-12-15T00:39:31,False,True
+554,CUST--0--9009,Makayla,Clark,timothy34@example.org,+61 412 542 521,Level 9 887 Brooke Dale,,Matthewmouth,TAS,6830,AU,-34.819314,121.526808,1968-04-02,2024-10-28T00:21:57,False,True
+555,CUST--9AAAA--,Yolanda,Brown,sparkssheila@example.net,(02)-1052-0696,Level 9 85 Lopez Quadrant,,South Carlosview,TAS,2922,AU,-37.447910,121.769774,1986-03-26,2024-03-07T22:04:05,False,True
+556,CUST-9-9AZA0-,Mandy,Novak,monicaschmidt@example.org,02-2110-7245,522/072 Laurie Highroad,,Trevorbury,VIC,2625,AU,-41.557942,147.719139,1988-08-09,2024-12-23T19:42:44,False,True
+557,CUST---09ZA-0,Michael,Collier,lejennifer@example.com,0471.851.514,93/3 Bryant Highroad,,Johntown,WA,2794,AU,-36.120599,113.434707,1981-02-02,2024-12-23T16:01:48,False,True
+558,CUST-0AA0ZA-Z,Matthew,Garcia,williamsontony@example.com,(07).7916.0508,6 Sarah Centreway,,New Aaronland,TAS,2685,AU,-35.372272,127.386530,1963-12-26,2024-04-24T07:29:25,False,True
+559,CUST-AZ-AA9Z-,Linda,Jimenez,thomasbrown@example.com,2519-9311,80 Michelle Centre,,South Danielle,WA,2629,AU,-37.784695,146.629692,1965-02-14,2024-02-25T20:08:41,False,True
+560,CUST---99-0Z0,Michael,Howell,davismary@example.net,07.0441.2309,271/237 Jennifer Service Way,,Welchfort,WA,2616,AU,-37.174013,122.975713,1982-06-03,2025-01-29T19:45:46,False,True
+561,CUST-ZZ-9ZZ9A,Tammy,Callahan,adamramsey@example.net,+61 2 1024 1131,Suite 871 698 Alisha Green,,East Vincentburgh,QLD,2938,AU,-43.827333,112.354828,1963-04-27,2024-07-02T17:29:01,False,True
+562,CUST-0--Z-ZAA,Timothy,Smith,tanyavelasquez@example.com,+61.420.883.418,227 Horne Tor,,Deborahhaven,WA,8051,AU,-37.696618,117.876071,1964-06-12,2024-04-29T04:10:00,False,True
+563,CUST-Z0A-9---,Kathryn,Perez,bpace@example.com,0427 804 480,65 Flynn Circus,,South Laurenmouth,NT,2236,AU,-43.552669,121.387874,1969-10-17,2024-02-09T18:27:25,False,True
+564,CUST-Z9-A--Z0,Christina,Hamilton,charles37@example.net,(08)98977197,700/933 Kevin Range,,Cortezville,QLD,9244,AU,-39.918624,138.079128,2002-03-24,2024-05-30T22:38:35,True,True
+565,CUST--Z-ZAA--,Debra,Blanchard,john92@example.net,2036-3904,277 Flores Crossway,,North Ruth,NT,2032,AU,-34.021791,115.137799,1966-12-08,2024-04-24T20:35:08,False,True
+566,CUST--09--9AA,Anthony,Gibbs,juan81@example.org,+61-416-843-247,24 Pruitt Centre,,Jacquelinebury,NT,1539,AU,-38.247563,148.442781,1989-06-27,2024-05-04T13:10:43,False,True
+567,CUST-A90-AZ90,Maria,Johnson,marissawhite@example.net,(02)50852441,Level 6 9 Wright Rise,,North Melissa,SA,7398,AU,-39.510320,128.754009,2011-01-29,2024-03-05T19:34:26,False,True
+568,CUST--Z9--Z9Z,Tami,Lin,jasonhudson@example.com,02 5837 4525,Suite 205 5 Cervantes Corner,,North Adrienne,SA,2952,AU,-37.673702,142.905799,1976-02-21,2024-08-20T00:33:53,False,True
+569,CUST-A90A09--,Carrie,Edwards,stephennorton@example.org,(03).0553.1092,9 Ray Broadway,,Toddchester,NSW,2619,AU,-40.456322,128.092700,2009-12-18,2024-05-03T10:40:55,True,True
+570,CUST-Z--AAA-9,Cheryl,West,lunamichele@example.org,(07) 3886 4675,Level 6 9 Miller Break,,Nealport,NSW,7765,AU,-36.665569,140.948299,2012-11-21,2024-09-17T03:03:02,False,False
+571,CUST-Z9-0Z009,Kimberly,Smith,smedina@example.net,(02).8880.1557,Flat 50 00 Collins Ring,,New Donald,VIC,2672,AU,-40.588828,134.565254,2007-02-12,2024-10-23T18:30:14,False,True
+572,CUST-90ZAZ-9-,Danielle,Thompson,summersronald@example.net,+61872700386,65 Brian Glade,,Patrickfort,TAS,2949,AU,-42.814489,122.953940,1999-05-18,2024-04-24T06:09:53,False,True
+573,CUST--9-AAZ--,Tamara,Lopez,valerie08@example.net,82502511,864 Davis Tollway,,Lake Lauren,VIC,4688,AU,-43.742227,120.125638,2011-03-29,2024-08-06T16:11:44,False,True
+574,CUST-09009AZA,Michael,Bowen,garnereric@example.com,0433 186 150,Suite 649 0 Robinson Parade,,Teresafurt,NSW,2672,AU,-41.775582,114.974013,1974-01-22,2024-09-16T12:12:33,False,True
+575,CUST-9-A0A9Z9,Gene,Smith,matthewjohnson@example.com,(02).2368.3547,Level 9 14 Christina Quays,,Lake Matthewborough,NT,2628,AU,-37.727150,121.836549,2012-08-08,2024-07-11T08:01:03,False,True
+576,CUST--9---Z00,Susan,Campbell,gentrymichael@example.net,+61 482 025 222,69 Mark Glade,,Port Shawnchester,NT,2972,AU,-37.887828,140.399620,1963-06-25,2024-08-02T09:34:41,False,True
+577,CUST--9--Z9Z0,Shelly,Schroeder,ronaldschaefer@example.org,03 3798 5376,71 Judith Vista,,Port Taramouth,NT,2255,AU,-38.565867,123.816689,1979-08-22,2024-02-27T10:27:33,False,True
+578,CUST--Z-9A009,Melissa,Parker,maryhendrix@example.com,0424.945.668,Suite 691 6 Houston Ridgeway,,North Sean,TAS,0844,AU,-37.127781,113.158502,1984-01-14,2024-09-16T07:49:54,False,True
+579,CUST-Z9-AZ0Z0,Sean,Boyd,milleranna@example.org,(02)35158115,Unit 18 622 Ryan Circlet,,New Thomas,QLD,2355,AU,-40.601584,144.740983,1987-09-05,2024-08-17T14:55:14,False,True
+580,CUST---9ZA---,Richard,Humphrey,bryanhansen@example.org,+61 486 970 222,Flat 24 22 Amanda Little,,West Belinda,TAS,2696,AU,-36.331579,134.115768,1964-05-31,2024-09-22T07:39:45,False,True
+581,CUST--0-Z--9Z,Kyle,Hall,tgonzales@example.net,+61 3 5815 3533,Suite 162 3 Steven Wynd,,South Jared,WA,2904,AU,-36.448782,133.062215,2004-12-28,2024-07-22T17:39:16,True,True
+582,CUST-A-99A9Z-,Edward,Foster,mconway@example.org,+61.7.3684.6349,020 Lindsay Concourse,,North Josephchester,ACT,2600,AU,-43.234729,132.180387,1997-04-07,2024-01-11T00:32:12,False,True
+583,CUST-Z-A9-0--,Anna,Jones,travischavez@example.net,0460 406 126,3 Allen Footway,,Suttonhaven,TAS,2985,AU,-41.357300,138.242028,2002-04-16,2024-07-11T10:36:13,False,True
+584,CUST-Z9-Z-0-0,Gregory,Knapp,jeanettewright@example.com,0899591008,429 Carrie River,,East Heather,SA,6462,AU,-38.221205,112.995675,1980-10-27,2024-08-16T13:27:53,False,True
+585,CUST-A-ZZA--9,Deborah,Walton,kendrataylor@example.com,+61.481.209.624,727 Anna Roads,,Henryland,VIC,0805,AU,-35.619296,132.936227,2010-11-01,2025-01-24T08:27:45,True,True
+586,CUST-AZ-Z909Z,Derek,Martin,scottluna@example.org,9943 1903,853/635 Alison Circle,,Reneeport,VIC,2933,AU,-40.869838,138.080345,1988-11-14,2024-08-24T17:35:07,False,True
+587,CUST-A0A0-9A9,Matthew,Baker,blankenshipjason@example.org,84465908,Level 5 9 Roger Gully,,West Kristy,VIC,2920,AU,-42.863354,147.420113,2004-06-04,2024-03-28T22:47:52,False,True
+588,CUST-9-000AZA,Jason,Peck,chandlertimothy@example.com,+61.460.294.573,Suite 525 666 Lopez Interchange,,Rebeccatown,WA,2114,AU,-42.340543,123.607871,1978-05-05,2024-11-10T13:31:00,False,True
+589,CUST--9--9Z0-,Richard,Cole,bad_email,+61-487-075-913,31 Wilson Bridge,,Byrdberg,NT,4350,AU,-34.230239,124.473620,1976-11-01,2024-04-12T03:25:00,False,True
+590,CUST--Z9-AA0-,Shawn,Clark,pearsonvictoria@example.net,5370-4751,Suite 578 14 Cannon Cutting,,Mackshire,VIC,0220,AU,-35.319068,135.378735,1987-06-06,2024-07-07T22:44:14,False,True
+591,CUST---9-9-A-,Jacqueline,Evans,mariaporter@example.org,(08)-6826-3412,0/1 Thomas Top,,North Deanna,QLD,2639,AU,-38.776822,137.793205,1994-05-10,2024-06-18T20:57:32,False,True
+592,CUST-A---0Z99,Joshua,Brown,randy02@example.net,(07).9031.9961,Flat 88 0 Rodriguez Place,,Byrdborough,QLD,2728,AU,-43.997531,115.111497,1964-09-06,2024-03-11T18:37:50,False,True
+593,CUST-0AZZ--0-,Colleen,Phillips,xhayes@example.com,0407 413 760,9 Amber Cove,,Smithview,NT,8961,AU,-35.167144,145.687649,1974-11-26,2024-11-20T10:06:43,False,True
+594,CUST-9-Z-009A,Paul,Coleman,millerjill@example.net,0471-239-653,397/36 Joshua Centre,,St. Joshuaside,VIC,5035,AU,-40.540084,128.963117,2010-03-22,2024-04-07T13:55:29,False,True
+595,CUST---Z-AA0-,Rachel,Hodges,dennis01@example.org,0479-088-378,Level 9 3 Santiago Firetrail,,South Matthew,ACT,2421,AU,-43.664718,122.998057,2002-12-13,2024-07-22T01:35:56,False,True
+596,CUST-A9AZ09--,Mary,Jenkins,bad_email,8899 2158,Apt. 513 812 Duffy Turn,,Port Stephanie,VIC,3041,AU,-35.057349,118.127670,1975-11-14,2024-03-08T03:00:55,False,True
+597,CUST-99ZA-0AA,Kelsey,Cooper,ebailey@example.org,5133 1066,6 Padilla Route,,West Crystalfort,SA,2609,AU,-42.307865,151.450811,1992-11-09,2024-09-21T00:30:57,False,True
+598,CUST-A9--A99-,Ashley,Colon,fieldsmadeline@example.net,07-1152-5523,472 Andrew Crossroad,,North Angela,TAS,2373,AU,-39.907485,137.411988,1960-04-15,2024-06-08T09:58:02,False,True
+599,CUST-9-AA00A-,Wendy,Duncan,douglas17@example.org,0791164184,7 Matthew Rue,,Toddmouth,SA,2627,AU,-36.112633,120.701034,1993-08-07,2024-08-23T02:57:32,False,True
+600,CUST-9Z-999-Z,Catherine,Mcbride,julie88@example.org,9623-1395,765 Lopez Thoroughfare,,Davefort,WA,2492,AU,-39.860172,145.411011,1984-06-22,2024-04-12T06:26:54,False,True
+601,CUST-0ZA0Z-ZZ,Hannah,Davidson,laura39@example.org,(08)66838210,945 Joshua Crossing,,South Katherine,SA,0204,AU,-38.312887,151.750225,1998-12-03,2024-06-26T23:31:13,False,True
+602,CUST-9--ZAZ9-,Allison,Lowe,hannah15@example.org,+61 3 3255 0818,7 Ryan Walkway,,Debbieport,NT,2510,AU,-37.688863,131.008393,2001-12-01,2024-10-27T11:45:35,False,True
+603,CUST-A-9AAZ9Z,John,Montgomery,sbarnes@example.com,(08)-3690-2388,Suite 764 01 Edwards Court,,Andersonchester,TAS,2483,AU,-40.419955,118.509826,2009-01-19,2024-04-05T00:47:30,False,True
+604,CUST--0-0-909,Scott,Bernard,murphyroger@example.org,4491 2123,1 Linda Elbow,,South William,WA,2642,AU,-34.292343,147.097309,2005-06-25,2024-02-25T15:19:39,False,True
+605,CUST--Z---0-A,Heather,Zhang,robertgomez@example.org,7429.1005,Suite 489 1 Kenneth Service Way,,Lake Deniseside,SA,2926,AU,-36.341769,144.059585,2001-02-25,2024-07-21T06:01:11,False,True
+606,CUST--ZZA----,Beth,Mann,bad_email,03 0460 6481,Flat 29 33 Walters Underpass,,West Daniel,NSW,1672,AU,-42.406702,115.996539,2009-04-29,2024-12-17T14:20:48,False,True
+607,CUST-9--0900A,Jose,Sanchez,fergusonwilliam@example.com,03.4337.0247,336 Webb Service Way,,Edwardschester,SA,8482,AU,-38.658848,125.874687,2012-08-11,2024-01-14T08:04:17,False,True
+608,CUST-Z-Z-ZA--,Pamela,Medina,bad_email,07 4219 7645,Unit 97 9 Fleming Way,,Morrismouth,NSW,2611,AU,-40.980621,115.714014,1994-06-16,2024-11-30T06:32:56,False,True
+609,CUST-09-A0Z0-,George,Calderon,reedchad@example.com,+61-8-3299-5576,706 Julian Circuit,,South Dustin,SA,2605,AU,-42.985949,146.498659,1961-02-04,2024-03-23T11:36:55,True,True
+610,CUST-909000A9,Omar,Mayer,imoran@example.org,14945038,7 Phillips Fire Track,,Cainton,ACT,8812,AU,-36.189965,140.480939,2007-12-31,2024-07-05T04:03:57,False,True
+611,CUST-9-ZAA90-,Lindsay,Hall,xsmith@example.org,+61.8.3762.9762,Unit 08 631 Crystal Corner,,East Katie,NSW,2655,AU,-43.601556,146.715869,2001-04-16,2024-07-06T01:49:23,False,True
+612,CUST-ZA0Z9-ZZ,Elizabeth,Nichols,sarahwalker@example.org,0411.085.380,4 Rebecca Walkway,,South Alexmouth,WA,2939,AU,-43.643849,116.467331,1963-04-14,2024-09-29T14:25:32,False,True
+613,CUST-A09-9Z-0,Jonathan,Nelson,bad_email,+61.420.769.357,642 Burns Rosebowl,,East Charlottemouth,WA,2176,AU,-40.734115,113.531495,2014-09-01,2025-01-05T23:13:19,False,True
+614,CUST-9Z90A9-Z,Michelle,Knight,pbrown@example.net,33854146,69 Reed Interchange,,Lake Joshuatown,NSW,2612,AU,-38.291049,151.796736,2006-02-12,2024-10-03T08:52:29,False,False
+615,CUST--090-9-Z,Kimberly,Davis,taylorgarcia@example.com,(03) 0764 9262,Suite 803 056 Jennifer Square,,West Lisaside,NSW,2078,AU,-39.928172,112.748758,1997-03-03,2024-12-02T04:43:28,False,True
+616,CUST-9ZAZA-9-,Eric,Moore,xbrown@example.net,0810520536,000/303 Burns Dell,,West Stacystad,SA,2678,AU,-40.712480,127.561581,2010-01-11,2024-01-07T12:29:11,False,True
+617,CUST--00-99-0,Brad,Wells,nicholas53@example.com,03.4958.9773,006 Daniel Run,,Jasonburgh,TAS,2987,AU,-38.386743,125.811968,1978-08-15,2025-01-17T19:16:54,False,True
+618,CUST--Z00--A9,Ashlee,Palmer,robert82@example.com,(02)-9271-5415,481 Cassandra Way,,Port Natalieland,ACT,2670,AU,-41.161123,141.762081,1981-01-21,2024-07-11T19:34:23,True,True
+619,CUST-ZAA--A-0,John,Salazar,ljohnson@example.org,(08).2358.4804,5 Torres Terrace,,Hopkinsmouth,TAS,2604,AU,-38.007515,124.776140,1992-07-31,2024-11-18T03:50:46,False,True
+620,CUST-9-9-Z--0,Joanna,Fields,wileywalter@example.com,+61 3 4709 5291,Flat 89 975 Warren Stairs,,Grossview,VIC,3291,AU,-43.966626,145.194652,2001-08-18,2024-12-01T06:16:19,False,True
+621,CUST-A90--090,Shawn,Rogers,veronica39@example.net,(02) 5497 6295,Level 9 197 Russell Court,,East Leslie,QLD,2624,AU,-40.749797,121.997630,2011-01-28,2024-11-16T17:10:54,False,True
+622,CUST--A-09-9-,Vincent,Lane,sstevenson@example.org,0360411129,66 Strickland Villas,,Lake Karen,VIC,2936,AU,-41.070181,147.777826,1978-07-28,2024-10-22T16:47:27,False,True
+623,CUST--0-0--A9,Dennis,Williams,bad_email,(08) 1707 4852,0 Samantha Tarn,,Abigailchester,TAS,2831,AU,-43.676774,139.074895,2006-08-18,2024-08-28T14:01:44,True,True
+624,CUST--99--9AZ,Molly,Blankenship,daniellenorris@example.com,+61 8 4654 4472,02 Jason Circus,,South Jessica,QLD,0800,AU,-36.833754,132.462388,1999-06-24,2024-08-07T04:31:00,True,True
+625,CUST-0Z-Z9-A9,Diana,Sawyer,qrogers@example.org,+61.8.2422.0336,Suite 077 0 Michael Grange,,St. Michelle,WA,2941,AU,-43.259304,147.967812,2004-02-06,2025-01-20T08:54:37,False,True
+626,CUST-90ZZZ0-9,Olivia,Rose,aballard@example.net,0489.121.330,1 Valerie Rise,,Melissachester,VIC,2974,AU,-38.364606,140.552125,1987-07-06,2025-01-01T05:45:49,False,True
+627,CUST-0999Z--9,Angela,Burgess,bad_email,+61 475 224 425,49 Natalie Alleyway,,Jacquelinechester,NSW,4223,AU,-41.883380,124.118263,2012-05-31,2024-01-07T09:26:42,False,True
+628,CUST-0--9-0-Z,Bridget,Turner,kevinmiddleton@example.com,0459-995-861,97 Ramirez Ring,,Ashleychester,SA,2312,AU,-39.179475,131.359937,1994-01-29,2024-01-08T02:21:27,False,True
+629,CUST---Z-99-A,Erin,Haas,gdavis@example.com,+61 431 274 166,2 Antonio Basin,,Taylorborough,ACT,2678,AU,-40.364397,113.313621,1968-11-12,2024-06-17T18:28:28,True,True
+630,CUST-0--A--9A,Brian,Joseph,iwolf@example.com,0422-706-181,73 Grimes Elbow,,Williamsside,SA,0895,AU,-34.206225,122.630534,1984-11-22,2024-02-16T06:55:05,False,True
+631,CUST-Z-----A-,Kimberly,Carey,taylor00@example.com,+61262692709,765/94 Christina Ronde,,East Matthew,QLD,2878,AU,-42.835936,115.335448,1977-09-16,2024-02-21T19:44:49,False,True
+632,CUST-A-Z09A0-,Austin,Brooks,vharper@example.org,+61-448-892-948,63 Joe Path,,Cunninghamberg,NSW,2920,AU,-37.986459,131.704206,1975-11-02,2024-06-17T18:28:11,False,True
+633,CUST-Z9ZZ9-Z-,William,Aguilar,lopezelizabeth@example.com,7070 6597,2 Andre Stairs,,Michaelchester,TAS,2175,AU,-34.256456,130.820253,1974-08-20,2024-04-01T02:23:13,False,True
+634,CUST-A99Z---0,James,Perez,timothy25@example.org,(03) 1482 8676,Unit 24 506 Suarez Alleyway,,South Kristenshire,NT,2985,AU,-38.696005,116.116685,1986-12-02,2024-11-08T07:39:23,False,True
+635,CUST---0-9---,Thomas,Perkins,dlee@example.net,97960819,6 John Alley,,Transide,NSW,2901,AU,-41.371446,149.373199,1987-03-28,2024-07-08T05:16:43,False,True
+636,CUST-00Z-0Z09,Brenda,Ward,zleonard@example.net,4724 4255,14 Mark Loop,,North Christopher,NT,2624,AU,-36.329514,112.779185,1978-02-21,2024-04-16T09:19:05,False,True
+637,CUST-0-Z0-9-Z,David,Jarvis,kristin09@example.net,+61.435.898.971,8 Mikayla Mew,,South Stephanieburgh,WA,2197,AU,-40.745170,131.187308,2013-03-12,2024-08-28T01:40:29,False,True
+638,CUST-0AZ---90,Nathan,Young,chad43@example.com,4232-7689,Flat 52 7 Nathan Crest,,Lake Kennethfurt,VIC,2654,AU,-41.157647,130.873635,1966-08-21,2024-06-15T15:03:54,False,True
+639,CUST-Z----0-A,Lauren,Baker,lewislindsey@example.net,(02)96708341,973 Wiggins Quay,,South Andrea,QLD,2325,AU,-36.300941,146.829013,1988-03-01,2024-07-03T16:13:57,False,True
+640,CUST--0Z0Z9-Z,Dawn,Miller,willie64@example.org,+61-428-444-686,1 Taylor Colonnade,,Emilyborough,QLD,6181,AU,-35.939352,143.923880,2007-05-28,2024-01-31T18:39:03,False,True
+641,CUST-Z-Z-0AZ-,Amy,Lee,burtondavid@example.com,07.8026.1230,5 Sylvia Riviera,,Lake Courtney,TAS,2395,AU,-36.014090,145.851974,1967-11-14,2024-10-20T17:03:20,False,True
+642,CUST-9Z-009A0,Dawn,Gibson,tammy67@example.com,(02)-4120-3957,Flat 53 2 Dawn Roadside,,Taylorstad,TAS,2615,AU,-39.985339,123.752551,1994-12-25,2024-01-10T00:18:39,False,True
+643,CUST-9-Z--Z09,Thomas,Shields,milleredward@example.com,+61 416 779 491,85/60 Key Meander,,Evansborough,WA,2658,AU,-42.184133,113.048980,2013-12-31,2024-01-21T04:38:08,False,True
+644,CUST--9Z--Z-Z,Adam,Oliver,wigginstammy@example.org,9896-5739,94 Combs Thoroughfare,,South Samantha,ACT,2920,AU,-34.556134,116.924404,1993-08-26,2024-01-14T16:09:49,False,True
+645,CUST-0-A00-0-,Angela,Suarez,jonathan12@example.org,5736.1383,Unit 96 027 Freeman Freeway,,New Scott,VIC,2601,AU,-41.903620,149.627831,2014-04-06,2024-07-02T11:32:14,False,True
+646,CUST-Z-AZ-00A,Tammy,Price,kleindaniel@example.com,8696-1962,Suite 706 40 Brown Gate,,North Kenneth,NT,2990,AU,-40.900183,114.612224,1986-12-23,2024-04-27T03:04:29,False,True
+647,CUST--ZZA09A9,Michael,Stevenson,amanda37@example.org,+61-2-1434-7905,39 Lopez Run,,Sarahburgh,SA,4381,AU,-39.301873,113.559632,2013-06-27,2024-04-17T10:40:15,False,True
+648,CUST-9---0-9-,Dustin,Pena,qbaker@example.net,(08) 7555 0926,75 Samuel View,,West Carolynland,WA,2462,AU,-37.746875,148.359234,1983-10-16,2024-11-14T11:41:23,True,False
+649,CUST-9AA00--A,Cheryl,Pierce,bad_email,0498 267 299,4 Martin Reach,,Port Deborahport,VIC,2200,AU,-35.028113,115.684956,1965-12-13,2024-02-27T17:19:09,False,True
+650,CUST-A--9Z0-0,Kara,Silva,umatthews@example.com,0408.317.659,Suite 353 021 Rhodes Interchange,,Hudsonland,WA,6303,AU,-36.512811,146.078739,1977-08-10,2024-03-05T07:59:05,False,True
+651,CUST-9AA9--09,Christian,White,rosalesjessica@example.com,03.6127.0353,Suite 970 06 Gloria Steps,,Bruceville,VIC,2027,AU,-40.988919,140.418419,2001-06-17,2024-12-08T21:30:35,False,True
+652,CUST--ZZ--09Z,Sara,Graham,lisa73@example.net,02.6342.6499,5 Gray Laneway,,Sanchezfurt,VIC,2223,AU,-43.658860,143.790889,1974-07-10,2024-07-22T11:44:34,True,True
+653,CUST---09Z-00,Ashley,Barnes,goodwindavid@example.com,1364.5815,9 Aguilar Esplanade,,South Matthew,ACT,4646,AU,-35.074732,122.211377,2003-09-21,2025-01-30T19:59:05,False,True
+654,CUST-A0Z9A-ZZ,Nathan,Foster,trevorwells@example.org,+61.8.4083.2639,95/0 Kevin Service Way,,Amychester,VIC,2926,AU,-40.523758,130.102593,2009-08-21,2024-02-12T18:22:35,False,True
+655,CUST-99-----A,Mary,Fox,kristin16@example.org,+61841170400,Apt. 254 2 Hodges Gate,,Sarafurt,QLD,2985,AU,-37.063053,151.886994,1974-12-17,2024-07-10T05:46:47,True,True
+656,CUST-----09-9,Gina,Conley,mooremario@example.com,+61 2 7740 8242,090/2 Harrison Loop,,South Luke,SA,2946,AU,-39.319959,117.444795,1986-11-30,2024-01-01T02:43:33,False,True
+657,CUST-0ZA-A--9,Douglas,Santiago,kimberlycampbell@example.org,(02) 3921 6812,Suite 390 807 Robert Mew,,Port Christopher,WA,2643,AU,-40.090003,119.734852,1991-06-09,2024-02-06T08:14:22,False,True
+658,CUST--90-99A-,Gerald,Rivera,sheri87@example.com,+61 499 259 407,9 Matthew Fire Track,,Jonesberg,TAS,2698,AU,-38.757590,142.866321,2013-09-08,2024-08-29T08:27:12,False,True
+659,CUST-0-9A-A9-,Melissa,Collier,smithjudy@example.net,08 1719 8410,792 Lisa Vista,,North Angelafort,QLD,2165,AU,-42.315440,140.390427,2003-09-19,2025-01-23T10:35:55,False,True
+660,CUST---9-99Z0,Roberta,Garcia,conniewoods@example.org,0429-008-398,2 Tate Round,,Kevinfurt,NSW,2907,AU,-37.597346,125.153187,1982-07-16,2024-07-01T03:01:31,True,True
+661,CUST-0--90-0-,Dean,Stephens,bad_email,8629.6225,74 Vasquez Underpass,,Kyleshire,ACT,5293,AU,-42.922023,145.528226,1968-11-04,2024-10-21T03:27:20,True,True
+662,CUST--90-909Z,Kevin,Contreras,klinetheresa@example.net,08.5440.3451,Unit 10 542 Elizabeth Basin,,Jimenezmouth,NSW,7007,AU,-35.868393,137.124734,1998-09-27,2024-12-08T00:56:00,False,True
+663,CUST-ZZ909AA0,Katherine,Cohen,sarah50@example.com,8776-2094,1 Castro Nook,,Stricklandmouth,WA,2178,AU,-43.522009,130.328183,1983-08-11,2025-01-28T05:50:49,False,True
+664,CUST--Z900-Z9,Deborah,Hebert,kraymond@example.net,+61 463 746 522,8/0 Samuel Circus,,Cassidyfort,SA,2766,AU,-36.780593,137.578070,1988-01-27,2024-11-14T18:06:08,False,True
+665,CUST-Z00Z-ZZ9,Tara,Ryan,beth67@example.org,+61 435 069 996,Flat 18 241 Davis Wynd,,Sheilatown,QLD,2796,AU,-36.997717,134.419412,2010-03-26,2024-10-02T06:28:38,False,True
+666,CUST-9-A0-Z9A,William,Jenkins,christine37@example.org,9627.9597,595 Riley Tollway,,St. Angelabury,WA,2612,AU,-42.963740,150.242998,1986-05-14,2024-11-10T20:45:25,False,True
+667,CUST-A9Z--0--,Jeffrey,Summers,qbarr@example.net,0439-026-922,0 Walsh Crossing,,Robinsonport,QLD,2608,AU,-41.840319,112.496734,1981-11-10,2024-01-11T22:17:24,False,True
+668,CUST------0--,Gabriel,Jacobson,brianhuffman@example.org,+61.3.9438.5714,Unit 98 744 Andrew Distributor,,Deborahfort,WA,0212,AU,-41.364427,126.809140,1981-01-20,2024-06-12T19:40:27,False,True
+669,CUST----Z-9-A,Ian,Davis,kimsanchez@example.com,1819 4568,Apt. 307 1 Jimenez Spur,,East Juliabury,VIC,2201,AU,-37.550340,134.162913,1980-02-03,2024-08-26T09:47:55,False,True
+670,CUST---00-A0A,Amanda,Strong,bad_email,4426 5812,0/46 Webb Trunkway,,North Dean,NSW,2294,AU,-40.455877,150.189370,1984-10-07,2024-10-18T09:10:31,False,True
+671,CUST-0-9-090-,Jennifer,Webb,greenvictoria@example.com,(03).2195.8935,68 Jones Approach,,Bestport,NSW,2619,AU,-38.603874,139.252869,1988-03-18,2024-01-04T22:11:40,True,True
+672,CUST--9-A0A-A,Andrea,Bullock,garrettgina@example.com,+61-2-3460-7983,65 Christine Turn,,Brownfort,QLD,2607,AU,-39.050249,116.780004,1967-12-29,2024-02-18T14:41:34,False,True
+673,CUST-0-09-Z00,Gabrielle,Ray,bad_email,(07)47659879,Flat 15 054 Cole Gardens,,North Laurenshire,NSW,2982,AU,-41.394944,120.024292,1991-07-05,2024-11-27T23:02:49,True,True
+674,CUST-ZAA---AA,Daniel,Brennan,karen25@example.com,0491.341.484,79 Lewis Fairway,,Josephville,QLD,2953,AU,-43.723464,148.205802,2010-07-17,2024-07-10T02:31:34,False,True
+675,CUST-Z--0A9--,Aaron,Hughes,ryan31@example.org,0469.730.771,34/0 Sanchez Street,,Odomport,SA,2619,AU,-35.856385,129.804258,1963-06-24,2024-10-02T04:22:45,False,True
+676,CUST-Z-Z---9A,William,Joseph,dana58@example.net,0489 539 664,Level 1 069 Mariah Cove,,Lake David,ACT,7064,AU,-34.713935,133.919217,1994-11-19,2024-08-17T04:14:14,False,True
+677,CUST-ZA-00---,Christina,Morton,mendozaandrea@example.org,(02)39534257,098 Nelson Expressway,,New William,VIC,5293,AU,-40.794469,133.093500,2011-08-05,2024-12-25T19:22:00,False,True
+678,CUST-Z--90ZZ-,Jeffrey,Hahn,hclark@example.org,+61 8 9568 9681,1/537 Donald Place,,Davisstad,ACT,2655,AU,-40.784855,131.364180,1994-11-18,2024-06-05T18:07:03,False,True
+679,CUST-A9-A9Z-A,Laura,Wood,vanessagordon@example.net,+61829972973,989/314 Watson Tor,,Ashleyshire,NT,2984,AU,-40.482344,133.510547,1998-12-01,2025-01-13T18:30:33,False,True
+680,CUST-0--9Z9AA,Amanda,Reyes,kanedanielle@example.com,(08)22737936,62/455 Heather Track,,Wardborough,NT,6027,AU,-37.869830,113.809355,1994-03-23,2024-04-15T04:14:07,False,False
+681,CUST-0-Z-0Z9-,Rebecca,Cooper,hallemily@example.net,(03)-1354-2021,1 Leonard Circuit,,West Kristineport,SA,2952,AU,-39.771594,134.821589,1987-10-15,2024-04-14T23:47:14,False,True
+682,CUST--A0Z0900,Chase,Hill,sandrali@example.org,02-6884-0083,321 Elizabeth End,,Obrienborough,TAS,2353,AU,-37.105006,114.820974,1970-04-06,2024-02-29T05:47:10,False,True
+683,CUST----Z99Z9,Kimberly,Hill,masonpatrick@example.org,22076139,15/597 Frank Outlook,,Whitakerburgh,NSW,2942,AU,-42.805993,144.915099,1978-02-18,2024-02-14T20:11:52,False,True
+684,CUST-A00AA-A-,Natasha,Perez,oliviahernandez@example.com,+61.2.2793.6735,Level 7 60 Brown Roadway,,Port Nicholasfort,WA,0944,AU,-42.572413,135.880059,1963-09-07,2024-12-05T18:20:10,False,True
+685,CUST-Z-A-AZ9-,Jeff,Tanner,torrespamela@example.net,+61-449-340-800,Suite 628 961 Brett Road,,West Shane,VIC,2920,AU,-42.469025,123.672224,1965-09-16,2024-04-25T06:41:52,False,True
+686,CUST--09A-0-A,Angel,Browning,wboone@example.com,45206872,7/6 Robinson State Highway,,Kleinstad,QLD,2991,AU,-39.900758,133.370951,1975-03-30,2025-01-05T11:42:40,False,True
+687,CUST-AA-9A0A-,Robert,Moore,hbrown@example.net,+61-441-141-927,957/529 Robert Mall,,West Jesse,ACT,2638,AU,-43.260760,137.954505,2002-09-28,2024-10-19T23:28:33,False,True
+688,CUST-0990--Z0,Kayla,Hurst,astevens@example.net,+61-447-422-563,Unit 29 51 Jennifer Intersection,,East Patrick,VIC,2991,AU,-41.131365,141.239141,1994-11-06,2024-05-11T05:50:13,False,False
+689,CUST-Z00-A9--,Christian,Chandler,nmartin@example.org,(02) 6966 3592,162 Gabrielle Laneway,,Miguelshire,QLD,2931,AU,-39.394185,130.092472,1994-11-06,2024-08-25T13:14:12,False,True
+690,CUST---9---9-,Nicholas,Knight,uconner@example.org,08-0575-1356,Flat 84 12 Laura Heights,,East Kevinville,QLD,2693,AU,-40.931010,127.713182,2002-03-09,2024-02-25T19:45:49,False,True
+691,CUST--A-Z0---,Steven,Brown,acostadanielle@example.com,(08).0933.3799,Unit 93 966 Scott Subway,,Jonesland,SA,2688,AU,-37.330065,122.932799,2010-07-17,2025-01-28T05:40:28,False,True
+692,CUST--Z9--00-,Jennifer,Santiago,nicholas94@example.com,+61 439 200 318,415 Brown Circus,,Lake Pamela,ACT,2680,AU,-43.142499,112.346747,1964-09-24,2024-06-18T03:16:29,False,True
+693,CUST-9-Z---ZA,Samantha,Watts,goodwinjesse@example.org,+61 439 504 516,Flat 13 638 Bennett State Highway,,North Kristin,NSW,2606,AU,-42.985005,134.475502,1973-08-21,2024-03-24T15:06:59,True,True
+694,CUST-9-9Z-00-,Andrea,Chambers,shellymckinney@example.com,+61-479-659-881,Level 3 156 Nichols Quay,,Hannahmouth,ACT,6361,AU,-40.190509,127.174790,1975-04-17,2025-01-27T00:43:35,False,True
+695,CUST-0--0AZ-0,Wendy,Willis,nrodriguez@example.net,+61-461-901-985,4 Karen Front,,Loriburgh,NT,2681,AU,-37.226268,148.670560,1969-12-15,2024-12-08T07:10:38,False,True
+696,CUST-9-0-AZA-,Laura,Jones,dustinpierce@example.com,+61.427.725.875,59/1 Krystal Trunkway,,East Monicaville,VIC,2638,AU,-34.957201,112.937774,1988-07-30,2024-03-26T01:53:37,False,True
+697,CUST-0AZ90ZZ9,Jeffery,Walter,hlopez@example.net,+61.456.661.951,Unit 98 77 Brown Grove,,Lowerymouth,SA,2938,AU,-43.807878,127.226845,2002-03-05,2024-07-13T14:08:27,True,True
+698,CUST-9-Z09Z00,Brandon,Banks,jamesgardner@example.com,3664 5292,Unit 83 461 Butler Lees,,Baileyland,TAS,2698,AU,-34.866426,148.751045,1967-08-10,2024-12-07T11:36:01,False,True
+699,CUST--A-ZA-AA,Nicholas,Townsend,sandovalanthony@example.com,0423-057-415,5/19 Michael Crescent,,Carriebury,WA,2686,AU,-40.588652,148.356457,1966-04-25,2024-03-20T21:13:02,False,True
+700,CUST-9AAA0-9Z,Dan,Francis,bad_email,0412-829-614,Apt. 309 126 Owens Promenade,,Mccormickmouth,VIC,1735,AU,-36.084073,121.323030,1964-06-26,2025-01-02T02:53:28,False,True
+701,CUST-990-0---,Sara,Bailey,williamhill@example.org,5630.0173,094/58 Anderson Ramp,,Jamesshire,NSW,2951,AU,-43.204417,150.967614,1983-08-14,2024-03-14T19:44:00,False,True
+702,CUST-A9--A-Z-,Donna,Carter,frankkristy@example.org,67716243,53 Ana Run,,Jonesland,NSW,2692,AU,-41.490502,125.790362,1981-08-07,2024-09-28T00:15:15,False,True
+703,CUST-Z-0AZAAZ,Brittany,Bryan,gsingh@example.com,+61228200841,Flat 93 09 Amanda Walk,,East Matthew,QLD,7539,AU,-36.286139,148.579067,2014-04-28,2024-12-13T02:23:54,False,True
+704,CUST-9Z0Z00ZZ,Denise,Jones,bad_email,02 3593 5357,Flat 88 8 Bell Point,,Zavalabury,TAS,2961,AU,-40.471050,130.597793,2001-06-01,2024-06-15T14:40:53,False,True
+705,CUST--00A--90,Tyler,Lopez,mark23@example.net,0498.089.383,Flat 83 1 Lewis Chase,,Sueside,TAS,2795,AU,-35.825952,148.214492,1973-07-20,2024-10-30T06:41:45,False,False
+706,CUST-AZ0-0-0Z,Tracy,Pacheco,williamssandy@example.net,+61211381588,24 Chavez Strip,,East Mary,TAS,2949,AU,-39.008631,129.404303,1974-05-04,2024-09-06T02:10:32,False,True
+707,CUST-0-ZZ-9--,William,Simpson,powersmichael@example.org,+61-451-026-700,Level 7 937 Singh Row,,Robertville,NT,4722,AU,-40.614195,124.424477,1998-06-27,2024-11-09T04:26:10,False,True
+708,CUST-0--ZZ9Z9,Nathan,Sims,aimeerodriguez@example.com,07 0016 0495,04/8 Juan Crossway,,New Edwardside,QLD,9893,AU,-37.117182,148.405845,1988-01-15,2024-11-20T17:20:14,False,True
+709,CUST-9--Z9-Z-,Raymond,Delgado,william57@example.com,+61-8-8585-6115,20 Rodriguez Reserve,,Valenciahaven,NSW,1735,AU,-35.094429,124.538402,1968-07-29,2024-07-15T05:24:05,False,True
+710,CUST-0Z0A0-09,Jason,Morgan,philip75@example.net,0464-165-394,13 Gerald Extension,,East Nicholasberg,NT,1142,AU,-37.669302,125.088575,2003-04-17,2024-10-14T05:19:12,False,True
+711,CUST-----09-Z,Michael,Perez,ecopeland@example.com,45447182,231 Lindsay Top,,Jeanetteton,NT,2678,AU,-40.239911,140.025844,1960-12-23,2024-06-01T09:30:08,False,True
+712,CUST-A099A0Z-,Renee,Hale,kristine93@example.org,(07)07427901,Unit 81 07 Newton River,,West Angelastad,VIC,1970,AU,-42.922551,122.942082,1984-10-03,2024-04-11T22:05:00,False,True
+713,CUST-A-0-AAZZ,Ryan,Tran,stephaniestevenson@example.net,+61-465-586-461,097 Lindsey Top,,Lake Scott,QLD,0926,AU,-40.044623,125.064419,1963-02-05,2024-11-25T10:18:01,False,True
+714,CUST-99A-90A-,Jeffrey,Green,ryan37@example.com,+61.473.070.251,171 Ortiz Link,,Burnston,ACT,5079,AU,-41.649864,142.186383,1992-01-13,2024-06-22T02:57:17,False,True
+715,CUST-900A00--,James,Parker,martinezluis@example.com,5427 5544,11 Joseph Hill,,Combsmouth,WA,0941,AU,-35.313349,121.095846,1965-01-25,2024-11-26T20:18:16,True,True
+716,CUST-9--A--A0,Nicholas,Clayton,bad_email,+61.3.5695.3736,42 David Mount,,West Mary,WA,9124,AU,-36.344633,131.689091,1997-03-23,2024-10-08T02:28:27,True,True
+717,CUST-9--A0-AZ,Sarah,Bryant,jordan27@example.net,(08)-8657-6263,8 Jackson Ridgeway,,South Brandon,NSW,1380,AU,-36.557461,123.256686,2009-11-26,2024-07-10T18:36:02,False,True
+718,CUST-ZZZA0--Z,Jesse,Smith,lindseyjames@example.org,07.7137.8418,Level 5 722 Mcdaniel Link,,Port Karen,TAS,2953,AU,-40.125479,116.269185,1978-06-11,2024-04-12T20:45:38,False,True
+719,CUST-ZA099-Z-,Matthew,Ford,wjones@example.com,03 1913 7659,640/20 Jimenez Towers,,West Nathan,NT,2603,AU,-42.190809,125.357281,2004-10-26,2025-01-03T14:08:50,False,True
+720,CUST---Z--000,Daniel,Mcintyre,lwalker@example.net,0808254598,Unit 00 435 Diane Edge,,St. Catherineberg,NT,3257,AU,-34.532129,149.206377,1987-03-23,2024-08-15T13:53:13,False,True
+721,CUST-99A0-ZA-,Christine,Jackson,turnerbradley@example.net,94982568,303/45 Cabrera Heights,,Lake Kathryn,QLD,2482,AU,-40.979499,122.509026,1978-05-12,2024-03-02T23:10:54,False,True
+722,CUST-AA0-AA9-,Eric,Weiss,carolynjimenez@example.com,0441-131-205,3 Thompson Quays,,St. Pamtown,NSW,0904,AU,-39.202750,141.257361,1973-10-02,2024-04-20T02:22:20,False,True
+723,CUST-A0000--A,Jason,Pham,pjordan@example.org,+61.7.4042.1665,331 Jesse Roadside,,Williamsfurt,QLD,6526,AU,-41.327156,138.849702,1976-11-14,2024-04-30T16:18:38,False,True
+724,CUST-9--09-0A,Thomas,Clark,wrightshane@example.net,1052 2825,Flat 34 27 Tina Way,,Deborahberg,VIC,2357,AU,-40.267325,148.072836,2009-06-07,2024-10-03T05:18:16,False,True
+725,CUST-0Z-Z00Z-,Joseph,Wilson,bad_email,+61-8-8522-7842,3 Davis State Highway,,East Kylestad,SA,5356,AU,-41.467997,117.505660,1992-03-05,2024-11-26T16:59:12,False,True
+726,CUST-AZ9----9,Alicia,Bolton,bad_email,0465.044.446,2 Heather Retreat,,St. Mark,TAS,2624,AU,-39.810239,116.475198,2004-12-24,2024-10-05T01:31:42,False,True
+727,CUST-9-999Z--,Daniel,Murillo,joshua14@example.com,2609.3361,64/3 Michelle Outlook,,Port Jeffreyborough,TAS,2697,AU,-35.806391,120.762857,1991-07-02,2025-01-18T14:51:17,False,True
+728,CUST-99909---,Michelle,Davidson,walkerwilliam@example.com,(03)-5751-3443,633 Garcia Ring,,Davidfort,NSW,2975,AU,-40.934441,142.232023,1987-03-04,2024-04-17T19:43:56,False,True
+729,CUST-ZA--AA-A,Joshua,Santos,juliecox@example.org,+61 405 854 951,Flat 96 58 Samuel Drive,,Alejandrostad,NSW,2646,AU,-43.894315,135.902434,1990-10-14,2024-07-17T13:39:00,False,True
+730,CUST-9-00A9--,Crystal,Byrd,gomeznicole@example.org,+61 3 4094 1331,598 Parrish Pocket,,Trevinoside,QLD,7693,AU,-40.162447,133.560692,1968-10-16,2024-08-04T21:22:35,False,True
+731,CUST-0AA0090A,Samuel,Valentine,felicia66@example.org,08 9131 7407,0 Susan Brace,,Port Theresa,NT,2681,AU,-36.509478,121.655146,2002-02-06,2024-01-18T11:45:19,False,True
+732,CUST-9-A--0A0,Tony,Moore,adrian58@example.net,+61-498-252-226,009 Smith Tollway,,South Christopher,TAS,2063,AU,-40.118219,148.999219,1964-05-15,2024-05-09T21:19:23,True,True
+733,CUST-ZA-Z0Z--,Stephanie,Mitchell,fwilliams@example.org,0439-387-152,6/3 Steven Underpass,,North Kellymouth,TAS,0801,AU,-43.943075,143.029605,1975-11-05,2025-01-30T13:42:57,True,True
+734,CUST-00--99Z9,Jeremy,Evans,leemorrison@example.org,0405 009 439,9 Brittany Follow,,Loweshire,SA,2649,AU,-40.333244,139.956848,1961-11-03,2024-12-28T19:07:15,False,True
+735,CUST-AA00Z--0,Susan,Bishop,williamskathleen@example.net,+61-7-4011-1083,094 Denise Estate,,Jaredview,ACT,6961,AU,-38.928864,121.729278,1972-05-03,2024-03-02T00:52:40,False,True
+736,CUST--0-9-Z9Z,Regina,Carey,pmorrison@example.com,(07)00631875,934 Jacqueline Lower,,St. Marcport,WA,6237,AU,-42.526128,117.328593,1995-01-19,2024-01-06T13:32:20,True,True
+737,CUST-A-A-Z-Z9,Christine,Aguilar,julieramirez@example.com,+61-450-815-154,Suite 961 930 Kimberly Landing,,New John,NT,1308,AU,-41.858775,118.896719,2009-08-12,2024-11-20T22:49:46,False,True
+738,CUST--0--A--9,Carl,Burke,scottmyers@example.com,0373406004,96 John Mews,,Port Jasonchester,TAS,3893,AU,-35.720244,128.255659,1998-09-29,2024-01-22T11:40:06,False,False
+739,CUST-999--00Z,Samantha,Phillips,gdodson@example.net,07.5160.8241,44 Jodi Fire Track,,St. Hannah,NSW,5814,AU,-38.787415,131.885339,1966-09-25,2024-08-09T21:50:19,True,True
+740,CUST-A9Z0-Z9A,Jason,Brown,mgray@example.org,0432 265 207,Apt. 731 2 Garcia Park,,West Crystal,TAS,2286,AU,-35.446211,130.796475,2003-10-05,2024-07-16T21:27:54,False,True
+741,CUST--Z--0-9A,Benjamin,Walker,garciachristopher@example.org,08 1693 2116,Flat 69 635 Jodi Centre,,St. Maryfort,QLD,7207,AU,-35.252485,135.777353,1980-06-09,2024-06-09T11:48:08,False,True
+742,CUST-Z9-0ZZZ-,Danielle,Arnold,cruzsuzanne@example.net,+61-470-291-305,Unit 73 67 Nancy Green,,Nelsonshire,TAS,2630,AU,-37.140203,140.504841,2009-08-08,2024-06-13T07:26:39,False,True
+743,CUST-Z--99-A9,Tracy,Hardin,ellisjohn@example.com,0702470111,6 Scott Ramble,,St. Jenniferborough,QLD,2619,AU,-41.292595,134.727575,2008-03-18,2024-06-23T05:19:41,False,True
+744,CUST-A0--AA0Z,Michelle,Wright,christine07@example.net,0448.299.804,Level 0 1 Martin Crescent,,Velasquezside,SA,2432,AU,-43.490070,129.108292,2003-12-02,2024-10-31T03:56:06,False,True
+745,CUST--AA-AAAZ,Michael,Frank,melissa76@example.net,0400.771.464,69 Jennifer Port,,Shanestad,ACT,2660,AU,-37.132757,120.195710,2010-10-30,2024-01-31T00:21:31,True,True
+746,CUST--09-ZZ--,Andrea,Mooney,danielle80@example.com,+61.8.2777.7351,1 Vasquez Concourse,,New Anneview,SA,2706,AU,-42.281577,150.655989,1994-05-21,2024-04-14T19:43:23,False,True
+747,CUST-9A0Z-AA-,Michael,Rocha,morrisonsteve@example.org,+61.7.5653.2331,29/721 James Right Of Way,,South Keith,NSW,2916,AU,-34.823745,123.178827,1960-04-13,2024-05-02T11:13:54,False,True
+748,CUST--A0A00-9,Paul,Santos,thomasdavid@example.net,5348 5424,Apt. 767 14 Heather Artery,,North Angela,ACT,2610,AU,-37.266888,129.466012,2007-01-02,2024-06-24T11:43:35,True,True
+749,CUST-0--ZA-09,Christopher,Harris,james74@example.net,8247.4726,327 Jeffery Circus,,East Christopher,SA,2697,AU,-41.512343,123.627153,1980-09-17,2024-07-13T21:51:40,False,True
+750,CUST-09-A-999,Catherine,Perez,brianna25@example.com,(02) 6308 7578,Apt. 854 741 Joseph State Highway,,Watsonmouth,NSW,2903,AU,-36.758215,148.367521,1968-01-10,2024-08-11T09:16:53,False,True
+751,CUST-0----Z9-,Molly,Hill,bad_email,+61.456.775.705,3 Laura Expressway,,Crystalmouth,TAS,2696,AU,-34.841501,115.695071,2009-08-05,2024-01-26T09:06:59,True,True
+752,CUST-Z--00-Z-,Andrew,Armstrong,aaron26@example.com,8550 7214,Apt. 460 229 Scott Bend,,West Jasonshire,ACT,0221,AU,-38.273910,143.324030,1975-10-14,2024-05-27T19:56:59,False,True
+753,CUST--A9--AA-,Christopher,Johnson,hallangela@example.org,+61 3 3036 2679,Unit 65 4 Taylor Plateau,,Port Matthew,WA,2993,AU,-42.472814,149.286004,1982-01-14,2024-01-05T11:51:01,False,True
+754,CUST----A0A--,Joshua,Hill,omurphy@example.org,+61 425 638 318,89 Frye Bridge,,St. Dylan,NT,2619,AU,-41.207229,121.831557,1975-09-18,2024-12-29T04:00:01,False,True
+755,CUST--AAZ-0A0,Erica,Howell,victor41@example.org,+61 413 676 269,31 Cannon Brace,,New Jillian,NT,4110,AU,-34.567147,126.157419,2014-04-28,2024-10-22T14:45:10,False,True
+756,CUST--A-00--A,Mark,Rogers,zgonzales@example.com,+61 7 8644 6480,119/9 Lori Sound,,Levinechester,NSW,2676,AU,-43.761242,131.488864,1961-06-09,2024-04-20T15:51:26,False,True
+757,CUST-09Z---09,Kenneth,Villegas,jsmith@example.com,6236.5440,397 Kyle Rosebowl,,Lake Justin,QLD,2900,AU,-39.347953,147.295337,2001-07-25,2024-03-07T15:08:19,False,True
+758,CUST-Z09A-ZAZ,Jordan,Mcdonald,bad_email,3431-2062,471 William Cruiseway,,Port Rickyberg,WA,3608,AU,-34.186425,145.886983,1966-01-29,2024-06-29T12:04:04,False,True
+759,CUST--9-AA9Z-,Dustin,Mcbride,antoniomorrison@example.org,(08)-0154-9298,Unit 85 5 William Sound,,Christianport,TAS,7492,AU,-36.014888,130.411639,1989-04-18,2024-05-25T13:23:50,True,True
+760,CUST-A9-A00-0,Nancy,Smith,adrian62@example.net,0494-915-700,Unit 43 196 Ricardo Grove,,Rogersport,VIC,2654,AU,-36.378912,119.853370,1994-06-10,2024-05-21T14:21:34,False,False
+761,CUST-0-A----0,Michael,Smith,rpatton@example.net,02-0931-4753,95 Kimberly Part,,West Jayfort,NT,2876,AU,-43.625390,141.089517,1965-12-05,2024-04-22T17:03:01,False,True
+762,CUST-90-9AAZ0,Jacqueline,Smith,brittneysalazar@example.org,0448.209.758,Apt. 848 2 Mullins Frontage,,Kathyside,NT,2942,AU,-37.322481,145.414346,2012-11-28,2024-09-23T10:09:24,False,True
+763,CUST---A-ZZ00,Michael,Garrett,andrewwheeler@example.net,(02)-5090-2512,Apt. 003 552 Jason Run,,Anitamouth,VIC,2966,AU,-41.423577,144.962760,2009-10-16,2024-04-24T07:58:18,False,True
+764,CUST-A9-Z9--0,Noah,Ferguson,thomas37@example.net,13581064,627 Tammy Rosebowl,,Jacksonside,WA,2989,AU,-39.188263,149.136394,1965-12-13,2025-01-31T11:25:50,False,True
+765,CUST-Z0A00Z-0,Timothy,Bell,espinozamichael@example.com,+61-450-026-214,539/3 Rodriguez Right Of Way,,Orozcostad,ACT,2629,AU,-35.505499,123.458704,1974-10-17,2024-06-21T05:47:45,False,True
+766,CUST-A9-AAAA-,Joshua,Jones,john09@example.org,(08).8592.0061,82 Michael Villas,,Javierfort,QLD,2619,AU,-42.665167,151.348043,1992-11-26,2024-12-13T13:00:25,False,True
+767,CUST-ZAAA-ZA-,Jasmine,Bishop,rebeccamaldonado@example.com,03 0203 6747,12 Cruz Strand,,New Brandonborough,NSW,2912,AU,-41.085716,145.473993,1966-06-06,2024-11-09T10:21:22,True,True
+768,CUST-0---Z9A9,Gary,Garcia,upatel@example.org,+61-7-7875-7295,17 Ian Roadside,,New Steven,SA,2938,AU,-35.897292,126.350077,2005-08-26,2024-06-05T10:41:29,False,True
+769,CUST--09Z0--Z,Gary,Wright,christensenkyle@example.org,+61387985782,039/00 Jason Crest,,Lake Jennifer,SA,2914,AU,-34.017743,117.044390,1966-08-03,2024-05-24T12:06:51,False,True
+770,CUST-0999009A,Sarah,Peterson,jamessmith@example.org,+61.495.342.214,Unit 14 2 Christopher Run,,Johnsonshire,NT,2089,AU,-40.549144,113.956487,1982-08-16,2024-07-18T06:47:33,False,True
+771,CUST-0909-ZZ9,Andrew,Munoz,jimenezmartha@example.org,+61 7 6817 0812,45 Alan Roadway,,St. Michael,NSW,2505,AU,-39.841990,131.475768,1990-01-05,2024-03-16T01:31:48,False,True
+772,CUST--A090Z--,Angela,White,bbrown@example.net,02 7186 6939,Flat 44 1 Frances Boulevard,,North Tara,QLD,2663,AU,-36.284320,150.770963,1978-02-04,2024-04-18T05:22:53,False,True
+773,CUST--9--90-Z,Justin,Smith,xmeyer@example.net,03.7064.9180,1 Williams Triangle,,Port Diana,VIC,9741,AU,-36.442264,113.780546,1989-11-02,2024-01-10T14:49:50,False,True
+774,CUST--0-A-0Z0,Brittany,Sanchez,jennifer21@example.com,+61844857597,38 Zachary Quadrangle,,Parkerville,TAS,2681,AU,-43.957150,121.168834,1979-11-24,2024-08-18T08:42:03,False,True
+775,CUST-ZA--A9-0,Teresa,Webb,gwilson@example.org,74896616,581/1 Albert Promenade,,East Isabel,WA,2906,AU,-38.476407,143.186992,1981-01-25,2024-07-18T20:24:59,False,True
+776,CUST-0ZA-A999,Ronald,Freeman,znelson@example.com,+61 485 662 196,812/6 Berry Plateau,,North Darrylhaven,WA,2664,AU,-41.076834,122.283699,1974-07-09,2024-08-06T07:25:50,False,True
+777,CUST-A9-Z9ZA-,Chad,Rodgers,joshua55@example.net,+61.404.133.597,Apt. 057 57 Turner Roadside,,Kimberlyhaven,VIC,0212,AU,-42.866292,130.051664,1970-11-23,2024-09-13T19:27:50,False,True
+778,CUST-A9AZZ--Z,Bruce,Ward,danielleford@example.com,03.8034.1115,48 Michelle Esplanade,,North Christopher,WA,5544,AU,-37.796580,150.776885,1967-10-02,2024-02-02T05:54:31,True,True
+779,CUST---9Z90ZA,Brittney,Merritt,eric71@example.com,0475.252.437,Level 2 968 Leroy Block,,Karenhaven,TAS,2944,AU,-37.625108,142.938535,1966-01-01,2025-01-16T08:15:20,False,True
+780,CUST-9Z0Z-0-0,Jillian,Murray,bad_email,(08)31239545,Unit 57 50 Harris Pocket,,St. Robertborough,NSW,2343,AU,-37.354198,126.901496,1990-05-22,2024-07-31T00:16:14,False,True
+781,CUST---A--A-A,Lisa,Lewis,brett48@example.org,+61-2-0475-6763,Apt. 843 70 Lindsey Riverway,,Pollardview,WA,2483,AU,-37.619197,121.841503,2008-03-08,2024-08-05T10:41:03,True,True
+782,CUST-Z9Z-Z9-0,Joy,Collins,ericksonmatthew@example.net,+61-477-911-968,Flat 55 6 Turner Trunkway,,East Johnfurt,NSW,2825,AU,-41.001799,112.909289,1985-07-31,2024-06-16T06:43:38,False,True
+783,CUST-AZAZ---A,Stephen,Wright,yolandaevans@example.com,+61.453.495.700,77/56 Thomas Lookout,,South Shane,QLD,0276,AU,-41.234851,145.658688,2009-05-12,2025-01-21T19:42:30,False,True
+784,CUST-Z9---99-,Jessica,Williams,stevensshannon@example.com,(02).4832.4219,Unit 29 8 Mendoza Grove,,Garciaberg,WA,0279,AU,-41.309518,114.082139,1966-03-02,2024-02-18T21:25:10,True,True
+785,CUST--ZA-0ZA0,Ann,Williams,veronicasmith@example.org,03-5394-3194,6 Donna Amble,,Paynebury,TAS,2829,AU,-43.831545,120.736715,1971-05-13,2024-03-27T18:33:25,False,True
+786,CUST-Z90---9-,Nicholas,Jacobson,johnathan64@example.org,+61 3 1611 0479,3 Suzanne Centre,,Shanefurt,WA,2951,AU,-39.954794,135.630805,2011-11-19,2024-05-27T09:48:25,False,True
+787,CUST--A00A9Z9,Steven,Campbell,billy01@example.com,0887948699,715 Lauren Ride,,New William,QLD,2630,AU,-35.855538,135.208165,1982-04-27,2024-03-08T01:27:49,False,True
+788,CUST--9A-ZA09,William,Walker,clarkjason@example.net,0479 136 485,8 Kyle Spur,,New Paula,NSW,2902,AU,-40.586430,129.882980,1973-03-09,2025-01-05T23:35:29,False,True
+789,CUST-Z00-09Z9,Andrew,Richards,jacob20@example.com,+61368929737,0/02 Edwards Roads,,Greenefort,NSW,2960,AU,-37.341430,149.870606,1981-10-12,2024-09-07T17:48:02,False,True
+790,CUST-AAZ0A0-9,Caleb,Brown,holly67@example.com,3760 8967,15 Dudley Triangle,,Phammouth,VIC,8031,AU,-41.206719,129.046091,1961-03-27,2024-08-30T19:16:54,True,True
+791,CUST-0Z-909-Z,William,Ramirez,bad_email,07 1547 3943,524 Smith Brace,,Johnsonmouth,ACT,2199,AU,-41.655790,131.436103,1979-08-21,2024-10-09T18:33:27,False,True
+792,CUST-9AZZZ-9Z,Duane,Gray,jesselowery@example.com,(03)17481721,4 Campbell Heights,,St. Coreyview,NSW,0948,AU,-41.171867,144.388406,2009-11-16,2024-11-10T20:54:49,False,True
+793,CUST-9-Z--0AA,Kevin,Mendez,weaversteven@example.net,+61 481 065 501,008 Kelly Mews,,Tracyburgh,VIC,2896,AU,-40.936619,142.566489,1982-07-14,2024-12-22T09:54:03,False,True
+794,CUST-Z00A9---,Dillon,Berry,michael52@example.com,(02)-6051-8083,952/687 Peters Bridge,,St. Carlosview,SA,2662,AU,-38.675140,131.726022,1998-08-26,2024-10-14T00:35:53,False,True
+795,CUST--00A-0--,Dawn,Jones,swalters@example.org,0423-446-597,Level 8 3 Kevin Byway,,Taylorport,VIC,2819,AU,-41.854663,126.835079,1963-04-14,2024-05-11T00:25:33,False,True
+796,CUST-A0Z---Z9,Thomas,Thomas,robinsonchristopher@example.com,1886-4969,825 Brown Deviation,,St. Corey,QLD,2916,AU,-38.589249,138.291881,1960-07-27,2024-09-07T07:52:38,False,True
+797,CUST-AA--A--Z,Jessica,Smith,bad_email,+61 7 8755 8849,944 Patterson Brae,,Johnton,NT,2659,AU,-43.024888,137.088258,1961-11-30,2024-12-07T10:01:18,False,True
+798,CUST-9----9-A,William,Taylor,bad_email,0248158903,97/03 Sarah Brow,,East Paulton,ACT,2920,AU,-36.742562,140.962476,1992-11-22,2024-11-17T10:54:28,False,True
+799,CUST-A--Z0A09,Harold,Ball,stewartbrian@example.net,07.7611.2849,69 Miller Plateau,,East Julieview,NSW,2247,AU,-42.462603,116.337589,1980-07-26,2024-12-24T06:03:02,False,True
