@@ -1,80 +1,80 @@
 supplier_id,supplier_code,name,country_code,lead_time_days,preferred
-1,SUP-A--0-,Harrison-Barrett,CN,21,False
-2,SUP-0--A-,Austin-Howard,CN,16,True
-3,SUP-0Z9--,Matthews Group,UK,10,False
-4,SUP--Z-99,Collins-Mooney,UK,22,True
-5,SUP-Z009A,Ruiz-Blankenship,UK,19,False
-6,SUP-A-0-Z,Griffin Inc,US,29,True
-7,SUP---A9-,Hoffman  Holmes and Weaver,AU,19,False
-8,SUP-Z99--,Sparks Ltd,US,10,True
-9,SUP-Z09Z-,Lane-Parker,CN,15,False
-10,SUP-0Z9Z9,Bradshaw  Chavez and Baker,AU,24,False
-11,SUP--A-A0,Barrera-Robinson,CN,10,False
-12,SUP-0AA0Z,Willis  Johnson and Liu,US,26,False
-13,SUP-00---,Ramirez and Sons,AU,21,False
-14,SUP-A-0Z-,Mitchell-Dixon,US,3,False
-15,SUP-AAZ-9,Bond-Harper,US,2,False
-16,SUP----00,Hinton  Williams and Flynn,AU,18,False
-17,SUP-09AZ9,Reyes-Nichols,AU,0,False
-18,SUP-A---A,Warren-Hicks,US,11,True
-19,SUP-09-AA,Cuevas-Garcia,AU,23,True
-20,SUP--Z-AZ,King and Sons,UK,30,False
-21,SUP--0-A0,Scott-Montoya,AU,8,False
-22,SUP-0ZZ-9,Wood PLC,AU,8,False
-23,SUP-0--00,Gomez  Collins and Frank,AU,4,False
-24,SUP--9-A0,Madden-Rodriguez,CN,1,False
-25,SUP-A0090,Hernandez  Mckee and Gibbs,US,13,False
-26,SUP-0A9A9,Neal Ltd,US,28,False
-27,SUP-ZAAZA,Sparks  Reid and Jackson,US,1,True
-28,SUP----00,Williams Inc,AU,15,False
-29,SUP----Z-,Espinoza  Hobbs and Lane,US,13,False
-30,SUP-999-A,Hall-Juarez,UK,17,False
-31,SUP--ZZ9A,Anderson-Mullen,CN,9,True
-32,SUP--0A-A,Stone LLC,AU,7,False
-33,SUP-0-9-0,Houston  Wilkins and Hansen,UK,10,False
-34,SUP-A9-ZA,Hardy  Dawson and Horn,CN,12,False
-35,SUP-A-9-0,Banks-Smith,AU,6,False
-36,SUP--9-AA,Silva Group,AU,5,False
-37,SUP-A9ZAA,Larson-Rodriguez,CN,12,False
-38,SUP-A-9A0,Little-Gonzalez,UK,9,True
-39,SUP-99--0,Brown-Green,US,6,True
-40,SUP-ZZ--0,Mclean PLC,AU,4,False
-41,SUP-AA-Z-,Smith-Smith,AU,16,True
-42,SUP-99-00,Miller Inc,CN,25,False
-43,SUP--0A9-,Miller Inc,UK,-5,False
-44,SUP--A0AA,Ingram LLC,CN,-5,False
-45,SUP-9AA0-,Rivera  Sloan and Rodriguez,UK,27,False
-46,SUP--099A,Jordan-Marquez,US,26,False
-47,SUP-ZA990,Perez  Hale and Moore,UK,3,False
-48,SUP-Z-0Z0,Castaneda Group,CN,26,True
-49,SUP-A0-9A,Mckee Ltd,AU,9,True
-50,SUP-99A-9,Everett  Murphy and Jones,CN,16,False
-51,SUP---A09,Moore-Turner,UK,16,True
-52,SUP--Z9-0,Webb  Richardson and Christensen,US,12,True
-53,SUP---AAA,Young PLC,UK,14,False
-54,SUP-9-Z9-,Hoffman  Perry and Mccoy,UK,30,True
-55,SUP-0A0A-,Woods  Hoffman and Rhodes,CN,17,False
-56,SUP--A-9A,Hampton-Lewis,CN,19,True
-57,SUP-AZ0A-,Yates PLC,US,26,False
-58,SUP--0Z-Z,Hicks and Sons,UK,19,False
-59,SUP-A-90-,Bailey-Sanchez,CN,16,False
-60,SUP-ZA--Z,Walker PLC,CN,13,False
-61,SUP-9009-,Palmer-Diaz,AU,0,False
-62,SUP-AA0A-,Wright  Walker and Huffman,UK,7,False
-63,SUP--99--,Bennett and Sons,US,24,False
-64,SUP-Z0A-0,Perry-Bennett,CN,-5,False
-65,SUP-A-90A,Evans Ltd,US,22,False
-66,SUP--Z-Z-,Simmons  Jones and Torres,AU,22,True
-67,SUP-0-Z-Z,Torres-Flynn,US,19,False
-68,SUP-0009Z,Wallace Ltd,AU,9,False
-69,SUP-99A--,Rogers  Stewart and Salas,US,20,False
-70,SUP-A-0--,Bradley Inc,CN,29,False
-71,SUP-Z-0Z9,Spencer  Moore and Rogers,AU,-5,True
-72,SUP---9A-,Mcneil-Wagner,CN,3,False
-73,SUP-Z-ZZA,Smith-Hunter,CN,6,True
-74,SUP-A0AA0,Robinson-Estes,AU,1,False
-75,SUP----9-,Torres Group,US,21,False
-76,SUP-A9Z90,Young Ltd,US,25,False
-77,SUP-Z9-9A,Figueroa Ltd,UK,10,False
-78,SUP-A-ZAA,Young-Hamilton,CN,26,False
-79,SUP--0ZZ-,Bauer  Waters and Miller,CN,18,True
+1,SUP---A-9,Dunn LLC,US,28,False
+2,SUP-0Z0--,Chen  Johnson and Morales,UK,15,False
+3,SUP---90Z,Schwartz PLC,UK,11,False
+4,SUP--ZZ9-,Zimmerman-Perez,UK,26,False
+5,SUP-AAAA-,Boyer LLC,CN,29,True
+6,SUP--ZA-9,Wade Ltd,AU,16,False
+7,SUP--0999,Griffin PLC,UK,17,False
+8,SUP--00-9,Schmidt  Kramer and Knight,UK,10,True
+9,SUP--A9Z-,Johnson PLC,CN,3,False
+10,SUP-A--99,Mills LLC,AU,5,False
+11,SUP-A0A9-,Phillips Group,CN,16,False
+12,SUP-Z--A0,Harris LLC,CN,6,False
+13,SUP-Z009Z,Lewis and Sons,AU,28,False
+14,SUP-A--99,Avery Ltd,AU,13,False
+15,SUP-09-9A,Myers  Williams and Smith,UK,7,False
+16,SUP--9-9-,Nunez PLC,CN,19,False
+17,SUP-0A9-Z,Drake  Young and Walters,CN,18,False
+18,SUP--9Z9Z,Delgado Inc,UK,4,False
+19,SUP-90-09,Roberts  Lowery and Jackson,US,19,False
+20,SUP-90--Z,Conner  Chavez and Smith,UK,0,True
+21,SUP-ZA--9,Levine Inc,US,23,True
+22,SUP------,Ellis LLC,AU,26,False
+23,SUP--AA-Z,Pittman-Ortiz,US,7,False
+24,SUP----Z9,Knapp  Thompson and Fuentes,CN,-5,False
+25,SUP--AZ-9,Harris Group,CN,6,False
+26,SUP---AA9,Hansen Ltd,US,3,True
+27,SUP-9--9Z,Phillips PLC,CN,3,False
+28,SUP-A--0A,Smith  Madden and Lopez,CN,4,True
+29,SUP-00099,Rubio Group,UK,13,True
+30,SUP-AA9--,Graham and Sons,UK,30,False
+31,SUP---99-,Hughes-Jacobson,CN,11,False
+32,SUP-9-990,Wilson  Reyes and Hill,US,3,True
+33,SUP-9--09,Holmes-Mccarty,US,5,False
+34,SUP--ZA9-,Davis-Mcdowell,US,7,True
+35,SUP-A09A-,Fischer PLC,US,14,False
+36,SUP-0Z--Z,Kaiser  Dunn and Martin,CN,25,True
+37,SUP-00AAZ,Stephens-Rich,AU,9,True
+38,SUP-09A9-,Mann PLC,CN,5,False
+39,SUP-Z-Z9A,Mcconnell  Moore and Taylor,US,23,True
+40,SUP-AAAZ-,Brooks-Allen,US,29,False
+41,SUP-9Z0Z-,Johnson-Parker,UK,9,False
+42,SUP-Z00A-,Ruiz  Moore and Shah,AU,26,True
+43,SUP--09-A,Hampton-Hicks,UK,3,True
+44,SUP-A-A--,Wright  Tran and Ramos,AU,1,False
+45,SUP-A0A9-,Wilson-Henson,UK,2,False
+46,SUP-ZZAAZ,Adams-Diaz,CN,13,True
+47,SUP--0-AA,George-Moore,UK,23,False
+48,SUP-AA--0,Hicks  Jackson and Burton,UK,6,False
+49,SUP-0-A00,Gregory-Martinez,UK,23,True
+50,SUP-00Z0A,Burns-Nelson,AU,26,True
+51,SUP-A00-9,Montgomery PLC,AU,18,False
+52,SUP-999-9,Willis  Murray and Richmond,AU,23,False
+53,SUP--AZ--,Kelly Group,UK,20,False
+54,SUP--900-,Williams  Moreno and Bishop,AU,22,False
+55,SUP--Z-90,Lee  Brown and Johnson,US,16,False
+56,SUP-0-Z-0,Palmer-Allison,US,24,False
+57,SUP-AAA-0,Stewart Group,AU,-5,False
+58,SUP-A0A--,Burton Ltd,US,22,True
+59,SUP-A--Z9,Nash  Lewis and Campbell,AU,-5,False
+60,SUP-9---Z,Shields-Reynolds,CN,10,True
+61,SUP-A-Z-0,Walker and Sons,CN,1,True
+62,SUP-0AZ-A,Castillo-Beck,CN,6,False
+63,SUP-A0-ZA,Stevens-Hill,US,19,False
+64,SUP---0-9,Smith-Bryant,UK,22,False
+65,SUP-A-ZAZ,Pitts-Thompson,AU,14,False
+66,SUP--A-90,Smith-Hernandez,US,13,True
+67,SUP-909-9,Gutierrez and Sons,UK,30,False
+68,SUP-Z-00-,Lawrence  Buck and Carrillo,US,-5,True
+69,SUP-A-Z-0,Young PLC,CN,12,False
+70,SUP----Z0,Daniels Group,CN,17,False
+71,SUP-00Z0-,Sherman  Miller and Wong,AU,20,True
+72,SUP-9A-A-,Nelson  Bird and Smith,CN,28,False
+73,SUP--9-A0,Olson-Knight,US,2,False
+74,SUP-90ZA-,Richardson  Winters and Ellis,CN,16,False
+75,SUP-9Z0A-,Dougherty  Anderson and Davenport,UK,26,False
+76,SUP-9090A,Mason-Thompson,AU,19,False
+77,SUP-00-9A,Willis  Patterson and Compton,AU,14,False
+78,SUP-Z-9-0,Hicks  Lester and Case,CN,18,False
+79,SUP--0-9-,Coffey  Colon and Hayden,AU,23,False

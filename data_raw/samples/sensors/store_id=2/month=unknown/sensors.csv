@@ -1,0 +1,2 @@
+sensor_ts,store_id,shelf_id,temperature_c,humidity_pct,battery_mv
+,2,SHELF-A9Z0,20.09,35.86,4108
