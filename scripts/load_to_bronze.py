@@ -14,6 +14,7 @@ from schemas import (
 )
 from pyarrow import concat_tables
 
+
 # --------------------------
 # Parse Arguments
 # --------------------------
@@ -25,12 +26,14 @@ def parse_args():
     ap.add_argument('--sample', action='store_true', help='Ingest sample data instead of full data')
     return ap.parse_args()
 
+
 # --------------------------
 # Ensure Directories
 # --------------------------
 def ensure_dirs(lake_root):
     for sub in ['bronze/parquet', 'bronze/delta', '_rejects']:
         (lake_root / sub).mkdir(parents=True, exist_ok=True)
+
 
 # --------------------------
 # Manifest Table
@@ -60,30 +63,15 @@ def mark_processed(conn, key, row_count, reject_count=0, status="SUCCESS"):
         [key, dt.datetime.now(dt.UTC), row_count, reject_count, status]
     )
 
+
 # --------------------------
 # Manifest Key Helper
 # --------------------------
-'''
 def make_manifest_key(path: pathlib.Path, raw_root: pathlib.Path) -> str:
-    """
-    Return a relative path starting from raw_root folder name.
-    Example: data_raw/samples/customers.csv
-    """
-    return str(path.relative_to(pathlib.Path.cwd())).replace("\\", "/")  '''
-
-
-def make_manifest_key(path: pathlib.Path, raw_root: pathlib.Path) -> str:
-    """
-    Always store manifest key starting with 'data_raw/...'
-    regardless of whether --raw points to data_raw or a subfolder like data_raw/samples.
-    """
     path = path.resolve()
     raw_root = raw_root.resolve()
-
-    # If user passed data_raw/samples, go one level up to data_raw
     if raw_root.name == "samples":
         raw_root = raw_root.parent
-
     return str(path.relative_to(raw_root.parent)).replace("\\", "/")
 
 
@@ -92,6 +80,7 @@ def make_manifest_key(path: pathlib.Path, raw_root: pathlib.Path) -> str:
 # --------------------------
 def log_processed(table_name, src, total_rows, total_rejects):
     print(f"✅ Processed {total_rows} rows ({total_rejects} rejects) from {src}")
+
 
 # --------------------------
 # Schema Enforcement
@@ -107,10 +96,12 @@ def enforce_schema(table: pa.Table, schema: pa.schema) -> pa.Table:
     table = table.cast(schema, safe=False)
     return table
 
+
 # --------------------------
-# Validation & Rejects
+# Validation & Rejects (New Structured Path)
 # --------------------------
-def validate_and_split(table, schema, reject_path: pathlib.Path, table_name=None, output_format="parquet"):
+def validate_and_split(table, schema, reject_root: pathlib.Path, table_name=None,
+                       output_format="parquet", src_path=None, base_dir=None, is_sample=False):
     valid_rows, reject_rows, reason_codes = [], [], []
 
     for i in range(len(table)):
@@ -126,35 +117,40 @@ def validate_and_split(table, schema, reject_path: pathlib.Path, table_name=None
     reject_count = 0
 
     if reject_rows:
-        reject_path.mkdir(parents=True, exist_ok=True)
+        # Build reject directory structure
+        if src_path and base_dir:
+            relative_folder = src_path.parent.relative_to(base_dir)  # e.g., event_date=2025-01-03
+            reject_dir_full = reject_root / ("samples" if is_sample else "") / relative_folder
+        else:
+            reject_dir_full = reject_root / ("samples" if is_sample else "")
+
+        reject_dir_full.mkdir(parents=True, exist_ok=True)
 
         if output_format == "jsonl":
-            reject_dicts = []
-            for row, reason in zip(reject_rows, reason_codes):
-                if "json" in row.column_names:
-                    raw_json = row.column("json")[0].as_py()
-                    try:
-                        obj = json.loads(raw_json)
-                    except Exception:
-                        obj = {"_raw": raw_json}
-                    obj["reject_reason"] = reason
-                    reject_dicts.append(obj)
-                else:
-                    reject_dicts.append({**row.to_pydict(), "reject_reason": reason})
-
-            reject_file = reject_path / f"rejects_{dt.datetime.now().isoformat()}.jsonl"
+            reject_file = reject_dir_full / src_path.name
             with open(reject_file, "w", encoding="utf-8") as f:
-                for obj in reject_dicts:
-                    f.write(json.dumps(obj) + "\n")
-
+                for row, reason in zip(reject_rows, reason_codes):
+                    if "json" in row.column_names:
+                        raw_json = row.column("json")[0].as_py()
+                        try:
+                            obj = json.loads(raw_json)
+                        except Exception:
+                            obj = {"_raw": raw_json}
+                        obj["reject_reason"] = reason
+                        f.write(json.dumps(obj) + "\n")
+                    else:
+                        obj = {**row.to_pydict(), "reject_reason": reason}
+                        f.write(json.dumps(obj) + "\n")
         else:
+            reject_file = reject_dir_full / src_path.name.replace(".csv", "_rejects.parquet")
             reject_table = pa.concat_tables(reject_rows)
             reject_table = reject_table.append_column("reject_reason", pa.array(reason_codes))
-            pq.write_table(reject_table, reject_path / f"rejects_{dt.datetime.now().isoformat()}.parquet")
+            pq.write_table(reject_table, reject_file)
 
         reject_count = len(reject_rows)
 
     return valid_table, reject_count
+
 
 # --------------------------
 # Write Helpers
@@ -182,9 +178,10 @@ def write_delta(table, base_path, mode='append', partition_by=None, merge_schema
 
 def verify_outputs(pq_path, delta_path):
     pq_count = sum(pq.read_table(str(f)).num_rows for f in pathlib.Path(pq_path).rglob("*.parquet"))
-    delta_count = duckdb.sql(f"SELECT COUNT(*) FROM delta_scan('{delta_path}')").fetchone()[0]
+    delta_count = duckdb.sql(f"LOAD delta; SELECT COUNT(*) FROM delta_scan('{delta_path}')").fetchone()[0]
     if pq_count != delta_count:
         raise ValueError(f"Row count mismatch: Parquet={pq_count}, Delta={delta_count}")
+
 
 # --------------------------
 # Path Helper for Sample Handling
@@ -196,85 +193,20 @@ def _get_base_path(raw_root, is_sample):
     return base_path
 
 # --------------------------
-# Loaders for Single-file Tables
-# --------------------------
-def load_table(table_name, schema, raw_root, lake_root, conn, is_sample=False):
-    base_path = _get_base_path(raw_root, is_sample)
-    src = base_path / f"{table_name}.csv"
-    manifest_key = make_manifest_key(src, raw_root)
-    print( manifest_key,"CSV PATH")
-   
-    if already_processed(conn, manifest_key):
-        print(f"⏩ Skipping {table_name}, already processed successfully.")
-        return
-    try:
-        raw_table = pacsv.read_csv(src, read_options=pacsv.ReadOptions(encoding='utf-8'))
-        process_and_write(table_name, raw_table, schema, src.name, src, lake_root, conn, manifest_key, is_sample)
-    except Exception as e:
-        print(f"❌ Failed processing {table_name}: {e}")
-        mark_processed(conn, manifest_key, 0, 0, "FAIL")
-
-def load_excel_table(table_name, schema, raw_root, lake_root, conn, is_sample=False):
-    base_path = _get_base_path(raw_root, is_sample)
-    src = base_path / f"{table_name}.xlsx"
-    manifest_key = make_manifest_key(src, raw_root)
-    print( manifest_key,"excel PATH")
-    
-    if already_processed(conn, manifest_key):
-        print(f"⏩ Skipping {table_name}, already processed successfully.")
-        return
-    try:
-        df = pd.read_excel(src, engine="openpyxl")
-        raw_table = pa.Table.from_pandas(df, preserve_index=False)
-        process_and_write(table_name, raw_table, schema, src.name, src, lake_root, conn, manifest_key, is_sample)
-    except Exception as e:
-        print(f"❌ Failed processing {table_name}: {e}")
-        mark_processed(conn, manifest_key, 0, 0, "FAIL")
-
-def load_parquet_table(table_name, schema, raw_root, lake_root, conn, is_sample=False):
-    base_path = _get_base_path(raw_root, is_sample)
-    src = base_path / f"{table_name}.parquet"
-    manifest_key = make_manifest_key(src, raw_root)
-    print( manifest_key,"parquet PATH")
-    
-    if already_processed(conn, manifest_key):
-        print(f"⏩ Skipping {table_name}, already processed successfully.")
-        return
-    try:
-        raw_table = pq.read_table(src)
-        process_and_write(table_name, raw_table, schema, src.name, src, lake_root, conn, manifest_key, is_sample)
-    except Exception as e:
-        print(f"❌ Failed processing {table_name}: {e}")
-        mark_processed(conn, manifest_key, 0, 0, "FAIL")
-
-def load_delta_table_with_schema_evolution(table_name, schema, raw_root, lake_root, conn, is_sample=False):
-    base_path = _get_base_path(raw_root, is_sample)
-    src = base_path / table_name
-    manifest_key = make_manifest_key(src, raw_root)
-    print( manifest_key,"delta PATH")
-    
-    if already_processed(conn, manifest_key):
-        print(f"⏩ Skipping {table_name}, already processed successfully.")
-        return
-    try:
-        df = duckdb.sql(f"SELECT * FROM delta_scan('{src}')").to_df()
-        raw_table = pa.Table.from_pandas(df, preserve_index=False)
-        process_and_write(table_name, raw_table, schema, f"{table_name}_delta", src, lake_root, conn, manifest_key, is_sample, merge_schema=True)
-    except Exception as e:
-        print(f"❌ Failed processing {table_name}: {e}")
-        mark_processed(conn, manifest_key, 0, 0, "FAIL")
-
-# --------------------------
 # Shared Process & Write
 # --------------------------
-def process_and_write(table_name, raw_table, schema, src_filename, src_path, lake_root, conn, manifest_key, is_sample=False, merge_schema=False):
+def process_and_write(table_name, raw_table, schema, src_filename, src_path, lake_root, conn, manifest_key,
+                      is_sample=False, merge_schema=False, base_dir=None):
     total_rows = 0
     total_rejects = 0
     status = "SUCCESS"
     try:
         raw_table = enforce_schema(raw_table, schema)
-        reject_dir = lake_root / "_rejects" / table_name / ("samples" if is_sample else "")
-        valid_table, reject_count = validate_and_split(raw_table, schema, reject_dir)
+        reject_root = lake_root / "_rejects" / table_name
+        valid_table, reject_count = validate_and_split(
+            raw_table, schema, reject_root, table_name,
+            output_format="parquet", src_path=src_path, base_dir=base_dir, is_sample=is_sample
+        )
 
         now = pa.scalar(dt.datetime.now(dt.UTC), type=pa.timestamp('us'))
         valid_table = valid_table.append_column('ingestion_ts', pa.array([now.as_py()] * len(valid_table), type=pa.timestamp('us')))
@@ -300,22 +232,135 @@ def process_and_write(table_name, raw_table, schema, src_filename, src_path, lak
         status = "FAIL"
     mark_processed(conn, manifest_key, total_rows, total_rejects, status)
 
+
 # --------------------------
-# Partitioned Table Loader
+# Loader Functions
 # --------------------------
-def load_partitioned_table_parallel(table_name, schema, partition_cols, raw_root, lake_root, conn, is_sample=False):
-    if isinstance(partition_cols, str):
-        partition_cols = [partition_cols]
+def load_table(table_name, schema, raw_root, lake_root, manifest_path, is_sample=False):
+    conn = duckdb.connect(manifest_path)
+    init_manifest(conn)
+
     base_path = _get_base_path(raw_root, is_sample)
-    base_dir = base_path / table_name
-    manifest_key = make_manifest_key(base_dir, raw_root)
-    if not base_dir.exists():
+    src = base_path / f"{table_name}.csv"
+    manifest_key = make_manifest_key(src, raw_root)
+    
+
+    if already_processed(conn, manifest_key):
+        print(f"⏩ Skipping {table_name}, already processed successfully.")
+        conn.close()
         return
-    print( manifest_key,"partitione path")
+
+    try:
+        raw_table = pacsv.read_csv(src, read_options=pacsv.ReadOptions(encoding='utf-8'))
+        process_and_write(table_name, raw_table, schema, src.name, src, lake_root, conn, manifest_key,
+                          is_sample=is_sample, base_dir=base_path)
+    except Exception as e:
+        print(f"❌ Failed processing {table_name}: {e}")
+        mark_processed(conn, manifest_key, 0, 0, "FAIL")
+    finally:
+        conn.close()
+
+
+def load_excel_table(table_name, schema, raw_root, lake_root, manifest_path, is_sample=False):
+    conn = duckdb.connect(manifest_path)
+    init_manifest(conn)
+
+    base_path = _get_base_path(raw_root, is_sample)
+    src = base_path / f"{table_name}.xlsx"
+    manifest_key = make_manifest_key(src, raw_root)
+    
+
+    if already_processed(conn, manifest_key):
+        print(f"⏩ Skipping {table_name}, already processed successfully.")
+        conn.close()
+        return
+
+    try:
+        df = pd.read_excel(src, engine="openpyxl")
+        raw_table = pa.Table.from_pandas(df, preserve_index=False)
+        process_and_write(table_name, raw_table, schema, src.name, src, lake_root, conn, manifest_key,
+                          is_sample=is_sample, base_dir=base_path)
+    except Exception as e:
+        print(f"❌ Failed processing {table_name}: {e}")
+        mark_processed(conn, manifest_key, 0, 0, "FAIL")
+    finally:
+        conn.close()
+
+
+def load_parquet_table(table_name, schema, raw_root, lake_root, manifest_path, is_sample=False):
+    conn = duckdb.connect(manifest_path)
+    init_manifest(conn)
+
+    base_path = _get_base_path(raw_root, is_sample)
+    src = base_path / f"{table_name}.parquet"
+    manifest_key = make_manifest_key(src, raw_root)
+    
+
+    if already_processed(conn, manifest_key):
+        print(f"⏩ Skipping {table_name}, already processed successfully.")
+        conn.close()
+        return
+
+    try:
+        raw_table = pq.read_table(src)
+        process_and_write(table_name, raw_table, schema, src.name, src, lake_root, conn, manifest_key,
+                          is_sample=is_sample, base_dir=base_path)
+    except Exception as e:
+        print(f"❌ Failed processing {table_name}: {e}")
+        mark_processed(conn, manifest_key, 0, 0, "FAIL")
+    finally:
+        conn.close()
+
+
+def load_delta_table_with_schema_evolution(table_name, schema, raw_root, lake_root, manifest_path, is_sample=False):
+    conn = duckdb.connect(manifest_path)
+    conn.execute("LOAD delta;")
+    init_manifest(conn)
+
+    base_path = _get_base_path(raw_root, is_sample)
+    src = base_path / table_name
+    manifest_key = make_manifest_key(src, raw_root)
     
     if already_processed(conn, manifest_key):
         print(f"⏩ Skipping {table_name}, already processed successfully.")
+        conn.close()
         return
+
+    try:
+        df = conn.sql(f"SELECT * FROM delta_scan('{src}')").to_df()
+        raw_table = pa.Table.from_pandas(df, preserve_index=False)
+        process_and_write(table_name, raw_table, schema, f"{table_name}_delta", src, lake_root, conn, manifest_key,
+                          is_sample=is_sample, merge_schema=True, base_dir=base_path)
+    except Exception as e:
+        print(f"❌ Failed processing {table_name}: {e}")
+        mark_processed(conn, manifest_key, 0, 0, "FAIL")
+    finally:
+        conn.close()
+
+
+def load_partitioned_table_parallel(table_name, schema, partition_cols, raw_root, lake_root, manifest_path, is_sample=False):
+    if isinstance(partition_cols, str):
+        partition_cols = [partition_cols]
+
+    conn = duckdb.connect(manifest_path)
+    init_manifest(conn)
+
+    base_path = _get_base_path(raw_root, is_sample)
+    base_dir = base_path / table_name
+    manifest_key = make_manifest_key(base_dir, raw_root)
+
+    if not base_dir.exists():
+        conn.close()
+        return
+
+   
+
+    if already_processed(conn, manifest_key):
+        print(f"⏩ Skipping {table_name}, already processed successfully.")
+        conn.close()
+        return
+
+    conn.close()
 
     data_files = []
     for root, dirs, files in os.walk(base_dir):
@@ -332,11 +377,10 @@ def load_partitioned_table_parallel(table_name, schema, partition_cols, raw_root
     tables_to_write = []
 
     def process_file(folder_path, data_file):
-        nonlocal status
         try:
             reject_rows = []
             reason_codes = []
-            reject_dir = lake_root / "_rejects" / table_name / ("samples" if is_sample else "")
+            reject_root = lake_root / "_rejects" / table_name
             output_fmt = "jsonl" if table_name == "events" else "parquet"
 
             if data_file.suffix.lower() == ".csv":
@@ -355,9 +399,10 @@ def load_partitioned_table_parallel(table_name, schema, partition_cols, raw_root
                             reject_rows.append(line)
                             reason_codes.append(f"JSON parse error: {str(e)}")
                 if reject_rows:
-                    relative_path = data_file.relative_to(raw_root)
-                    reject_file = lake_root / "_rejects" / relative_path
-                    reject_file.parent.mkdir(parents=True, exist_ok=True)
+                    relative_folder = folder_path.relative_to(base_dir)
+                    reject_dir_full = reject_root / ("samples" if is_sample else "") / relative_folder
+                    reject_dir_full.mkdir(parents=True, exist_ok=True)
+                    reject_file = reject_dir_full / data_file.name
                     with open(reject_file, "w", encoding="utf-8") as f:
                         for line, reason in zip(reject_rows, reason_codes):
                             try:
@@ -389,7 +434,10 @@ def load_partitioned_table_parallel(table_name, schema, partition_cols, raw_root
                     raw_table = raw_table.drop([col])
 
             raw_table = enforce_schema(raw_table, schema)
-            valid_table, reject_count = validate_and_split(raw_table, schema, reject_dir, table_name, output_format=output_fmt)
+            valid_table, reject_count = validate_and_split(
+                raw_table, schema, reject_root, table_name,
+                output_format=output_fmt, src_path=data_file, base_dir=base_dir, is_sample=is_sample
+            )
 
             for col, data in partition_data.items():
                 if col not in valid_table.column_names:
@@ -404,7 +452,6 @@ def load_partitioned_table_parallel(table_name, schema, partition_cols, raw_root
             return valid_table, reject_count + len(reject_rows)
         except Exception as e:
             print(f"❌ Failed processing {data_file}: {e}")
-            status = "FAIL"
             return None, 0
 
     max_threads = min(32, (os.cpu_count() or 1) * 4, len(data_files))
@@ -427,7 +474,11 @@ def load_partitioned_table_parallel(table_name, schema, partition_cols, raw_root
             verify_outputs(pq_base, dl_base)
         log_processed(table_name, base_dir, total_rows, total_rejects)
 
+    conn = duckdb.connect(manifest_path)
+    init_manifest(conn)
     mark_processed(conn, manifest_key, total_rows, total_rejects, status)
+    conn.close()
+
 
 # --------------------------
 # Main
@@ -438,9 +489,13 @@ def main():
     lake_root = pathlib.Path(args.lake)
     ensure_dirs(lake_root)
     pathlib.Path(args.manifest).parent.mkdir(parents=True, exist_ok=True)
+
+    # Install delta once globally
     conn = duckdb.connect(args.manifest)
-    conn.execute("INSTALL delta; LOAD delta;")
+    conn.execute("INSTALL delta;")
+    conn.execute("LOAD delta;")
     init_manifest(conn)
+    conn.close()
 
     flat_tables = [
         ("customers", customers_schema),
@@ -449,13 +504,13 @@ def main():
         ("suppliers", suppliers_schema)
     ]
     with ThreadPoolExecutor(max_workers=len(flat_tables)) as executor:
-        futures = [executor.submit(load_table, name, schema, raw_root, lake_root, conn, args.sample) for name, schema in flat_tables]
+        futures = [executor.submit(load_table, name, schema, raw_root, lake_root, args.manifest, args.sample) for name, schema in flat_tables]
         for f in as_completed(futures):
             f.result()
 
-    load_excel_table("exchange_rates", exchange_rates_schema, raw_root, lake_root, conn, args.sample)
-    load_parquet_table("shipments", shipments_schema, raw_root, lake_root, conn, args.sample)
-    load_delta_table_with_schema_evolution("returns", returns_day1_schema, raw_root, lake_root, conn, args.sample)
+    load_excel_table("exchange_rates", exchange_rates_schema, raw_root, lake_root, args.manifest, args.sample)
+    load_parquet_table("shipments", shipments_schema, raw_root, lake_root, args.manifest, args.sample)
+    load_delta_table_with_schema_evolution("returns", returns_day1_schema, raw_root, lake_root, args.manifest, args.sample)
 
     partitioned_tables = [
         ("orders_header", orders_header_schema, "order_dt_local"),
@@ -464,12 +519,12 @@ def main():
         ("events", events_schema, "event_date")
     ]
     with ThreadPoolExecutor(max_workers=len(partitioned_tables)) as executor:
-        futures = [executor.submit(load_partitioned_table_parallel, name, schema, part_col, raw_root, lake_root, conn, args.sample) for name, schema, part_col in partitioned_tables]
+        futures = [executor.submit(load_partitioned_table_parallel, name, schema, part_col, raw_root, lake_root, args.manifest, args.sample) for name, schema, part_col in partitioned_tables]
         for f in as_completed(futures):
             f.result()
 
     print("🏁 Bronze load completed in parallel for all tables.")
 
+
 if __name__ == '__main__':
     main()
-# --------------------------
