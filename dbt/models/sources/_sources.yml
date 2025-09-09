@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: bronze
+    schema: bronze
+    description: "Bronze schema for source data from Lake"
+    tables:
+      - name: customers
+      - name: products
+      - name: stores
+      - name: orders_header
+      - name: orders_lines
+      - name: suppliers
+      - name: returns
+      - name: events #not working.. issue in bronze layer.. data needs to be loaded correctly
+      - name: sensors
+      - name: exchange_rates
+      - name: shipments

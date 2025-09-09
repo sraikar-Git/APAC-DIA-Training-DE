@@ -2,7 +2,7 @@ name: 'local_de_assessment'
 version: '1.0.0'
 config-version: 2
 
-profile: 'local_duckdb'
+profile: 'local_duckdb' # This should match a profile in your profiles.yml
 
 model-paths: ['models']
 snapshot-paths: ['snapshots']
@@ -15,7 +15,7 @@ clean-targets: ['target']
 
 models:
   local_de_assessment:
-    +materialized: view
+    +materialized: view #view
     staging:
       +schema: stg
     silver:

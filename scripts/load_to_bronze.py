@@ -387,35 +387,45 @@ def load_partitioned_table_parallel(table_name, schema, partition_cols, raw_root
                 raw_table = pacsv.read_csv(data_file, read_options=pacsv.ReadOptions(encoding='utf-8'))
             elif data_file.suffix.lower() in [".jsonl", ".json"]:
                 parsed_rows = []
+                reject_rows = []
+                reason_codes = []
+
                 with open(data_file, "r", encoding="utf-8") as f:
                     for line in f:
-                        line = line.strip()
-                        if not line:
+                        raw_line = line.strip()
+                        if not raw_line:
                             continue
                         try:
-                            obj = json.loads(line)
+                            obj = json.loads(raw_line)
+                            # Always preserve the raw JSON string in `json` column
+                            if "json" not in obj:
+                                obj["json"] = raw_line
                             parsed_rows.append(obj)
                         except Exception as e:
-                            reject_rows.append(line)
+                            reject_rows.append(raw_line)
                             reason_codes.append(f"JSON parse error: {str(e)}")
+
+                # Write rejects if any
                 if reject_rows:
                     relative_folder = folder_path.relative_to(base_dir)
                     reject_dir_full = reject_root / ("samples" if is_sample else "") / relative_folder
                     reject_dir_full.mkdir(parents=True, exist_ok=True)
                     reject_file = reject_dir_full / data_file.name
                     with open(reject_file, "w", encoding="utf-8") as f:
-                        for line, reason in zip(reject_rows, reason_codes):
+                        for raw_line, reason in zip(reject_rows, reason_codes):
                             try:
-                                obj = json.loads(line)
+                                obj = json.loads(raw_line)
                             except Exception:
-                                obj = {"_raw": line}
+                                obj = {"_raw": raw_line}
                             obj["reject_reason"] = reason
                             f.write(json.dumps(obj) + "\n")
+
                 if parsed_rows:
                     df = pd.DataFrame(parsed_rows)
                     raw_table = pa.Table.from_pandas(df, preserve_index=False)
                 else:
                     return None, len(reject_rows)
+
             else:
                 return None, 0
 
