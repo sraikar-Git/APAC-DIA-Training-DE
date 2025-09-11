@@ -49,7 +49,11 @@ fk_checked AS (
         ON d.order_id = o.order_id
 )
 
--- ✅ Final clean output: only valid FK rows
-SELECT * EXCLUDE (valid_order_id)
+-- 🚨 Final anomaly output: only invalid FK rows
+SELECT 
+    * EXCLUDE (valid_order_id),
+    CASE
+        WHEN valid_order_id IS NULL THEN 'Invalid order_id'
+    END AS anomaly_reason
 FROM fk_checked
-WHERE valid_order_id IS NOT NULL
+WHERE valid_order_id IS NULL

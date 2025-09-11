@@ -70,22 +70,14 @@ fk_checked AS (
         {% endif %}
 )
 
--- ✅ Keep only rows with both valid FKs
+-- 🚨 Keep only rows with invalid FKs and add reason
 SELECT
-    order_id,
-    line_number,
-    product_id,
-    qty,
-    unit_price,
-    line_discount_pct,
-    tax_pct,
-    order_dt,
-    ingestion_ts,
-    src_filename,
-    src_row_hash,
-    line_total,
-    discount_amount,
-    tax_amount
+    *,
+    CASE
+        WHEN valid_order_id IS NULL AND valid_product_id IS NULL THEN 'Invalid order_id and product_id'
+        WHEN valid_order_id IS NULL THEN 'Invalid order_id'
+        WHEN valid_product_id IS NULL THEN 'Invalid product_id'
+    END AS anomaly_reason
 FROM fk_checked
-WHERE valid_order_id IS NOT NULL
-  AND valid_product_id IS NOT NULL
+WHERE valid_order_id IS NULL
+   OR valid_product_id IS NULL

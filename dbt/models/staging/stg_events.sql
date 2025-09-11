@@ -58,13 +58,14 @@ typed AS (
         src_filename,
         src_row_hash
     FROM json_parsed
+    where event_id is not null
 ),
 
 -- Step 3: Deduplicate by latest ingestion
 deduped AS (
     SELECT *,
            ROW_NUMBER() OVER (PARTITION BY event_id ORDER BY ingestion_ts DESC) AS rn
-    FROM typed
+    FROM typed where event_id is not null
     QUALIFY rn = 1
 )
 

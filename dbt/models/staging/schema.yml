@@ -1,0 +1,259 @@
+version: 2
+
+models:
+  # Customers
+  - name: stg_customers
+    description: "Customer master data with SCD Type 2 history"
+    columns:
+      - name: customer_id
+        description: "Surrogate customer id from source"
+        tests:
+          - not_null
+          - unique:
+              config:
+                where: "is_current = TRUE"   # Only current records must be unique
+      - name: natural_key
+        description: "Business key for customer"
+        tests:
+          - not_null
+          - unique:
+              config:
+                where: "is_current = TRUE"   # Only current records must be unique
+                severity: warn
+      - name: email
+        description: "Customer email address"
+        tests:
+          - not_null
+          - email_format:
+              arguments: {}
+              config:
+                severity: warn
+      - name: latitude
+        description: "Customer latitude"
+        tests:
+          - not_null
+          - latitude_range:
+              arguments: {}
+              config:
+                severity: warn
+      - name: longitude
+        description: "Customer longitude"
+        tests:
+          - not_null
+          - longitude_range:
+              arguments: {}
+              config:
+                severity: warn
+
+
+  # Products
+  - name: stg_products
+    description: "Product master data with SCD Type 2 history"
+    columns:
+      - name: product_id
+        description: "Surrogate product id from source"
+        tests:
+          - not_null
+          - unique:
+              config:
+                where: "is_current = TRUE"   # Only current rows must be unique
+      - name: sku
+        description: "Stock Keeping Unit"
+        tests:
+          - not_null
+          - unique:
+              config:
+                where: "is_current = TRUE"
+      - name: category
+        description: "Product category"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Electronics', 'Clothing', 'Home', 'Sports']
+      - name: valid_from
+        description: "SCD2 start timestamp"
+        tests:
+          - not_null
+      - name: valid_to
+        description: "SCD2 end timestamp (NULL for current)"
+      - name: is_current
+        description: "Flag for current active version"
+        tests:
+          - not_null
+
+  # Stores
+  - name: stg_stores
+    description: "Store master data with SCD Type 2 history"
+    columns:
+      - name: store_id
+        description: "Surrogate store id from source"
+        tests:
+          - not_null
+          - unique:
+              config:
+                where: "is_current = TRUE"   # Only current rows must be unique
+      - name: store_code
+        description: "Store code from source"
+        tests:
+          - not_null
+          - unique:
+              config:
+                where: "is_current = TRUE"
+                severity: warn
+      - name: channel
+        description: "Sales channel for store"
+        tests:
+          - accepted_values:
+              values: ['web', 'pos']
+      - name: latitude
+        description: "Store latitude"
+        tests:
+          - latitude_range:
+              arguments: {}
+              config:
+                severity: warn
+      - name: longitude
+        description: "Store longitude"
+        tests:
+          - longitude_range:
+              arguments: {}
+              config:
+                severity: warn
+      - name: valid_from
+        description: "SCD2 start timestamp"
+        tests:
+          - not_null
+      - name: valid_to
+        description: "SCD2 end timestamp (NULL for current)"
+      - name: is_current
+        description: "Flag for current active version"
+        tests:
+          - not_null
+
+  # Suppliers
+  - name: stg_suppliers
+    description: "Supplier master data"
+    columns:
+      - name: supplier_id
+        tests: [unique, not_null]
+      - name: supplier_code
+        tests: [unique, not_null]
+
+  # Orders Header
+  - name: stg_orders_header
+    description: "Order header"
+    columns:
+      - name: order_id
+        tests: [unique, not_null]
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+              #severity: warn
+          - fk_violation_rate:
+              parent_model: ref('stg_customers')
+              parent_column: customer_id
+      - name: store_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stores')
+              field: store_id
+          - fk_violation_rate:
+              parent_model: ref('stores')
+              parent_column: store_id
+      - name: channel
+        tests:
+          - accepted_values:
+              values: ['online', 'retail']
+
+  # Orders Lines
+  - name: stg_orders_lines
+    description: "Order lines"
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_orders_header')
+              field: order_id       
+      - name: product_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_products')
+              field: product_id
+      - name: line_discount_pct
+        tests: 
+          - discount_pct_range:
+              arguments: {}
+              config:
+                severity: warn
+
+
+    # Events
+  - name: stg_events
+    description: "Event logs"
+    columns:
+      - name: event_id
+        tests: [unique, not_null]
+      - name: event_type
+        tests:
+          - accepted_values:
+              values: ['click', 'view', 'purchase', 'login']
+
+  # Sensors
+  - name: stg_sensors
+    description: "IoT readings"
+    columns:
+      - name: store_id
+        tests:
+          - relationships:
+              to: ref('stores')
+              field: store_id
+      - name: temperature_c
+        tests: []
+      - name: humidity_pct
+        tests: []
+
+  # Exchange Rates
+  - name: stg_exchange_rates
+    description: "FX rates"
+    columns:
+      - name: date
+        tests: [not_null]
+      - name: currency
+        tests:
+          - accepted_values:
+              values: ['USD', 'EUR', 'JPY', 'GBP', 'NZD', 'CAD', 'CHF', 'CNY', 'SGD', 'INR']
+
+  # Shipments
+  - name: stg_shipments
+    description: "Shipment data"
+    columns:
+      - name: shipment_id
+        tests: [unique, not_null]
+      - name: order_id
+        tests:
+          - relationships:
+              to: ref('stg_orders_header')
+              field: order_id
+
+  # Returns
+  - name: stg_returns
+    description: "Returns data"
+    columns:
+      - name: return_id
+        tests: [unique, not_null]
+      - name: order_id
+        tests:
+          - relationships:
+              to: ref('stg_orders_header')
+              field: order_id
+      - name: product_id
+        tests:
+          - relationships:
+              to: ref('stg_products')
+              field: product_id

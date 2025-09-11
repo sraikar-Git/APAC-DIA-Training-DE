@@ -56,7 +56,14 @@ fk_checked AS (
         ON d.store_id = s.store_id
 )
 
-SELECT * EXCLUDE (valid_customer_id, valid_store_id)
+-- 🚨 Final anomaly output: only invalid FK rows
+SELECT 
+    * EXCLUDE (valid_customer_id, valid_store_id),
+    CASE
+        WHEN valid_customer_id IS NULL AND valid_store_id IS NULL THEN 'Invalid customer_id and store_id'
+        WHEN valid_customer_id IS NULL THEN 'Invalid customer_id'
+        WHEN valid_store_id IS NULL THEN 'Invalid store_id'
+    END AS anomaly_reason
 FROM fk_checked
-WHERE valid_customer_id IS NOT NULL
-  AND valid_store_id IS NOT NULL
+WHERE valid_customer_id IS NULL
+   OR valid_store_id IS NULL

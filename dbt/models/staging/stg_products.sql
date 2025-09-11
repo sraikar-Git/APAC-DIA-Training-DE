@@ -1,5 +1,6 @@
 {{ config(
-    materialized='table',
+    materialized='incremental',
+    unique_key=['product_id', 'valid_from'],
     on_schema_change='append_new_columns'
 ) }}
 
@@ -27,10 +28,79 @@ typed AS (
 ),
 
 deduped AS (
-    SELECT *,
-           ROW_NUMBER() OVER (PARTITION BY product_id ORDER BY ingestion_ts DESC) AS rn
-    FROM typed
-    QUALIFY rn = 1
+    SELECT *
+    FROM (
+        SELECT *,
+               ROW_NUMBER() OVER (PARTITION BY product_id ORDER BY ingestion_ts DESC) AS rn
+        FROM typed
+    ) sub
+    WHERE rn = 1
 )
 
-SELECT * EXCLUDE (rn) FROM deduped
+{% if is_incremental() %}
+    -- 1️⃣ New or changed rows
+    SELECT
+        new_data.product_id,
+        new_data.sku,
+        new_data.name,
+        new_data.category,
+        new_data.subcategory,
+        new_data.current_price,
+        new_data.currency,
+        new_data.is_discontinued,
+        new_data.introduced_dt,
+        new_data.discontinued_dt,
+        new_data.ingestion_ts,
+        new_data.src_filename,
+        new_data.src_row_hash,
+        new_data.ingestion_ts AS valid_from,
+        NULL AS valid_to,
+        TRUE AS is_current
+    FROM deduped new_data
+
+    UNION ALL
+
+    -- 2️⃣ Expire old versions
+    SELECT
+        old_data.product_id,
+        old_data.sku,
+        old_data.name,
+        old_data.category,
+        old_data.subcategory,
+        old_data.current_price,
+        old_data.currency,
+        old_data.is_discontinued,
+        old_data.introduced_dt,
+        old_data.discontinued_dt,
+        old_data.ingestion_ts,
+        old_data.src_filename,
+        old_data.src_row_hash,
+        old_data.valid_from,
+        new_data.ingestion_ts AS valid_to,
+        FALSE AS is_current
+    FROM {{ this }} old_data
+    INNER JOIN deduped new_data
+        ON old_data.product_id = new_data.product_id
+    WHERE old_data.is_current = TRUE
+      AND old_data.src_row_hash <> new_data.src_row_hash
+{% else %}
+    -- Initial load
+    SELECT
+        product_id,
+        sku,
+        name,
+        category,
+        subcategory,
+        current_price,
+        currency,
+        is_discontinued,
+        introduced_dt,
+        discontinued_dt,
+        ingestion_ts,
+        src_filename,
+        src_row_hash,
+        ingestion_ts AS valid_from,
+        NULL AS valid_to,
+        TRUE AS is_current
+    FROM deduped
+{% endif %}
